@@ -25,10 +25,16 @@ gulp.task('copy:rootfiles', function () {
         .pipe(gulp.dest(config.dest.root));
 });
 
+gulp.task('copy:wow', function () {
+    return gulp
+        .src(config.src.js + '/lib/wow.min.js')
+        .pipe(gulp.dest(config.dest.js));
+});
+
 gulp.task('copy:img', function () {
     return gulp
         .src([
-            config.src.img + '/**/*.{jpg,png,jpeg,svg,gif}',
+            config.src.img + '/**/*.*',
             '!' + config.src.img + '/svgo/**/*.*'
         ])
         .pipe(gulp.dest(config.dest.img));
@@ -39,7 +45,8 @@ gulp.task('copy', [
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',
-    'copy:fonts'
+    'copy:fonts',
+    'copy:wow'
 ]);
 gulp.task('copy:watch', function () {
     gulp.watch(config.src.img + '/*', ['copy']);
