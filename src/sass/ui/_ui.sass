@@ -1,0 +1,113 @@
+html
+body
+  font-family: 'Eina03', sans-serif
+  font-size: 18px
+  box-sizing: border-box
+  position: relative
+.container
+  width: 100% !important
+  box-sizing: border-box
+  @media (min-width: 1200px)
+    max-width: 1250px !important
+  +r(1250)
+    padding: 0 15px
+a
+  text-decoration: none
+  transition: all 0.3s
+input[type="submit"]
+  appearance: none
+  -webkit-appearance: none
+textarea
+  resize: none
+
+.out
+  overflow: hidden
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1040px)
+	.hidden-sm
+		display: none !important
++rmin(1040)
+	.hidden-md
+		display: none !important
+
+
+
+
+#fp-nav ul li a span
+  width: 10px
+  height: 10px
+  background-color: #d8dce6
+#fp-nav ul li:hover a span
+  margin: -2px 0 0 -2px !important
+#fp-nav ul li a.active span
+  background-color: #ff0057
+  margin: -3px 0 0 -3px
+#fp-nav ul li
+  width: 20px
+  height: 20px
+
+
+.pulsating-background-container
+  position: absolute
+  left: 0
+  top: 0
+  z-index: -1
+  width: 100%
+  height: 100%
+  overflow: hidden
+.pulsating-background__circle--positioned-from-bottom
+  animation-name: pulsate-from-bottom
+  transform: translate3d(-50%, 0%, 0)
+  transform-origin: 50% 50% !important
+.pulsating-background__circle
+  will-change: transform
+  position: absolute
+  box-shadow: 0px 3px 107.5px 0 rgba(0, 0, 0, 0.23)
+  opacity: 0.2
+  border-radius: 100%
+  animation: pulsate 2s ease-in-out infinite alternate
+  transform-origin: 50% 0% 
+.pulsating-background
+  height: 100%
+  position: relative
+  width: 100%
+  bottom: -40vh
+  left: 22vw
+  +center
+
+
+@keyframes pulsate
+  0%
+    transform: translate3d(-50%, 0%, 0)
+  to
+    transform: scale(0.95) translate3d(-52.63158%, 2.63158%, 0)
+@keyframes pulsate-from-bottom
+  0%
+    transform: translate3d(-50%, 0%, 0)
+  to
+    transform: scale(0.95) translate3d(-52.63158%, 2.63158%, 0)
+
+
+
+
+
+
+.pages
+  padding: 120px 0 60px
+  h1
+    font-size: 40px
+    text-align: center
+    margin-bottom: 40px
+  a
+    font-size: 20px
+    padding: 10px 0
+    display: block
+    color: #000
+    &:hover
+      text-decoration: underline
+  ul
+    +center-column

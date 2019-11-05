@@ -1,0 +1,180 @@
+.midmarket
+  h2
+    font-size: 80px
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 880px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 34px
+      letter-spacing: normal
+  .intro
+    min-height: 750px
+    background-image: url('../img/midmarket/midmarket__bg.png')
+    +r(767)
+      min-height: auto
+  &__curated
+    padding-top: 100px
+    +r(767)
+      padding-top: 50px
+    h2
+      margin-bottom: 110px
+      max-width: 1000px
+      +r(767)
+        margin-bottom: 40px
+    &__row
+      display: flex
+      align-items: stretch
+      padding: 0 25px
+      +r(991)
+        flex-direction: column
+      +r(767)
+        padding: 0
+    &__block
+      border-radius: 10px
+      width: 100%
+      margin: 0 12px
+      padding: 30px 25px 45px 45px
+      +r(991)
+        margin-bottom: 30px
+      +r(767)
+        margin: 0
+        margin-bottom: 30px
+        padding: 15px
+      &--1
+        background-color: #3a33bc
+      &--2
+        background-color: #2870e5
+      &--3
+        background-color: #41414f
+    &__img
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      height: 130px
+      margin-bottom: 25px
+      padding-right: 20px
+      img
+        width: 100px
+    h4
+      font-size: 25px
+      font-weight: bold
+      color: #ffffff
+      margin-bottom: 30px
+      padding-right: 20px
+    p
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      color: #ffffff
+      margin-bottom: 30px
+    a
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      color: #ffffff
+      text-decoration: underline
+      &:hover
+        color: #ff0057
+  &__features
+    padding-top: 200px
+    +r(767)
+      padding-top: 50px
+  .features-scroller
+    &__img
+      width: auto
+      height: 100%
+      box-shadow: none
+      background: none
+      img
+        max-width: 80%
+    &__text
+      h3
+        font-size: 49px
+        margin-bottom: 35px
+        +r(991)
+          font-size: 40px
+      p
+        margin-bottom: 30px
+  .message__success
+    h3
+      font-size: 36px
+      letter-spacing: normal
+
+
+
+  &__security
+    padding-bottom: 190px
+    +r(767)
+      padding: 50px 0
+    h2
+      margin-bottom: 80px
+      +r(767)
+        margin-bottom: 40px
+    &__block
+      border-radius: 10px
+      background-color: #f4f0eb
+      padding: 30px 35px
+      height: 100%
+      +r(1999)
+        margin-bottom: 30px
+        height: calc(100% - 30px)
+      h4
+        font-size: 25px
+        font-weight: bold
+        color: #131c2e
+        margin-bottom: 25px
+      p
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.53
+        color: #131c2e
+  &__follow
+    padding-bottom: 200px
+    +r(767)
+      padding-bottom: 50px
+    h2
+      margin-bottom: 100px
+      +r(767)
+        margin-bottom: 40px
+    &__row
+      display: flex
+      justify-content: center
+      align-items: stretch
+      +r(767)
+        flex-direction: column
+    &__block
+      width: 100%
+      margin: 0 70px
+      display: flex
+      flex-direction: column
+      align-items: center
+      +r(1200)
+        margin: 0 20px
+      +r(767)
+        margin: 0
+        margin-bottom: 80px
+      img
+        height: 95px
+        margin-bottom: 55px
+        +r(767)
+          margin-bottom: 30px
+      h4
+        font-size: 25px
+        font-weight: bold
+        color: #131c2e
+        text-align: left
+        display: block
+        width: 100%
+        margin-bottom: 25px
+      p
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.53
+        color: #131c2e

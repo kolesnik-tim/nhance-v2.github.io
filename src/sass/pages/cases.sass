@@ -1,0 +1,168 @@
+.cases
+  h2
+    font-size: 80px
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 880px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 34px
+      letter-spacing: normal
+  .intro
+    background-image: url('../img/cases/use-cases-header.png')
+    min-height: 720px
+    +r(767)
+      min-height: auto
+    h2
+      margin-bottom: 60px
+      +r(767)
+        margin-bottom: 30px
+    p
+      max-width: 800px
+      margin-bottom: 30px
+      +r(767)
+        font-size: 20px
+
+  &__specific
+    padding-top: 130px
+    +r(767)
+      padding-top: 50px
+    h2
+      margin-bottom: 130px
+      max-width: 640px
+      +r(767)
+        margin-bottom: 40px
+    .tabs
+      background-color: rgb(247, 247, 253)
+      &__caption
+        display: flex
+        width: 100%
+        +r(767)
+          flex-direction: column
+        li
+          background: #131b2b
+          padding: 25px 0
+          width: 100%
+          +center
+          font-size: 25px
+          font-weight: bold
+          letter-spacing: -1.15px
+          color: #ffffff
+          cursor: pointer
+          +tr
+          +r(1999)
+            font-size: 20px
+          +r(767)
+            padding: 18px 0
+          &.active
+            background: none
+            color: #131b2b
+      &__content
+        display: none
+        padding: 50px 0 100px
+        +r(767)
+          padding: 50px 0
+        &.active
+          display: block
+    &__schedule
+      display: flex
+      align-items: center
+      +r(991)
+        margin-bottom: 40px
+      img
+        width: 75px
+        margin-right: 15px
+      strong
+        font-size: 25px
+        font-weight: bold
+        margin-bottom: 10px
+        color: #131b2b
+        display: block
+      p
+        font-size: 14px
+        font-weight: normal
+        color: #131b2b
+        max-width: 200px
+        display: block
+    &__advantages
+      display: flex
+      padding-bottom: 40px
+      i
+        color: #0ef7b5
+        font-size: 20px
+        margin-right: 17px
+      p
+        font-size: 18px
+        font-weight: 600
+        line-height: 1.39
+        color: #131b2b
+        padding-right: 20px
+    &__row
+      display: flex
+      justify-content: center
+      margin-top: 30px
+      +r(991)
+        flex-wrap: wrap
+    &__block
+      max-width: 245px
+      width: 100%
+      +rmin(1200)
+        margin-right: 60px !important
+      +r(1999)
+        margin-right: 20px
+      +r(991)
+        margin: 0 10px 50px !important
+      +r(767)
+        margin: 0 8px 50px !important
+        max-width: 230px
+      &:last-child
+        margin-right: 0 !important
+        +r(1999)
+          margin-right: 0 !important
+      h4
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.11
+        color: #131b2b
+        margin-bottom: 20px
+      p
+        font-size: 14px
+        font-weight: normal
+        line-height: 1.43
+        color: #131b2b
+        b
+          font-weight: bold
+    &__img
+      width: 100%
+      border-radius: 40px
+      box-shadow: 0px 3px 29.5px 0 rgba(0, 0, 0, 0.13)
+      background-color: #131b2b
+      border: 6px solid #000
+      overflow: hidden
+      margin-bottom: 40px
+      height: 516px
+      +center
+      +r(1200)
+        height: 456px
+      +r(991)
+        height: 516px
+      +r(767)
+        height: 483px
+      &-secondary
+        background: none
+        border-radius: 0
+        border: none
+        box-shadow: none
+        justify-content: flex-start
+        img
+          width: 90% !important
+      img
+        width: 100%
+        
+                              

@@ -1,0 +1,264 @@
+.message
+  h2
+    font-size: 80px
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 880px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 34px
+      letter-spacing: normal
+  .intro
+    background-image: url('../img/message/chat-bubble.png')
+    
+  &__info
+    padding: 135px 0
+    +r(767)
+      padding: 50px 0
+    h2
+      max-width: 940px
+      margin-bottom: 40px
+    .container
+      div
+        max-width: 690px
+        +relative-x
+        text-align: center
+        padding-bottom: 40px
+    span
+      font-size: 25px
+      font-weight: 600
+      line-height: 1.2
+      text-align: center
+      color: #131c2e
+      margin-bottom: 50px
+      background: rgb(121, 251, 252)
+    p
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      text-align: center
+      color: #131c2e
+      margin-bottom: 30px
+      max-width: 830px
+      display: block
+      +relative-x
+  &__channels
+    padding: 70px 0
+    +r(767)
+      padding: 0
+    h2
+      max-width: 100%
+      margin-bottom: 75px
+      +r(767)
+        margin-bottom: 40px
+    &__row
+      display: flex
+      +relative-x
+      max-width: 980px
+      padding-bottom: 210px
+      +r(767)
+        flex-wrap: wrap
+        padding-bottom: 50px
+    &__block
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      +r(767)
+        width: 49%
+        margin-bottom: 40px
+      img
+        height: 75px
+        margin-bottom: 25px
+      b
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.2
+        color: #131c2e
+        text-align: center
+  &__features
+    &__img
+      width: 100%
+      img
+        max-width: 100%
+        width: 100%
+  .features-scroller__img--center
+    +center
+  &__cases
+    background: rgb(243, 240, 236)
+    padding-top: 110px
+    +r(767)
+      padding-top: 50px
+    h2
+      margin-bottom: 25px
+    &__img
+      +center
+      img
+        width: 100%
+        max-width: 800px
+
+  &__importance
+    padding: 160px 0
+    +r(767)
+      padding: 50px 0
+    h2
+      max-width: 100%
+      margin-bottom: 100px
+      +r(767)
+        margin-bottom: 40px
+    &__row
+      display: flex
+      align-items: stretch
+      +r(1250)
+        flex-wrap: wrap
+    &__block
+      border-radius: 10px
+      padding: 40px 30px
+      margin: 0 5px
+      width: 100%
+      +r(1250)
+        width: 32%
+        margin-bottom: 10px
+      +r(991)
+        width: 48%
+      +r(600)
+        width: 100%
+      &--1
+        background: #463dd6
+      &--2
+        background: #114fb3
+      &--3
+        background: #2362c8
+      span
+        font-size: 36px
+        font-weight: bold
+        color: #ffffff
+        margin-bottom: 25px
+        display: block
+      h4
+        font-size: 22px
+        font-weight: bold
+        line-height: 1.2
+        color: #ffffff
+        margin-bottom: 20px
+      p
+        font-size: 18px
+        line-height: 1.39
+        color: #ffffff
+
+  
+
+
+  
+
+  &__channels-other
+    padding: 140px 0
+    +r(767)
+      padding: 50px 0
+    h2
+      font-size: 88px
+      font-weight: bold
+      text-align: center
+      color: #131725
+      letter-spacing: -4px
+      margin-bottom: 100px
+      max-width: 100%
+      +r(767)
+        margin-bottom: 40px
+        font-size: 32px
+    &__block
+      background: rgb(243, 240, 236)
+      min-height: 344px
+      +center-column
+      padding: 10px 30px
+      border-bottom-right-radius: 150px
+      border-bottom-left-radius: 40px
+      border-top-left-radius: 150px
+      border-top-right-radius: 40px
+      margin: 0 35px
+      +r(1040)
+        margin: 0
+      +r(767)
+        margin-bottom: 40px
+      h3
+        font-size: 26px
+        font-weight: bold
+        text-align: center
+        color: #171717
+        margin-bottom: 20px
+        margin-top: 40px
+      p
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.39
+        text-align: center
+        color: #171717
+        margin-bottom: 35px
+        max-width: 335px
+      a
+        font-size: 18px
+        font-weight: 600
+        line-height: 1.79
+        text-align: center
+        color: #2226a3
+        &:hover
+          text-decoration: underline
+          i
+            transform: translate(8px)
+        i
+          color: #006dff
+          margin-left: 10px
+          font-size: 12px
+          +tr
+    &__btn
+      margin-top: 130px
+      +center-column
+      +r(767)
+        margin-top: 50px
+      strong
+        background-image: linear-gradient(to right, #2df6b6, #28e6f1)
+        font-size: 36px
+        font-weight: bold
+        text-align: center
+        color: #131725
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 10px
+      p
+        font-size: 16px
+        font-weight: normal
+        text-align: center
+        color: #131725
+        margin-bottom: 50px
+        max-width: 280px
+        +r(767)
+          max-width: 100%
+          margin-bottom: 30px
+      a
+        border-radius: 52.8px
+        background-color: #28e6f1
+        border: 1px solid #28e6f1
+        +center-column
+        padding: 26px 60px
+        font-size: 26px
+        font-weight: bold
+        text-align: center
+        color: #131725
+        &:hover
+          box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.2)
+        +r(767)
+          font-size: 20px
+          padding: 20px 20px
+        span
+          font-size: 14px
+          font-weight: normal
+          text-align: center
+          color: #131725
+          display: block
+

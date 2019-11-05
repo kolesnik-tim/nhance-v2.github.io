@@ -1,0 +1,105 @@
+.customers
+  .intro
+    background-image: url('../img/solution/solution__intro-bg.png')
+    h1
+      font-size: 80px
+      font-weight: bold
+      line-height: 0.94
+      letter-spacing: -4px
+      text-align: center
+      color: #131c2e
+      max-width: 880px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      width: 100%
+      margin-bottom: 55px
+      +r(767)
+        font-size: 34px
+        letter-spacing: normal
+  &__content
+    background: rgb(232, 230, 239)
+    padding: 130px 0 100px
+    +r(767)
+      padding: 50px 0
+  &__row
+    column-count: 3
+    column-gap: 30px
+    +r(991)
+      column-count: 2
+    +r(767)
+      column-count: 1
+  &__block
+    background-color: #fff
+    border-radius: 10px
+    box-shadow: 0px 1.5px 15px 0 rgba(0, 0, 0, 0.04)
+    border: solid 0.5px #e8e8e8
+    display: inline-flex
+    flex-direction: column
+    margin: 0 0 30px
+    width: 100%
+    padding: 40px
+    +r(767)
+      padding: 25px
+    &__img
+      img
+        height: 50px
+        margin-bottom: 25px
+    p
+      font-size: 18px
+      line-height: 1.39
+      color: #131c2e
+      display: block
+      margin-bottom: 30px
+    a
+      font-size: 18px
+      font-weight: 600
+      color: #2226a3
+      &:hover
+        text-decoration: underline
+        i
+          transform: translate(8px)
+      i
+        font-size: 10px
+        font-weight: 900
+        color: #006dff
+        margin-left: 10px
+        +tr
+
+
+  &__all
+    padding: 200px 0 140px
+    +r(767)
+      padding: 50px 0
+    h2
+      font-size: 50px
+      font-weight: bold
+      line-height: 1.2
+      letter-spacing: -1px
+      text-align: center
+      color: #131c2e
+      margin-bottom: 90px
+      +r(767)
+        letter-spacing: normal
+        font-size: 30px
+        margin-bottom: 40px
+    &__row
+      display: flex
+      flex-wrap: wrap
+    &__block
+      flex: 0 0 20%
+      max-width: 20%
+      transform: scale(0.5)
+      transform-origin: center
+      +center
+      +r(991)
+        flex: 0 0 33.33%
+        max-width: 33.33%
+      +r(767)
+        flex: 0 0 50%
+        max-width: 50%
+      +r(500)
+        flex: 0 0 100%
+        max-width: 100%
+      img
+        max-width: 100%

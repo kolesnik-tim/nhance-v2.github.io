@@ -1,0 +1,56 @@
+---
+title: Contact US | NHANCE NOW
+"description": "Reach out to us. We are just a message away. Always."
+---
+extends layouts/_layout
+block content
+  .contacts
+    .intro
+      .container.wow.fadeInUp(data-wow-duration="1s")
+        h2 We’d love to hear from you
+        p Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.
+    .contacts__content
+      .container
+        .row.justify-content-center.justify-content-lg-start
+          .col-lg-6.col-md-10.col-12.wow.fadeInLeft(data-wow-duration="1s")
+            ul.contacts__block
+              li
+                strong Address
+                .contacts__block__info
+                  b.primary Bangalore
+                  p
+                    | #271, 2nd Floor, Sri Ganesh Complex, Hosur Main Road, Madiwala, Landmark: Silk Board Junction, Bangalore - 560068.
+                  b.secondary Dubai
+                  p FS#46, Building 16, Dubai Internet City, TECOM, Dubai, U.A.E.
+              li
+                strong Phone number
+                .contacts__block__info
+                  a(href='tel:+14158004295') 
+                    img(src="img/country/usa.png", alt="")
+                    | USA +1 415 800 4295
+                  a(href='tel:+971527999279') 
+                    img(src="img/country/uae_flag.png", alt="")
+                    | Dubai +971 52 799 9279
+                  a(href='tel:+919108499377') 
+                    img(src="img/country/india_flag.png", alt="")
+                    | India +91 9108499377
+              li
+                strong Sales
+                a(href='mailto:sales@nhancenow.com') sales@nhancenow.com
+              li
+                strong Support
+                a(href='mailto:sales@nhancenow.com') support@nhancenow.com
+              li
+                strong We’re hiring
+                a.button(href='https://angel.co/nhance-now/jobs', target='_blank') See our job openings
+          .col-12.col-lg-6.wow.fadeInRight(data-wow-duration="1s")
+            form.contacts__form
+              .contacts__form__input
+                input(type='text', placeholder='Name', name='customerName')
+                input(type='tel', placeholder='Contact Number', name='customerNumber')
+                input(type='email', placeholder='Email ID', name='customerEmail')
+                input(type='text', placeholder='Message', name='customerMessage')
+              .contacts__form__btn
+                input.button(type='submit', value='Submit')
+              .contacts__form__dialogue__message
+                p Message sent

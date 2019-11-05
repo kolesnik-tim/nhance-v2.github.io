@@ -1,0 +1,182 @@
+.intro
+  background-color: rgb(247, 247, 253)
+  background-size: auto 80%
+  background-position: 95% 30px
+  background-repeat: no-repeat
+  min-height: 680px
+  +center
+  padding-top: 100px
+  +r(767)
+    padding: 120px 0 50px
+    min-height: auto
+  +r(450)
+    background-size: 85% auto
+  &__text
+    padding: 70px 85px
+    border-radius: 20px
+    background-color: #40404d
+    width: 100%
+    max-width: 940px
+    +relative-x
+    margin-top: -90px
+    +r(767)
+      padding: 25px 20px
+    p
+      font-size: 25px
+      font-weight: normal
+      line-height: 1.4
+      color: #ffffff
+      +r(767)
+        font-size: 20px
+  strong
+    display: block
+    text-align: center
+    font-size: 20px
+    font-weight: bold
+    margin-bottom: 15px
+    color: #131c2e
+    +r(767)
+      font-size: 18px
+  h2
+    margin-bottom: 40px
+    +r(767)
+      font-size: 34px
+  p
+    font-size: 25px
+    font-weight: normal
+    line-height: 1.4
+    text-align: center
+    color: #131c2e
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    max-width: 660px
+    width: 100%
+    +r(767)
+      font-size: 20px
+  a
+    padding: 17px 30px 14px
+    height: 50px
+    border-radius: 28px
+    border: solid 1px #131c2e
+    background-color: #131c2e
+    font-size: 18px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.39
+    letter-spacing: normal
+    text-align: left
+    color: #ffffff
+    margin-top: 45px
+    +center
+    display: inline-flex !important
+    +relative-x
+    &:hover
+      background: none
+      color: #131c2e
+
+
+
+.features-scroller
+  &__row
+    padding-bottom: 250px
+    +r(767)
+      padding-bottom: 100px
+  &__img
+    width: 310px
+    height: 653px
+    border-radius: 40px
+    box-shadow: 0px 3px 107.5px 0 rgba(0, 0, 0, 0.23)
+    background-color: #ffffff
+    border: 8px solid #fff
+    +relative-x
+    overflow: hidden
+    +r(767)
+      margin-top: 50px
+      max-width: 310px
+      width: 100%
+    img
+      max-width: 100%
+  &__text
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h3
+      font-size: 50px
+      font-weight: bold
+      line-height: 1.1
+      letter-spacing: -1px
+      color: #131c2e
+      margin-bottom: 45px
+      +r(991)
+        font-size: 40px
+      +r(767)
+        font-size: 30px
+    &--color
+      background: #2cfffe !important
+    p
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      color: #131c2e
+      margin-bottom: 40px
+    b
+      font-size: 14px
+      font-weight: 600
+      color: #131c2e
+      +center-y
+      strong
+        font-size: 14px
+        font-weight: 600
+        color: #131c2e
+        flex: 1
+        +r(991)
+          br
+            display: none
+      span
+        width: 60px
+        height: 60px
+        background-color: #2df6b6
+        border-radius: 100%
+        font-size: 16px
+        font-weight: bold
+        line-height: 1.5
+        color: #131c2e
+        +center
+        margin-right: 15px
+    li
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      color: #131c2e
+      margin-bottom: 40px
+      display: flex
+      i
+        margin-right: 25px
+        color: #ff0057
+        font-size: 20px
+        width: 20px
+        height: 20px
+        background-color: #fff
+        margin-top: 4px
+
+
+
+@import home
+@import message
+@import midmarket
+@import small-business
+@import cases
+@import solution
+@import security
+@import contacts
+@import voice
+@import about-us
+@import brand-assets
+@import overview
+@import team
+@import customers
+@import customer-stories
+@import pricing

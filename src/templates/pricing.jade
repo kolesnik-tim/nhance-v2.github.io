@@ -1,0 +1,155 @@
+---
+title: Pricing | NHANCE NOW
+"description": "Pay as you go service.Start with a delicious Freemium plan. Scale without the fear of affordability."
+---
+extends layouts/_layout
+block content
+  .pricing
+    .pricing__title
+      .container
+        h1 Pricing
+    .container
+      .pricing__tariff
+        .row
+          .col-lg-4.col-12
+            .pricing__tariff__block.wow.flipInY(data-wow-duration='1.5s')
+              .pricing__tariff__block__title
+                h2 Free
+                div
+                  strong $
+                  span 0
+                  i *
+                  p Limited to 200 DX Cards
+              .pricing__tariff__block__btn
+                a(href="#schedule" rel="modal:open").btn.btn-secondary Select plan
+              .pricing__tariff__block__mobile
+                .pricing__tariff__block__all
+                  h3
+                    a(href='#') All Features
+                  ul
+                    li Limited 3rd party integrations
+                    li Assisted Onboarding
+                    li Phone/Email Support
+              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
+                span View details
+                i.icon.icon-arrow-down
+          .col-lg-4.col-12
+            .pricing__tariff__block.pricing__tariff__block-secondary.wow.flipInY(data-wow-duration='1.5s')
+              .pricing__tariff__block__popular
+                p Most Popular Plan
+              .pricing__tariff__block__title
+                h2 Pro
+                div
+                  b Starting at
+                  strong $
+                  span 99
+                  em /mo
+              .pricing__tariff__block__btn
+                a(href="#schedule" rel="modal:open").btn.btn-secondary Select plan
+              .pricing__tariff__block__mobile
+                .pricing__tariff__block__all
+                  h3
+                    a(href='#') All Features
+                  ul
+                    li Open API for 3rd party integrations
+                    li Assisted Onboarding
+                    li Phone/Email Support
+                    li Custom Reports
+                    li Shared Account Manager
+                    li Add-on features (at extra cost)
+              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
+                span View details
+                i.icon.icon-arrow-down
+          .col-lg-4.col-12
+            .pricing__tariff__block.wow.flipInY(data-wow-duration='1.5s')
+              .pricing__tariff__block__title
+                h2 Enterprise
+                div
+                  span Custom
+              .pricing__tariff__block__details
+              .pricing__tariff__block__btn
+                a(href="#schedule" rel="modal:open").btn.btn-secondary Talk to sales
+              .pricing__tariff__block__mobile
+                .pricing__tariff__block__all
+                  h3
+                    a(href='#') Everything in basic
+                  ul
+                    li Open API for 3rd party integrations
+                    li Assisted Onboarding
+                    li Priority Support (Email/Phone)
+                    li Custom Reports
+                    li Dedicated Account Manager
+                    li Add-on features (at extra cost)
+              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
+                span View details
+                i.icon.icon-arrow-down
+        .pricing__tariff__info
+          p Standard charges for custom integrations
+            span Not sure which plan to choose? Please drop us a mail at 
+              a(href="mailTo:support@nhancenow.com") support@nhancenow.com
+      .pricing__questions
+        .row
+          .col-12
+            h2 Frequently Asked Questions
+          .col-md-6.col-12
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | *What are DKs?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | DK (Digital Kit) is the revolutionary new conceot of providing customer experience. Digital Kit is a mobile optimised post purchase experience hub where consumers and businesses can engage, interact and transact for all post purchase interactions. 
+                  a(href='mobile_tour.html') (Click here to know more about Digital Kits and the benefits that they offer).
+                div
+                  | A Digital Kit is generated for every product which is sold by the business. It can be accessed by their conusmers, using their mobile number and password/OTP through any digital mobile channel like app, mobile web or Progressive Web Apps (PWA).
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | What is your pricing model?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | We have a simple pricing model. We charge a fixed Monthly Platform Usage Fee which is based on a slab pricing. Slabs are customised for every customer. In addition to this customers pay a nominal one time fee for every Digital Kit that is issued. We generate an invoice at the end of each month which displays the Monthly Usage Fee slab considered for the month and the number of Digital Kits issued and the price for each Digital Kit. The price of Digital Kit is determined based on the industry segment that you belong to.
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | Do you charge for transactionals SMS and Emails?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | SMSes and Emails sent for Digital Kit issuance notification, password recovery/reset and any system level alerts are not charged. However any SMS and Emails sent for additional communication or custom interactions will be charged extra. We have partnerships with a number of SMS and Email providers and would offer you a choice of provider.
+          .col-md-6.col-12
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | What is your cancellation policy?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | You can cancel your subscription at any time by emailing our Support team. Canceling your subscription will stop the auto-renewal of your subscription from the next billing cycle. Your existing subscription that you’ve already paid for will remain active till the end of the current billing cycle. We do not delete your data for a period of 2 months (60 days) from the time you cancel your subscription. You can renew anytime within this period to gain complete access to your data.
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | What payment methods do you accept?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | We accept payments by credit card (Visa, Mastercard, Discover and American Express) and PayPal. All payments are processed through our payment gateway partner ZOHO. We also accept Wire Transfers and Online bank transfers.
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | How does the Free Trial work?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | In a free-trial, all the features are made available to you for a period of 14 days. You can choose to purchase a subscription any time during those 14 days or at the end of the trial period.
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | What happens once the Trial period has expired?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | At the end of the free trial, you can choose to purchase a subscription. Also, please note that we will not delete any data from your account for a period of 2 months (60 days) from the end of the trial. In this time period, you can renew your subscription at any time.
+            .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
+              strong.active
+                | Do you charge for integrations?
+                i.icon.icon-arrow-down
+              .pricing__questions__block__text
+                div
+                  | We provide APIs which can be consumed by businesses to link their IT systems and business applications. However where custom or complex integrations have to be undertaken we do charge an hourly fee.
+    

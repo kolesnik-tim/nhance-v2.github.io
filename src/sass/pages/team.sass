@@ -1,0 +1,107 @@
+.team
+  .intro
+    background-image: url('../img/solution/solution__intro-bg.png')
+    h1
+      font-size: 80px
+      font-weight: bold
+      line-height: 0.94
+      letter-spacing: -4px
+      text-align: center
+      color: #131c2e
+      max-width: 880px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      width: 100%
+      margin-bottom: 55px
+      +r(767)
+        font-size: 34px
+        letter-spacing: normal
+    p
+      max-width: 790px
+  &__content
+    padding-bottom: 280px
+    +r(767)
+      padding-bottom: 50px
+    // .col-12:nth-child(n+13)
+    //   display: none
+  &__block
+    background-image: linear-gradient(to top, #e0e0e0, #f9f9f9, $white)
+    +center-column
+    padding: 0 10px
+    padding-bottom: 25px
+    border-radius: 15px
+    margin-top: 50px
+    position: relative
+    height: calc(100% - 50px)
+    min-height: 320px
+    +r(767)
+      width: 60%
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    +r(500)
+      width: 100%
+    &__hover
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border-radius: 15px
+      background-color: #2cfffe
+      +center-column
+      padding: 0 50px
+      transition: all 0.5s
+      p
+        font-size: 25px
+        font-weight: 300
+        line-height: 1.5
+        text-align: center
+        color: #131c2e
+        margin-bottom: 35px
+      a
+        height: 40px
+        border-radius: 20px
+        border: solid 0.5px #131c2e
+        padding: 0 24px
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: bold
+        color: #131c2e
+        +center
+        &:hover
+          background: #131c2e
+          color: #fff
+    &__img
+      width: 172px
+      height: 172px
+      overflow: hidden
+      border-radius: 100%
+      background-color: #e3e7f0
+      position: relative
+      margin-bottom: 40px
+      img
+        height: 150px
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%)
+    &__info
+      +center-column
+      strong
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.79
+        color: #131c2e
+        text-align: center
+      p
+        font-size: 12px
+        color: #616161
+        text-align: center
+        min-height: 12px
+      i
+        color: rgb(20, 88, 144)
+        margin-top: 20px
+        font-size: 15px
+  

@@ -1,0 +1,331 @@
+.overview
+  &__intro
+    background: rgb(247, 247, 253)
+    padding: 160px 0 100px
+    +r(767)
+      padding: 120px 0 50px
+    h1
+      font-size: 80px
+      font-weight: bold
+      line-height: 0.94
+      letter-spacing: -1.6px
+      text-align: center
+      color: #131c2e
+      margin-bottom: 30px
+      +r(767)
+        letter-spacing: normal
+        line-height: 1
+        font-size: 40px
+    p
+      font-size: 25px
+      font-weight: normal
+      line-height: 1.4
+      text-align: center
+      color: #131c2e
+      max-width: 720px
+      width: 100%
+      +relative-x
+      +r(767)
+        font-size: 18px
+      b
+        font-weight: bold
+    &__row
+      padding-top: 140px
+      display: flex
+      align-items: stretch
+      +r(991)
+        flex-wrap: wrap
+      +r(767)
+        padding-top: 60px
+        flex-direction: column
+        align-items: center
+    &__block
+      margin: 0 25px
+      display: flex
+      flex-direction: column
+      align-items: stretch
+      +r(1200)
+        margin: 0 10px
+      +r(991)
+        margin: 0 10px 50px
+        max-width: 300px
+        width: 100%
+      +r(767)
+        margin: 50px 0
+      strong
+        font-size: 20px
+        font-weight: bold
+        text-align: center
+        display: block
+        color: #131c2e
+        padding-bottom: 30px
+      &__logo
+        +center-column
+        align-items: flex-start
+        border-radius: 22px
+        background-color: #ffffff
+        padding: 35px 30px
+        height: 100%
+        padding-right: 55px
+        +r(1200)
+          padding: 20px 15px
+          width: 210px
+        +r(991)
+          width: 100%
+        li
+          font-size: 14px
+          font-weight: bold
+          padding-bottom: 25px
+          color: #131c2e
+          +center-y
+          &:last-child
+            padding-bottom: 0
+          img
+            margin-right: 20px
+            width: 26px
+        &-primary
+          li
+            padding-bottom: 35px
+      &__img
+        height: 460px
+        +r(1200)
+          height: auto
+          width: 100%
+          +center
+        img
+          height: 100%
+          +r(1200)
+            width: 100%
+            height: auto
+
+
+
+  &__advantages
+    padding: 125px 0
+    +r(767)
+      padding: 50px 0
+    &__title
+      margin-bottom: 110px
+      +r(767)
+        margin-bottom: 50px
+      h2
+        font-size: 70px
+        font-weight: bold
+        line-height: 0.71
+        letter-spacing: -1.4px
+        color: #131c2e
+        text-align: center
+        margin-bottom: 25px
+        +r(991)
+          letter-spacing: normal
+          line-height: 1
+        +r(767)
+          font-size: 30px
+      p
+        font-size: 25px
+        font-weight: normal
+        line-height: 2
+        text-align: center
+        color: #131c2e
+        +r(767)
+          font-size: 18px
+    &__block
+      +center
+      align-items: flex-start
+      position: relative
+      padding: 0 20px
+      padding-bottom: 40px
+      height: 190px
+      margin-bottom: 40px
+      +r(1200)
+        padding: 0 10px 40px
+      +r(767)
+        display: block
+        height: auto
+      &:after
+        content: ''
+        width: 1px
+        height: 150px
+        background: rgba(#bdbdbd, 0.6)
+        top: 0px
+        right: 0px
+        position: absolute
+        z-index: 10
+        +r(767)
+          display: none
+      &:before
+        content: ''
+        width: 83%
+        height: 1px
+        background: rgba(#bdbdbd, 0.6)
+        position: absolute
+        bottom: 0
+        left: 4%
+        +r(767)
+          display: none
+      &--border
+        &:before
+          display: none
+      &--right
+        &-1
+          &:after
+            +r(1024)
+              display: none !important
+        &:after
+          display: none
+          +r(1024)
+            display: block
+      &--mobile
+        &:after
+          +r(1024)
+            display: none
+        &:before
+          +r(1024)
+            display: block
+      &__img
+        margin-right: 50px
+        +r(1200)
+          margin-right: 20px
+        +r(767)
+          +center
+          margin-bottom: 20px
+        img
+          width: 40px
+      &__text
+        flex: 1
+        position: relative
+        padding-right: 5px
+        strong
+          font-size: 25px
+          font-weight: bold
+          line-height: 1.4
+          color: #131a2e
+          display: block
+          margin-bottom: 15px
+          +r(767)
+            text-align: center
+        p
+          font-size: 18px
+          font-weight: normal
+          line-height: 1.53
+          color: #131c2e
+          +r(767)
+            text-align: center
+            max-width: 100%
+
+
+
+
+  &__features
+    .features-scroller__img-overview
+      height: 100%
+      +center
+      +r(991)
+        margin-top: 20px
+        max-width: 400px
+        width: 100%
+        +relative-x
+      img
+        width: 100%
+    h3
+      margin-bottom: 35px
+    strong
+      font-size: 14px
+      font-weight: bold
+      color: #ff0057
+      margin-bottom: 20px
+      display: block
+      text-transform: uppercase
+    a
+      margin-bottom: 20px
+      display: block
+      font-size: 18px
+      font-weight: 600
+      color: #2226a3
+      &:hover
+        text-decoration: underline
+      i
+        margin-left: 10px
+        font-size: 12px
+        color: #006dff
+    ul
+      display: flex
+      +r(767)
+        flex-direction: column
+      li
+        font-size: 18px
+        font-weight: bold
+        color: #131c2e
+        margin-right: 30px
+        +r(767)
+          margin-bottom: 10px
+
+
+
+  &__security
+    padding: 0px 0 140px
+    &__block
+      border-radius: 10px
+      background-color: #f6f6f6
+      padding: 50px 20px
+      h2
+        font-size: 60px
+        font-weight: bold
+        line-height: 0.83
+        color: #fd3e39
+        text-align: center
+        +center
+        margin-bottom: 20px
+        +r(767)
+          font-size: 34px
+          line-height: 1
+        img
+          margin-right: 10px
+          height: 48px
+          margin-bottom: 4px
+      p
+        font-size: 25px
+        text-align: center
+        font-weight: normal
+        line-height: 1.1
+        color: #131c2e
+        margin-bottom: 30px
+        +r(767)
+          font-size: 18px
+      ul
+        +center
+        margin-bottom: 25px
+        flex-wrap: wrap
+        +r(767) 
+          align-items: flex-start
+        li
+          display: flex
+          font-size: 18px
+          font-weight: bold
+          line-height: 1.53
+          color: #131c2e
+          margin-right: 25px
+          margin-bottom: 20px
+          +r(767)
+            margin-right: 0
+            width: 100%
+          i
+            margin-right: 12px
+            margin-top: 4px
+            font-size: 18px
+      a
+        font-size: 18px
+        font-weight: 600
+        color: #2226a3
+        +center
+        i
+          font-size: 12px
+          color: #006dff
+          margin-left: 10px
+
+
+
+
+
+    .message__channels-other__btn
+      margin-top: 140px

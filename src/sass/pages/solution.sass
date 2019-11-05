@@ -1,0 +1,54 @@
+.solution
+  &.onboard, &.engage
+    .features-scroller__img
+      display: flex
+      align-items: flex-end
+  &.support, &.transact
+    .features-scroller__img
+      background: #eeeeee
+      &--support
+        background: #fff
+  h2
+    font-size: 80px
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 880px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 30px !important
+      letter-spacing: normal
+  .intro
+    background-image: url('../img/solution/solution__intro-bg.png')
+    background-size: auto 65%
+    background-position: 95% 90px
+    display: block
+    padding-top: 180px
+    padding-bottom: 150px
+    +r(767)
+      padding-top: 100px
+    p
+      max-width: 690px
+      +r(767)
+        font-size: 18px
+  &__features
+    h2
+      padding: 150px 0
+      display: block
+      +r(767)
+        padding: 50px 0 40px
+        font-size: 45px
+    .features-scroller__text
+      max-width: 545px
+      +relative-x
+    .features-scroller__img
+      border: 6px solid #fff
+      +r(767)
+        max-width: 262px
+        margin-top: 0
+        height: 550px

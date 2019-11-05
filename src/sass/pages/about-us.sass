@@ -1,0 +1,137 @@
+.about-us
+  h2
+    font-size: 80px
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 780px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 30px !important
+      letter-spacing: normal
+  .intro
+    background-image: url('../img/solution/solution__intro-bg.png')
+    background-size: auto 70%
+    background-position: 95% 90px
+    +r(767)
+      background-position: 95% 30px
+    h2
+      max-width: 870px
+
+
+
+
+  &__content
+    padding: 120px 0
+    background-repeat: no-repeat
+    background-position: 15% 100%
+    background-size: 360px auto
+    +r(991)
+      background-position: 50% 100%
+      background-size: 300px auto
+      padding: 50px 0 180px
+    &--1
+      background-color: rgb(238, 236, 252)
+      background-image: url('../img/about/about-section-illustration-1.png')
+    &--2
+      background-color: rgb(64, 64, 76)
+      background-image: url('../img/about/about-section-illustration-2.png')
+      background-position: 15% 80%
+      background-size: 440px auto
+      +r(991)
+        background-position: 50% 98%
+      h2, p
+        color: #fff !important
+    &--3
+      background-color: rgb(247, 247, 253)
+      background-image: url('../img/about/about-section-illustration-3.png')
+    h2
+      max-width: 485px
+      text-align: left
+      +r(991)
+        max-width: 100%
+        text-align: center
+    p
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.53
+      text-align: left
+      color: #131725
+      margin-bottom: 30px
+    &__text
+      margin-top: -90px
+      padding-left: 30px
+      +r(991)
+        margin-top: 40px
+        padding-left: 0
+    
+  &__culture
+    padding: 110px 0 140px
+    background-color: #f4f0eb
+    background-image: url('../img/about/about-us-bg.jpg')
+    background-size: contain
+    +r(767)
+      padding: 50px 0
+    h2
+      margin-bottom: 90px
+      +r(767)
+        margin-bottom: 40px
+    .row
+      &:hover
+        .about-us__culture__block
+          transform: scale(0.95)
+          opacity: 0.4
+          +r(1040)
+            opacity: 1 !important
+            transform: none !important
+    &__block
+      padding: 45px 23px
+      min-height: 320px
+      border-radius: 10px
+      margin: 0 10px
+      margin-bottom: 20px
+      transition: transform 1s ease
+      position: relative
+      +cover
+      +r(1040)
+        min-height: 400px
+        &:hover
+          transform: none !important
+      +r(767)
+        margin: 0
+        margin-bottom: 20px
+      +r(500)
+        min-height: 300px
+      &-1
+        transform-origin: top left
+      &-2, &-3,
+        transform-origin: top
+      &-4
+        transform-origin: top right
+      &-5
+        transform-origin: bottom left
+      &-6, &-7
+        transform-origin: bottom
+      &-8
+        transform-origin: bottom right
+      &:hover
+        transform: scale(1.3) !important
+        opacity: 1 !important
+        z-index: 9
+      h3
+        font-size: 24px
+        font-weight: bold
+        text-align: center
+        color: $white
+        margin-bottom: 15px
+      p
+        font-size: 16px
+        line-height: 1.43
+        font-weight: 600
+        text-align: center
+        color: $white
