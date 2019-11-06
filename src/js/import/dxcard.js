@@ -16,7 +16,7 @@ if($(window).width() > 767 && $('div').hasClass('phone')) {
     // navigationTooltips: ['firstSlide', 'secondSlide'],
   
     //Scrolling
-    // css3: true,
+    css3: true,
     scrollingSpeed: 900,
     // autoScrolling: true,
     // fitToSection: true,
