@@ -244,10 +244,13 @@
       color: #2226a3
       &:hover
         text-decoration: underline
+        i
+          transform: translate(8px)
       i
         margin-left: 10px
         font-size: 12px
         color: #006dff
+        +tr
     ul
       display: flex
       +r(767)
@@ -318,10 +321,16 @@
         font-weight: 600
         color: #2226a3
         +center
+        &:hover
+          span
+            text-decoration: underline
+          i
+            transform: translate(8px)
         i
           font-size: 12px
           color: #006dff
           margin-left: 10px
+          +tr
 
 
 

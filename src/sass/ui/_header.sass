@@ -57,7 +57,7 @@
     display: flex
     align-items: center
   &__logo
-    margin-right: 60px
+    margin-right: 50px
     margin-top: 10px
     +r(1200)
       margin-right: 30px
@@ -71,11 +71,12 @@
       border: solid 1px #131c2e
       background: none
       font-size: 14px
-      font-weight: 600
+      font-weight: bold
       color: #131c2e
       margin-left: 15px
+      text-transform: uppercase
       +center
-      padding: 11px 23px 8px
+      padding: 11px 18px 8px
       // +r(767)
       //   width: calc(100% - 20px)
       //   margin-left: 0
@@ -98,9 +99,11 @@
         position: relative
         display: flex
         align-items: center
+        +r(1200)
+          font-size: 14px
       a
         padding-right: 30px
-        +r(1200)
+        +r(1250)
           padding-right: 15px
         i
           font-size: 10px
