@@ -82,7 +82,7 @@
   background: #fff
   position: fixed
   transform: translate(0, 0%)
-  top: 55vh
+  top: 52vh
   right: 19%
   z-index: 99
   transition: all 1s cubic-bezier(.43,.06,0,1.05)
@@ -90,19 +90,18 @@
   +center-column
   overflow: hidden
   will-change: auto
+  border: 8px solid #fff
   +r(1040)
     right: 60px
   +r(767)
     display: none
   &.active
     transform: translate(0, -50%)
-    border: 8px solid #fff
     transition: all 0.8s cubic-bezier(.43,.06,0,1.05)
   &.stop
     position: absolute
     transition: all 1s cubic-bezier(.43,.06,0,1.05)
     transform: translate(0, 0%) !important
-    border: 8px solid #fff
   &__block
     width: 100%
     height: calc(100% + 5px)
@@ -118,13 +117,8 @@
     img
       width: 100%
     &:first-child
-      background: #131c2e
       height: 100%
-      align-items: center
-      img
-        width: 66px
-        position: relative
-        top: -80px
+      align-items: flex-start
     &.active
       top: -5px
       z-index: 2

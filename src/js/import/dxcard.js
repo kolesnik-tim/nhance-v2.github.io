@@ -45,13 +45,13 @@ if($(window).width() > 767 && $('div').hasClass('phone')) {
         $('.phone').removeClass('active');
         $('#fp-nav').fadeOut();
         $('.phone').removeClass('stop');
-        $('.phone').css({'top': '55vh', 'transition': 'all 0.8s cubic-bezier(.43,.06,0,1.05)'});
+        $('.phone').css({'top': '52vh', 'transition': 'all 0.8s cubic-bezier(.43,.06,0,1.05)'});
         $('.header').removeClass('dx-card');
       }else if(nextIndex.index >= 1 && nextIndex.index <= 4) {
         $('.phone').addClass('active');
         $('#fp-nav').fadeIn();
         $('.phone').removeClass('stop');
-        $('.phone').css({'top': '55vh'});
+        $('.phone').css({'top': '52vh'});
         $('.header').addClass('dx-card');
       }else if(nextIndex.index >= 4) {
         $('#fp-nav').fadeOut();
