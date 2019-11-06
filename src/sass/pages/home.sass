@@ -110,11 +110,15 @@
       h2
         margin-bottom: 0 !important
         position: relative
-        display: inline-block
+        display: inline-flex
+        align-items: flex-end
         width: auto
         max-width: 100%
         transform: none
+        height: 70px
         left: 0
+        +r(767)
+          height: 30px
         &:after
           content: ''
           width: 95%
@@ -123,11 +127,12 @@
           background-color: #2cfffe
           display: block
           position: absolute
-          bottom: 16px
+          bottom: 4px
           z-index: -1
           +r(767)
             height: 5px
-            bottom: 7px
+            bottom: 3px
+
       span
         font-size: 50px
         font-weight: bold
@@ -135,10 +140,13 @@
         letter-spacing: -1px
         text-align: center
         color: #131c2e
-        display: inline-block
+        display: inline-flex
+        align-items: flex-end
         position: relative
+        height: 50px
         +r(767)
           font-size: 21px
+          height: 22px
         &:after
           content: ''
           width: 100%
@@ -146,10 +154,10 @@
           background-color: #2cfffe
           display: block
           position: absolute
-          bottom: 14px
+          bottom: 7px
           z-index: -1
           +r(767)
-            bottom: 6px
+            bottom: 3px
             height: 4px
     h2
       max-width: 990px
