@@ -40,6 +40,15 @@ $('.header__nav li').hover(function() {
   $(this).toggleClass('active');
 });
 
+$('.header__nav li').hover(function() {
+  clearTimeout($.data(this,'timer'));
+  $('ul',this).stop(true,true).fadeIn();
+}, function() {
+  $.data(this,'timer', setTimeout($.proxy(function() {
+    $('ul',this).stop(true,true).fadeOut();
+  }, this), 100));
+});
+
 
 //open mobile menu
 $('.menu-open').on('click', function() {

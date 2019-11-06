@@ -88,7 +88,7 @@
     align-items: center
     nav
       flex: 1
-    ul
+    &__list
       display: flex
       justify-content: space-between
       a, li
@@ -112,33 +112,29 @@
         &.active
           i
             transform: rotate(180deg)
-        &:hover
-          .header__nav__dropdown
-            opacity: 1
-            visibility: visible
+        // &:hover
+        //   .header__nav__dropdown
+        //     opacity: 1
+        //     visibility: visible
     &__dropdown
       width: 420px
       position: absolute
       box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
       background: $white
       right: -260px
-      max-height: 80vh
-      overflow-y: auto
-      top: 30px
+      top: 40px
       border-radius: 10px
       flex-direction: column
-      +tr
-      opacity: 0
-      visibility: hidden
+      display: none
       &--icon
         width: 445px
         right: -278px
       &:after
         content: ''
         width: 100%
-        height: 10px
+        height: 20px
         position: absolute
-        top: -10px
+        top: -20px
       &:before
         content: ''
         border: 8px solid transparent
@@ -165,7 +161,7 @@
             border-bottom-right-radius: 10px
             border-bottom: none
       a
-        padding: 20px 34px
+        padding: 20px 20px 14px 34px
         display: flex
         border-bottom: 1px solid rgba(#131c2e, 0.1)
         width: 100%
@@ -178,7 +174,6 @@
           // margin-bottom: 10px
           margin-top: 3px
           display: block
-          margin-bottom: 8px
           span
             font-size: 12px
         p
@@ -187,6 +182,7 @@
           line-height: 1.25
           color: #616161
           display: block
+          margin-top: 2px
           span
             color: #131c2e
             display: block

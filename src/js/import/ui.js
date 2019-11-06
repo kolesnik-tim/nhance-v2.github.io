@@ -54,6 +54,18 @@ $('.cases .tabs__caption').find('li').removeClass();
 $('.cases .tabs__block .tabs__content').removeClass('active');
 $('.cases .tabs__caption li').eq(tab).addClass('active');
 $('.cases .tabs__block .tabs__content').eq(tab).addClass('active');
+$('body').on('click', '.header__nav__dropdown a, .footer__nav__block a', function(event) {
+  setTimeout(function() {
+    var tab = window.location.hash;
+    tab = tab.replace('#', '');
+    $('.cases .tabs__caption').find('li').removeClass();
+    $('.cases .tabs__block .tabs__content').removeClass('active');
+    $('.cases .tabs__caption li').eq(tab).addClass('active');
+    $('.cases .tabs__block .tabs__content').eq(tab).addClass('active');
+  }, 300);
+  var top = $('.cases__specific .tabs').offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
 
 

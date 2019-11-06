@@ -8,6 +8,7 @@ if($(window).width() > 767 && $('div').hasClass('phone')) {
   //Navigation
     menu: '#menu',
     scrollOverflow: true,
+    // licenseKey: 'YOUR KEY HERE',
     // lockAnchors: false,
     // anchors:['firstPage', 'secondPage', 'secondPage-1', 'secondPage-2'],
     navigation: true,
@@ -15,17 +16,17 @@ if($(window).width() > 767 && $('div').hasClass('phone')) {
     // navigationTooltips: ['firstSlide', 'secondSlide'],
   
     //Scrolling
-    css3: true,
+    // css3: true,
     scrollingSpeed: 900,
     // autoScrolling: true,
-    fitToSection: true,
-    fitToSectionDelay: 100,
+    // fitToSection: true,
+    // fitToSectionDelay: 100,
     // scrollBar: true,
     easing: 'easeInOutCubic',
     easingcss3: 'cubic-bezier(.43,.06,0,1.05)',
 
     //Design
-    normalScrollElements: '#section11',
+    // normalScrollElements: '#section11',
     responsiveWidth: 767,
     responsiveHeight: 600,
 
