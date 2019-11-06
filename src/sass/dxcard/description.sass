@@ -211,7 +211,7 @@
 .solution-card
   padding: 150px 0
   min-height: 100vh
-  +center
+  display: flex
   background: #fff
   +r(767)
     padding: 50px 0
@@ -227,7 +227,9 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+    width: 100%
     +r(1200)
+      width: auto
       flex: 0 0 50%
       max-width: 50%
     +r(767)
