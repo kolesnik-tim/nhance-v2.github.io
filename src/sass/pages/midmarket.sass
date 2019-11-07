@@ -68,18 +68,26 @@
       color: #ffffff
       margin-bottom: 30px
       padding-right: 20px
+      +r(767)
+        text-align: center
     p
       font-size: 18px
       font-weight: normal
       line-height: 1.53
       color: #ffffff
       margin-bottom: 30px
+      +r(767)
+        text-align: center
     a
       font-size: 18px
       font-weight: normal
       line-height: 1.53
       color: #ffffff
       text-decoration: underline
+      +r(767)
+        text-align: center
+        display: block
+        width: 100%
       &:hover
         color: #ff0057
   &__features
@@ -92,6 +100,8 @@
       height: 100%
       box-shadow: none
       background: none
+      +r(767)
+        +center
       img
         max-width: 80%
     &__text
@@ -130,11 +140,15 @@
         font-weight: bold
         color: #131c2e
         margin-bottom: 25px
+        +r(767)
+          text-align: center
       p
         font-size: 18px
         font-weight: normal
         line-height: 1.53
         color: #131c2e
+        +r(767)
+          text-align: center
   &__follow
     padding-bottom: 200px
     +r(767)
@@ -173,9 +187,13 @@
         display: block
         width: 100%
         margin-bottom: 25px
+        +r(767)
+          text-align: center
       p
         font-size: 18px
         font-weight: normal
         line-height: 1.53
         color: #131c2e
         width: 100%
+        +r(767)
+          text-align: center
