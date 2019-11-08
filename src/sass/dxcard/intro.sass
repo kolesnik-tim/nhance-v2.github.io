@@ -176,6 +176,9 @@
   overflow: hidden
   will-change: auto
   border: 8px solid transparent
+  background-image: url('../img/dxcard/dx-card.png')
+  background-size: contain
+  background-repeat: no-repeat
   +r(1040)
     right: 60px
   +r(767)
@@ -185,14 +188,16 @@
     transition: all 0.8s cubic-bezier(.43,.06,0,1.05)
     border: 8px solid #fff
     padding: 0 18.7vh
-    background: #fff
+    background-color: #fff
+    background-position: 0 -200%
   &.stop
     position: absolute
     transition: all 1s cubic-bezier(.43,.06,0,1.05)
     transform: translate(0, 0%) !important
     border: 8px solid #fff
     padding: 0 18.7vh
-    background: #fff
+    background-color: #fff
+    background-position: 0 -100%
   &__block
     width: 100%
     height: calc(100% + 5px)
