@@ -101,9 +101,9 @@
     font-weight: normal
     line-height: 1.11
     text-align: left
-    display: flex
-    align-items: flex-start
+    display: inline-block
     padding: 20px 0 15px
+    padding-left: 50px
     position: relative
     background-image: linear-gradient(to right bottom, #f3d9a9, #f3d9a9, #cca56e, #cca56e)
     +r(991)
@@ -121,8 +121,9 @@
     img
       width: 26px
       margin-right: 25px
-      position: relative
-      top: -4px
+      position: absolute
+      top: 15px
+      left: 0
   h1
     font-size: 80px
     font-weight: bold
@@ -203,12 +204,14 @@
     border-radius: 36px
     overflow: hidden
     opacity: 0
+    background: #fff
     img
       width: 100%
     &:first-child
       height: 100%
       align-items: flex-start
       padding-top: 10px
+      background: none
     &.active
       top: -5px
       z-index: 2
