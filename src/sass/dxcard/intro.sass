@@ -2,95 +2,178 @@
   min-height: 100vh
   position: relative
   z-index: 9
-  padding-top: 180px
-  background-color: #f7f7fd
-  background-image: url('../img/solution/solution__intro-bg.png')
-  background-size: auto 60%
-  background-position: 95% 30px
-  background-repeat: no-repeat
+  padding-top: 100px
+  background-color: #0f0f20
+  background-image: url('../img/dxcard/dx-card-bg.png')
+  +cover
+  +center-y
   +rh(740)
-    padding-top: 120px
-  +r(450)
-    background-size: 85% auto
-  +r(1200)
-    +center
+    padding-top: 100px
   +r(767)
     padding: 100px 0 50px
     min-height: 100vh
-  &__title
-    max-width: 860px
-    width: 100%
-    +r(1200)
-      max-width: 490px
-    +r(1040)
-      max-width: 350px
-    +r(767)
-      max-width: 100%
-    span
-      font-size: 18px
-      font-weight: normal
-      color: #131c2e
-      display: flex
-      align-items: center
-      margin-bottom: 10px
-      +r(767)
-        justify-content: center
-        flex-direction: column
-        margin-bottom: 20px
-      b
-        font-size: 25px
-        font-weight: bold
-        color: #131c2e
-        margin-right: 10px
-        +r(767)
-          margin-right: 0
-    h1
-      font-size: 80px
+  h1, li, p, span
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+  &__text
+    b
+      font-size: 25px
       font-weight: bold
-      font-stretch: normal
-      font-style: normal
-      line-height: 0.94
-      letter-spacing: -4px
-      text-align: left
-      color: #131c2e
-      margin-bottom: 25px
-      +r(1200)
-        font-size: 50px
-        letter-spacing: normal
+      line-height: 2.7
+      color: #cca56e
       +r(767)
-        font-size: 30px
+        font-size: 20px
+        display: block
         text-align: center
-    p
+    strong
+      font-family: 'Dancing Script', cursive
+      font-size: 30px
+      font-weight: normal
+      line-height: 1
+      color: #f0d5a5
+      margin-left: 10px
+      +r(991)
+        text-align: center
+        display: block
+      +r(767)
+        font-size: 20px
+    h1
+      text-align: left
+      margin: 20px 0
+      background-image: linear-gradient(to right bottom, #c8baa5, #c8baa5, #c8baa5, #fcefd6, #fcefd6, #a19281, #a19281, #a19281, #a19281)
+      +r(1200)
+        font-size: 40px
+        letter-spacing: normal
+      +r(991)
+        text-align: center
+    span
       font-size: 25px
       line-height: 1.4
-      color: #131c2e
-      max-width: 640px
-      width: 100%
+      color: #f3d9a9
+      background-image: linear-gradient(to right bottom, #cca56e, #cca56e, #f3d9a9, #f3d9a9)
       +r(767)
+        font-size: 18px
         text-align: center
-      strong
-        font-weight: bold
+        display: block
+    p
+      font-size: 25px
+      font-weight: normal
+      line-height: 1.2
+      color: #f0d5a5
+      background-image: linear-gradient(to right bottom, #cca56e, #cca56e, #f3d9a9, #f3d9a9)
+      +r(991)
+        text-align: center
+      +r(767)
+        font-size: 18px
+    a
+      font-size: 18px
+      font-weight: bold
+      color: #e99d39
+      width: 195px
+      height: 50px
+      padding-top: 1px
+      border-radius: 25px
+      background-color: rgb(33, 31, 36)
+      +center
+      +r(991)
+        +relative-x
+      &:hover
+        i
+          transform: translate(8px)
+      i
+        color: #f2015b
+        margin-left: 10px
+        +tr
+        font-size: 12px
+  ul
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-top: 30px
+    max-width: 520px
+    width: 100%
+    +r(991)
+      align-items: center
+  li
+    font-size: 18px
+    font-weight: normal
+    line-height: 1.11
+    text-align: left
+    display: flex
+    align-items: flex-start
+    padding: 20px 0 15px
+    position: relative
+    background-image: linear-gradient(to right bottom, #f3d9a9, #f3d9a9, #cca56e, #cca56e)
+    +r(991)
+      max-width: 400px
+      width: 100%
+    &:before
+      width: calc(100% - 50px)
+      content: ''
+      background-image: linear-gradient(to right, #4d484e, #16141a, #16141a)
+      height: 1px
+      display: block
+      position: absolute
+      bottom: 0
+      right: 0
+    img
+      width: 26px
+      margin-right: 25px
+      position: relative
+      top: -4px
+  h1
+    font-size: 80px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: left
+    color: #131c2e
+    margin-bottom: 25px
+    +r(1200)
+      font-size: 50px
+      letter-spacing: normal
+    +r(767)
+      font-size: 30px
+      text-align: center
+  p
+    font-size: 25px
+    line-height: 1.4
+    color: #131c2e
+    max-width: 640px
+    width: 100%
+    +r(767)
+      text-align: center
+    strong
+      font-weight: bold
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .intro-dx h1, .intro-dx li, .intro-dx p, .intro-dx span
+    color: #cca56e
+    background: none
+
 
 
 .phone
   // width: 310px
-  padding: 0 18.7vh
+  padding: 0 19vh
   max-height: 81vh
   height: 100%
   border-radius: 40px
   box-shadow: 0px 3px 107.5px 0 rgba(0, 0, 0, 0.23)
-  background: #fff
   position: fixed
   transform: translate(0, 0%)
   top: 52vh
   right: 19%
   z-index: 99
   transition: all 1s cubic-bezier(.43,.06,0,1.05)
-  transition-delay: 0.3s 
   +center-column
   overflow: hidden
   will-change: auto
-  border: 8px solid #fff
+  border: 8px solid transparent
   +r(1040)
     right: 60px
   +r(767)
@@ -98,10 +181,14 @@
   &.active
     transform: translate(0, -50%)
     transition: all 0.8s cubic-bezier(.43,.06,0,1.05)
+    border: 8px solid #fff
+    padding: 0 18.7vh
   &.stop
     position: absolute
     transition: all 1s cubic-bezier(.43,.06,0,1.05)
     transform: translate(0, 0%) !important
+    border: 8px solid #fff
+    padding: 0 18.7vh
   &__block
     width: 100%
     height: calc(100% + 5px)
@@ -114,13 +201,13 @@
     align-items: flex-end
     border-radius: 36px
     overflow: hidden
-    background: #fff
     opacity: 0
     img
       width: 100%
     &:first-child
       height: 100%
       align-items: flex-start
+      padding-top: 10px
     &.active
       top: -5px
       z-index: 2

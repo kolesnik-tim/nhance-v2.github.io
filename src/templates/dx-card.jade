@@ -1,13 +1,13 @@
 ---
 title: World's First Digital Card for Customer Experience | NHANCE NOW
 "description": "Create a conversational experience hub that provides all brand experiences in one place for consumers."
-header: dx-card
+header: dx-card-color
 ---
 extends layouts/_layout
 block content
   .phone
     .phone__block.active
-      img(src="img/dxcard/dx-card.jpg", alt="")
+      img(src="img/dxcard/dx-card.png", alt="")
     .phone__block
       img(src="img/dxcard/dxcard__phone-1.jpg", alt="")
     .phone__block
@@ -35,7 +35,27 @@ block content
       .pulsating-background__circle(style='animation-delay: -1.8s; width: 540px; height: 540px; background-color: rgb(255, 255, 255); left: 50%; bottom: 10vh;')
   #fullpage
     #section1.section.active
-      include ./dxcard/intro
+      section.intro-dx
+        .container
+          .row
+            .col-xl-12.col-lg-6.col-md-6
+              .intro-dx__text
+                b DX Card
+                  strong (Digital Experience Card)
+                h1 Digital Card for <br>customer experience.
+                p Help your customers with the most convenient way to manage post purchase journey in one place, with a 
+                span conversational experience card.
+                ul
+                  li
+                    img(src="img/dxcard/star.png", alt="")
+                    | Unique post purchase conversational experience hub
+                  li
+                    img(src="img/dxcard/star.png", alt="")
+                    | All brand services in one place
+                  li
+                    img(src="img/dxcard/star.png", alt="")
+                    | Personalized experience card with each purchase
+
     #section2.section
       .description
         .container

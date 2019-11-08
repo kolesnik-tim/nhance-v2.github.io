@@ -8,6 +8,34 @@
   transition: all .5s linear 0s
   &.dx-card
     top: -100px
+  &.dx-card-color
+    .menu-open span
+      background: #e99d39
+      &:before, &:after
+        background: #e99d39
+    .header__nav__list a
+      color: #fff
+      &:hover
+        color: #e99d39
+    nav .btn
+      background: #1a1a2a
+      color: #e99d39
+    .header__btn b
+      color: #fff
+      +tr
+      &:hover
+        color: #e99d39
+      i
+        color: #e99d39
+    .header__btn a
+      color: #fff
+      i
+        background: #e99d39
+        color: #0f0f20
+      &:hover
+        color: #e99d39 
+        i
+          background: #e99d39 !important
   .container
     max-width: 1250px !important
   &.active

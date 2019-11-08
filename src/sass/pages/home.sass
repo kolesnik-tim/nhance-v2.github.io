@@ -284,9 +284,9 @@
           font-size: 12px
           color: #006dff
   &__presentation
-    background-color: #171717
     padding: 140px 0 
-    background-image: url('../img/home/dx-card-bg.png')
+    background-color: #0f0f20
+    background-image: url('../img/dxcard/dx-card-bg.png')
     +cover
     +r(767)
       padding: 50px 0
@@ -301,10 +301,9 @@
         +r(991)
           width: auto
           height: 400px
-    h2, li
+    h2, li, strong, p
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
-      background-image: linear-gradient(to right bottom, #f3d9a9, #f3d9a9, #cca56e, #cca56e)
     &__text
       padding-right: 70px
       +r(1200)
@@ -318,14 +317,18 @@
         font-weight: normal
         line-height: 1
         color: #f0d5a5
+        background-image: linear-gradient(to right, #f3d9a9, #cca56e, #cca56e)
+        padding-bottom: 5px
+        display: block
         +r(991)
           text-align: center
-          display: block
         +r(767)
           font-size: 20px
       h2
         text-align: left
         margin: 20px 0
+        padding: 5px 0
+        background-image: linear-gradient(to right bottom, #c8baa5, #c8baa5, #fcefd6, #fcefd6, #a19281, #a19281)
         +r(1200)
           font-size: 40px
           letter-spacing: normal
@@ -337,6 +340,7 @@
         line-height: 1.2
         color: #f0d5a5
         margin-bottom: 50px
+        background-image: linear-gradient(to right bottom, #f3d9a9, #f3d9a9, #f3d9a9, #cca56e, #cca56e, #cca56e)
         +r(991)
           text-align: center
         +r(767)
@@ -377,6 +381,7 @@
       align-items: flex-start
       padding: 20px 0 15px
       position: relative
+      background-image: linear-gradient(to right bottom, #f3d9a9, #f3d9a9, #cca56e, #cca56e)
       +r(991)
         max-width: 400px
         width: 100%
