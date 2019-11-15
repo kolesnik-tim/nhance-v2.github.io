@@ -167,29 +167,24 @@
   border-radius: 40px
   box-shadow: 0px 3px 107.5px 0 rgba(0, 0, 0, 0.23)
   position: fixed
-  transform: translate(0, 0%)
+  transform: translate(0, -50%)
   top: 52vh
-  right: 19%
+  right: 14%
   z-index: 99
   transition: all 1s cubic-bezier(.43,.06,0,1.05)
   +center-column
   overflow: hidden
   will-change: auto
   border: 8px solid transparent
-  background-image: url('../img/dxcard/dx-card.png')
-  background-size: contain
-  background-repeat: no-repeat
   +r(1040)
     right: 60px
   +r(767)
     display: none
   &.active
-    transform: translate(0, -50%)
     transition: all 0.8s cubic-bezier(.43,.06,0,1.05)
     border: 8px solid #fff
     padding: 0 18.7vh
     background-color: #fff
-    background-position: 0 -200%
   &.stop
     position: absolute
     transition: all 1s cubic-bezier(.43,.06,0,1.05)
@@ -215,8 +210,8 @@
       width: 100%
     &:first-child
       height: 100%
-      align-items: flex-start
-      padding-top: 10px
+      align-items: center
+      padding-top: 100px
       background: none
     &.active
       top: -5px
