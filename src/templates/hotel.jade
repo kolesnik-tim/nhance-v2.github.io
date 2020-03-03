@@ -5,4 +5,157 @@ title: Hotel-landing
 extends layouts/_layout
 block content
   .hotel
-  
+    .hotel__intro
+      .container
+        .row
+          .col-xl-7
+            .hotel__intro__content
+              header.header-hotel
+                img(src="img/logo.png", alt="")
+                a(href="#") Visit Website
+                  i.icon.icon-link
+              .hotel__intro__buble
+                h1 Boost <br>Social Ratings <br>and <span>Increase</span> <br><span>Revenues</span> through <br>Conversational <br>Guest Experiences
+                .row
+                  a(href="#").block
+                    img(src="img/hotel/whatsapp.png", alt="")
+                    p Whatsapp
+                  a(href="#").block
+                    img(src="img/hotel/message.png", alt="")
+                    p FB Messenger
+                  a(href="#").block
+                    img(src="img/hotel/we-chat.png", alt="")
+                    p WeChat
+                  a(href="#").block
+                    img(src="img/hotel/alexa.png", alt="")
+                    p Alexa
+              img(src="img/hotel/illustration.png", alt="").illustration
+              ul.hotel__intro__list
+                li 
+                  i.icon.icon-check
+                  | Conversational Concierge
+                li 
+                  i.icon.icon-check
+                  | AI Powered
+                li 
+                  i.icon.icon-check
+                  | Omni Channel Engagement
+                li 
+                  i.icon.icon-check
+                  | Multi Language Support
+          .col-xl-5
+            form.form
+              h2 Schedule a free demo
+              p Have one of our CX experts reach out to you.
+              .form__input
+                input(type="text" name="name" id="name" required)
+                label(for="name") Name
+                  i *
+              .form__input
+                input(type="email" name="email" id="email" required)
+                label(for="email") Email
+                  i *
+              .form__input
+                input(type="text" name="company" id="company" required)
+                label(for="company") Company
+                  i *
+              .form__input
+                input(type="tel" name="phone" id="phone" required)
+                label(for="phone") Phone
+                  i *
+              button(type="submit") Request Your FREE Consultation
+              strong 
+                img(src="img/hotel/safety.png", alt="")
+                | Your information is kept safe
+    .hotel__talk
+      .container
+        h2 Leverage the power of personalised conversations
+        p Keep your guests engaged during various stages of their stay. Our AI powered Conversational Experience platform allows you to provide more personalised services with minimal effort and cost. Better guest experiences result in better online reviews and increased bookings. 
+        .hotel__talk__row
+          .hotel__talk__block
+            b Your PMS
+            ul.hotel__talk__list
+              li
+                img(src="img/hotel/hotel__talk-img-1.png", alt="")
+                | Cloudbeds
+              li
+                img(src="img/hotel/hotel__talk-img-2.png", alt="")
+                | Ezee
+              li
+                img(src="img/hotel/hotel__talk-img-3.png", alt="")
+                | Frontdesk Anywhere
+              li
+                img(src="img/hotel/hotel__talk-img-4.png", alt="")
+                | Hotelogix
+              li
+                img(src="img/hotel/hotel__talk-img-5.png", alt="")
+                | Winhms
+              li
+                img(src="img/hotel/hotel__talk-img-6.png", alt="")
+                | IDS Next
+              li
+                img(src="img/hotel/hotel__talk-img-7.png", alt="")
+                | Axis Rooms
+              li
+                img(src="img/hotel/hotel__talk-img-8.png", alt="")
+                | MSI Cloud 
+          .hotel__talk__block
+            b Conversation Cloud
+            .hotel__talk__bg
+          .hotel__talk__block
+            b Your Customers
+            .hotel__talk__block--white
+              a(href="#")
+                img(src="img/hotel/whatsapp-2.png", alt="")
+                | Whatsapp
+              a(href="#") 
+                img(src="img/hotel/message.png", alt="")
+                | FB Messenger
+   .hotel__experience
+      .container
+        h2 Improve Guest Experiences With Conversational Concierge
+        img(src="img/hotel/guest-map.png", alt="")
+    .hotel__benefits
+      .container
+        h2 Benefits
+        .row
+          .col-md-6
+            .hotel__benefits__block
+              h3 For You
+              ul
+                li
+                  img(src="img/hotel/improved-social.png", alt="")
+                  .text
+                    strong Improved Social Ratings
+                    p Better guest experiences translate into more positive social reviews.
+                li
+                  img(src="img/hotel/increased-online.png", alt="")
+                  .text
+                    strong Increased Online Bookings
+                    p Improved social ratings result in more bookings.
+                li
+                  img(src="img/hotel/time-cost.png", alt="")
+                  .text
+                    strong Time and Cost Reduction
+                    p AI powered solution can service all guests simultaneously. 
+          .col-md-6
+            .hotel__benefits__block.hotel__benefits__block--secondary
+              h3 For Your Customer
+              ul
+                li
+                  img(src="img/hotel/24-7.png", alt="")
+                  .text
+                    strong 24/7 Conversational Concierge
+                    p Guests can connect with you on their favourite Messaging & Voice platforms.
+                li
+                  img(src="img/hotel/instant-access.png", alt="")
+                  .text
+                    strong Instant Access
+                    p From gym timings to buffet menu, guests have instant access to all information.
+                li
+                  img(src="img/hotel/connect-experience.png", alt="")
+                  .text
+                    strong Connected Experience
+                    p Eliminates the need for phone calls and manual effort.
+          .col-12
+            a(href="#") take tour

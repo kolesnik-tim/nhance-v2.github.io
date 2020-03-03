@@ -16,13 +16,15 @@ $icon-arrow_left-cicle: "\EA04";
 $icon-arrow_right-circle: "\EA05";
 $icon-check: "\EA06";
 $icon-double-arrows: "\EA07";
-$icon-fb: "\EA08";
-$icon-in: "\EA09";
-$icon-linkedin: "\EA0A";
-$icon-play: "\EA0B";
-$icon-star: "\EA0C";
-$icon-twitter: "\EA0D";
-$icon-user: "\EA0E";
+$icon-download-arrow: "\EA08";
+$icon-fb: "\EA09";
+$icon-in: "\EA0A";
+$icon-link: "\EA0B";
+$icon-linkedin: "\EA0C";
+$icon-play: "\EA0D";
+$icon-star: "\EA0E";
+$icon-twitter: "\EA0F";
+$icon-user: "\EA10";
 
 
 %icon {
@@ -48,8 +50,10 @@ $icon-user: "\EA0E";
 .icon-arrow_right-circle:before { content: $icon-arrow_right-circle; }
 .icon-check:before { content: $icon-check; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
+.icon-download-arrow:before { content: $icon-download-arrow; }
 .icon-fb:before { content: $icon-fb; }
 .icon-in:before { content: $icon-in; }
+.icon-link:before { content: $icon-link; }
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-play:before { content: $icon-play; }
 .icon-star:before { content: $icon-star; }

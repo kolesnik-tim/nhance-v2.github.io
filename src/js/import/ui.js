@@ -92,3 +92,12 @@ if($(window).width() < 768) {
 
 
 
+//label active  (page hotel)
+$('.hotel input').on('focus', function() {
+  $(this).next('label').addClass('active');
+});
+$('.hotel input').on('blur', function() {
+  if($(this).val() === '') {
+    $(this).next('label').removeClass('active');
+  }
+});
