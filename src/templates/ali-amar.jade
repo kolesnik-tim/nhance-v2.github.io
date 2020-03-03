@@ -3,6 +3,8 @@ title: Customers story Ali-amar
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -46,3 +48,5 @@ block content
           p Each of the above features come with a high level of automation and requires very little human monitoring which was the key deciding factor in the purchase decision for Ali Amar.
           p Ali Amar is now generating a lot more “noise” in their customer community. They are now able to understand and positively influence customer needs and desires. Its helping them generate atleast 19% more revenue from their existing customer base.
 
+  block footer
+    include partials/_footer

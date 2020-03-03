@@ -4,6 +4,8 @@ title: Pricing | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .pricing
     .pricing__title
       .container
@@ -152,4 +154,5 @@ block content
               .pricing__questions__block__text
                 div
                   | We provide APIs which can be consumed by businesses to link their IT systems and business applications. However where custom or complex integrations have to be undertaken we do charge an hourly fee.
-    
+  block footer
+    include partials/_footer

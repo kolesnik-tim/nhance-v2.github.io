@@ -3,6 +3,8 @@ title: Customers story leau-pure
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -42,3 +44,5 @@ block content
               i "We always had aspirations of providing the same world class customer experience that our competitors provided. With deep pockets they could go the extra mile. NHANCE NOW has shattered the myth that high quality customer experience needs a large budget. We are proud to be providing an experience that is truly modern and even leaves behind the models followed by bigger competitors. Instead of 5 IT systems we get all our work done with 1!! And the flexible and super affordable pricing is the cherry on the cake.Customer experience is the only tool, apart from our products, which we have to build our market share and with NHANCE NOW covering our back, we no longer feel left behind!"
               b Siddananda Gouda, CEO Leaupure
 
+  block footer
+    include partials/_footer

@@ -3,6 +3,8 @@ title: Customers story confidential
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -38,3 +40,6 @@ block content
             img(src="img/quote-icon.png", alt="")
             div
               i “Dealing with our customers directly and offering them a customer experience that they deserve is at the core of our business culture. NHANCE NOW’s simple mechanism allowed us to easily capture customer data while making the process seamless for them. It also allowed us to bring them onto the NHANCE NOW ecosystem. We now have a 24/7 connect with our customers and offer them all post-purchase interactions with a few taps”
+
+  block footer
+    include partials/_footer

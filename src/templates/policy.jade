@@ -5,6 +5,8 @@ header: app-function
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .security
     .intro
       .container
@@ -47,3 +49,5 @@ block content
         p It is our policy to post any changes we make to our Privacy Policy on this page. Your continued use of the NHANCE NOW platform and app after we make changes is deemed to be acceptance of those changes, so please check the Privacy Policy (posted at nhance now.com/privacy) periodically for updates.
         strong Questions and Suggestions
         p If you have any questions about this Privacy Policy or don't see your concerns addressed here, please mail us at support@nhance now.com
+  block footer
+    include partials/_footer

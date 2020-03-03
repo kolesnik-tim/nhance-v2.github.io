@@ -4,6 +4,8 @@ title: Voice Gateway for Conversational Customer Experience | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .voice
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -151,3 +153,5 @@ block content
               p Our friendly executives are waiting to help you get going
               a(href="#schedule" rel="modal:open") Setup Your Custom Demo
                 span 100% Free to get started
+  block footer
+    include partials/_footer

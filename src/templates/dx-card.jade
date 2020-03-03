@@ -5,6 +5,8 @@ header: dx-card-color
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .phone
     .phone__block.active
       img(src="img/dxcard/dx-card.png", alt="")

@@ -4,12 +4,16 @@ title: All pages
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .pages
     .container
       h1 All pages
       ul
         li
           a(href="index.html") Home
+        li
+          a(href="hotel.html") Hotel-landing
         li
           a(href="dx-card.html") DX Card
         li
@@ -50,3 +54,5 @@ block content
           a(href="service.html") Terms of Service
         li
           a(href="policy.html") Policy
+  block footer
+    include partials/_footer

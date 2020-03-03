@@ -3,6 +3,8 @@ title: Customers story confidential
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -43,3 +45,5 @@ block content
           p NHANCE NOW enables the business to seamlessly execute the above processes to gain a deeper understanding of the customer journey. This helps them to continuously refine their experience offerings to match the needs of the demanding customer.
           p Customer engagement and repeat buying rates saw a spike of nearly 20% a few months of the company adopting the solution.
           p NHANCE NOW also allowed the company to form a large connected digital community of their enrolled members who they could serve with greater efficiency and also use them as advocates to further their brand value.
+  block footer
+    include partials/_footer

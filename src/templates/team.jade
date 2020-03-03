@@ -4,6 +4,8 @@ title: Team | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .team
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -356,3 +358,5 @@ block content
                 //- a(href='#')
                 //-   i.icon.icon-linkedin
 
+  block footer
+    include partials/_footer

@@ -4,6 +4,8 @@ title: About the Company | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .about-us
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -74,3 +76,6 @@ block content
             .about-us__culture__block.about-us__culture__block-8(style="background-image: url('img/about/value-08.jpg')")
               h3 Think Big
               p Environment for everyone to think big, have fun, do what is right and become the best version of oneself 
+
+  block footer
+    include partials/_footer

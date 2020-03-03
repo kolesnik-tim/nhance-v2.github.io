@@ -3,6 +3,8 @@ title: Customers story confidential
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -51,3 +53,5 @@ block content
           p Rich and visual data feed and charts provided the company with useful insights on customer behaviour and offer personalized services. The company now had one web interface to manage their entire customer lifecycle and it allowed them to plan a co-ordinated sequence of interactions for higher lifetime value.
           p The company through the use of NHANCE NOW was also able to support various social initiatives of the Government of UAE, like the Green Initiative (by digitising all doucments) and the Customer Happiness Index (by collecting feedback on key events).
           p NHANCE NOW also allowed the company to form a large connected digital community of their enrolled members who they could serve with greater efficiency and also use them as advocates to further their brand value.
+  block footer
+    include partials/_footer

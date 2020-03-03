@@ -3,6 +3,8 @@ title: Customers story Al-reef
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -51,3 +53,5 @@ block content
               i “Traditionally customers have been left on their own after they purchase travel packages. We are disrupting this process with NHANCE NOW. We are now engaging and interacting with customers right from the moment they buy a holiday package from us and even after they have completed their journey. We believe in constant and personalized engagement with our customers to keep their spirit of travel alive and kicking. NHANCE NOW allows us to do so in ways which we had not envisioned earlier. ”
               b CEO, Al Reef
 
+  block footer
+    include partials/_footer

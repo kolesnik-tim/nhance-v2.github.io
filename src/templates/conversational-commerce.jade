@@ -4,6 +4,8 @@ title: Conversational Commerce | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .solution.transact
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -42,3 +44,6 @@ block content
             .features-scroller__text
               h3 Sell care plans
               p Care plans (like extended warranty, insurance, AMCs) are extremely popular in the customer products segment. They help protect products from accidental damage and offer peace of mind to customers. Reduce the friction in selling care plans by eliminating long forms and complex process with easy Tap-n-Buy features on the customer’s mobile interface.
+
+  block footer
+    include partials/_footer

@@ -3,6 +3,8 @@ title: Customers story Souq
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -39,3 +41,5 @@ block content
               i “Dealing with our consumers directly and offering them a customer experience that they deserve is at the core of our business culture. NHANCENOW’s simple mechanism allowed us to easily capture consumer data while making the process seamless for them. It also allowed us to bring them onto the NHANCENOW ecosystem. We now have a 24/7 connect with our consumers and offer them all post-purchase interactions with a few taps”.
               b Hiren Modi, CEO
 
+  block footer
+    include partials/_footer

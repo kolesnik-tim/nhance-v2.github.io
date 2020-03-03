@@ -4,6 +4,8 @@ title: Brand Assets | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .brand-assets
     .brand-assets__intro
       .container
@@ -93,3 +95,5 @@ block content
         h2 Pictures
         p Access pictures of our people, events & products.
         a(href="https://app.box.com/s/bro8wi69imbt1s97ivxmrnjzi8ivuzzu" target="_blank").button Download all PNG, JPG versions here. 
+  block footer
+    include partials/_footer

@@ -4,6 +4,8 @@ title: Conversational Lifecycle Engagement Platform | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .solution.engage
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -45,3 +47,5 @@ block content
               h3 Personalization – speak 1-1 to your customers
               p The days of one-size-fits-all are bygone. NHANCE NOW’s data engine allows you to configure customer interactions with precision. With 360° customer information you can tailor interactions to add depth, context and meaning.
               p Address customers by their name, greet them on important occasions, send them marketing information which is relevant to them, make smart recommendations and provide customised offers.
+  block footer
+    include partials/_footer

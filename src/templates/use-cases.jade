@@ -4,6 +4,8 @@ title: Conversational Customer Experience Use Cases | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .cases
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -276,3 +278,5 @@ block content
                     | Service requests, Support FAQs, complimentary purchases (e.g. Extended Warranty, Accessories, insurance) Alerts, Notifications, Exclusive Offers, Feedback.
 
 
+  block footer
+    include partials/_footer

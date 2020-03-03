@@ -4,6 +4,8 @@ title: Customers | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customers
     .intro
       .container
@@ -101,3 +103,5 @@ block content
             img(src="img/customers/logo/aqua-pro-total-solutions.png", alt="")
           .customers__all__block
             img(src="img/customers/logo/fam-logo.png", alt="")
+  block footer
+    include partials/_footer

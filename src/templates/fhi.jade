@@ -3,6 +3,8 @@ title: Customers story Fhi
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -31,3 +33,5 @@ block content
           p Within 3 months of adopting NHANCE NOW Esymart saw a 7% decrease in product returns and a 23% increase in customer satisfaction.
           p Helping their customers with a smooth onboarding process has allowed them to experiment with other NHANCE NOW offerings to boost retention and drive long term value creation.
 
+  block footer
+    include partials/_footer

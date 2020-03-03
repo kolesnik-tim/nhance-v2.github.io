@@ -3,6 +3,8 @@ title: Customers story confidential
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header
   .customer-stories
     .customer-stories__intro
       .container
@@ -35,3 +37,6 @@ block content
           p The company also created rule based triggers for a host of other engagement activities which, based on customer’s interaction with the app, offered an instant contextual response.
           p Customer engagement and repeat buying rates saw a spike of nearly 20% a few months of the company adopting the solution.
           p NHANCE NOW also allowed the company to form a large connected digital community of their enrolled members who they could serve with greater efficiency and also use them as advocates to further their brand value.
+
+  block footer
+    include partials/_footer

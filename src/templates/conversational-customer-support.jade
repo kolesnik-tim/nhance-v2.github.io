@@ -4,6 +4,8 @@ title: Conversational Customer Support Platfom | NHANCE NOW
 ---
 extends layouts/_layout
 block content
+  block header
+    include partials/_header 
   .solution.support
     .intro
       .container.wow.fadeInUp(data-wow-duration="1s")
@@ -45,4 +47,5 @@ block content
               h3 Live chat
               p Live chat is the best communication platform to offer a real-time support and response to your customers. It has higher satisfaction rates than email and phone.With instant connect to live chat agents and 24/7 availability, it is the most non-intrusive channel for customers support enjoying wide popularity.
               p Live chat not only helps your customers start a conversation with you anytime, it also helps you to build long-term relationships with your existing customers.
-        
+  block footer
+    include partials/_footer
