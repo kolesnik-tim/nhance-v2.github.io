@@ -32,9 +32,19 @@
       +r(767)
         +relative-x
         margin-top: 30px
+    p
+      font-size: 18px
+      font-weight: normal
+      line-height: 1.39
+      color: rgba(255, 255, 255, 0.6)
+      margin-bottom: 65px
+      text-align: center
+      +r(767)
+        text-align: center
+        margin-bottom: 30px
     &__title
       padding-top: 70px
-      max-width: 500px
+      max-width: 560px
       width: 100%
       h1
         font-size: 65px
@@ -46,17 +56,8 @@
         +r(767)
           text-align: center
           font-size: 45px
-        span
-          color: #00ee4c
       p
-        font-size: 18px
-        font-weight: normal
-        line-height: 1.39
-        color: rgba(255, 255, 255, 0.6)
-        margin-bottom: 65px
-        +r(767)
-          text-align: center
-          margin-bottom: 30px
+        text-align: left
       a
         padding: 4px 45px 0
         font-size: 18px
@@ -94,7 +95,7 @@
       max-width: 1000px
       width: 100%
       +relative-x
-      margin-bottom: 50px
+      margin-bottom: 10px
       +r(767)
         margin-bottom: 40px
         margin-top: 50px
@@ -102,43 +103,39 @@
         letter-spacing: -2px
     &__row
       display: flex
+      align-items: center
+      justify-content: space-around
+      padding-bottom: 45px
       +r(767)
-        display: block
-    &__block
-      width: 100%
-      padding: 65px
-      background: #000
-      background-repeat: no-repeat
-      background-position: 0 100%
-      background-size: 100% auto
-      min-height: 485px
-      +r(1200)
-        padding: 20px
-      +r(767)
-        min-height: 370px
-      h3
-        font-size: 50px
-        font-weight: bold
-        color: #ffffff
-        margin-bottom: 30px
-        +r(992)
-          font-size: 40px
-      p
-        font-size: 18px
-        font-weight: normal
-        line-height: 1.53
-        color: rgba(255, 255, 255, 0.8)
+        flex-direction: column
+        align-items: center
+      img
+        width: 40%
+        +r(767)
+          width: 100%
+          transform: none
+          position: static
+      .old-way
+        max-width: 451px
+      .vs
+        max-width: 60px
+        margin: 0 50px
+        +r(767)
+          margin: 20px 0
+      .newway
+        max-width: 445px
 
+    
+  
 
 
   &__who
-    background-color: rgb(226, 226, 226)
     padding-top: 80px
     padding-bottom: 100px
     +r(992)
       padding-bottom: 0
     .whatsapp__title
-      padding-bottom: 145px
+      padding-bottom: 160px
     &__block
       border-radius: 10px
       background-color: #131725
@@ -148,8 +145,8 @@
       +r(1200)
         padding: 45px 20px
       +r(992)
-        margin-bottom: 100px
-        height: calc(100% - 100px)
+        margin-bottom: 140px
+        height: calc(100% - 140px)
       .line
         position: absolute
         top: 0
@@ -158,24 +155,36 @@
         height: 12px
         border-top-left-radius: 10px
         border-top-right-radius: 10px
-      a
+      h3
+        background-image: linear-gradient(to right, #43ea80, #43ea80, #38f8d4, #38f8d4)
         font-size: 30px
         font-weight: bold
+        text-align: left
         line-height: 1
         color: #f0f0f0
-        margin-bottom: 25px
-        display: inline-block
+        -webkit-background-clip: text
+        background-clip: text
+        -webkit-text-fill-color: transparent
+      a
+        font-size: 14px
+        font-weight: 600
+        color: #2af1fd
+        padding: 25px 0
+        display: inline-flex
+        +tr
         &:hover
-          text-decoration: underline
+          transform: translate(5px)
+          i
+            transform: scale(1.3)
         i
-          color: rgb(114, 238, 250)
           padding-left: 10px
-          font-size: 25px
+          font-size: 13px
           margin-top: 2px
+          +tr
       img
         position: absolute
-        height: 85px
-        top: -85px
+        height: 130px
+        top: -130px
         left: 50%
         transform: translate(-50%)
       p
@@ -212,7 +221,7 @@
         text-align: center
         color: #131725
         width: 100%
-        max-width: 170px
+        max-width: 210px
         margin-bottom: 20px
       p
         font-size: 14px

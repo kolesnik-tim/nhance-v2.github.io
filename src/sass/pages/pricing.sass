@@ -3,59 +3,46 @@
   &__title
     background-color: rgb(232, 230, 239)
     padding: 180px 0 
-    min-height: 480px
+    min-height: 600px
     +r(767)
       padding: 140px 0 50px
     h1
       font-size: 70px
       font-weight: bold
-      line-height: 0.36
+      line-height: 1
       letter-spacing: -1.4px
       text-align: center
       color: #131c2e
+      margin-bottom: 30px
       +r(767)
         font-size: 50px
         letter-spacing: normal
-  // .tabs
-  //   +center-column
-  //   margin-top: -210px
-  //   +r(767)
-  //     margin-top: -280px
-  //   &__caption
-  //     display: flex
-  //     justify-content: center
-  //     margin-bottom: 80px
-  //     +r(767)
-  //       margin-bottom: 40px
-  //     li
-  //       cursor: pointer
-  //       border-radius: 19px
-  //       border: solid 1px transparent
-  //       padding: 10px 20px
-  //       width: 160px
-  //       +center
-  //       font-size: 14px
-  //       font-weight: normal
-  //       line-height: 1
-  //       color: #131c2f
-  //       +tr
-  //       +r(550)
-  //         font-size: 11px
-  //         text-align: center
-  //         padding: 13px
-  //       &:hover
-  //         color: #000
-  //       &.active
-  //         border: solid 1px #131c2e
-  //         font-weight: bold
-  //         &:hover
-  //           color: #131c2f
-  //           cursor: default
-  //   &__content
-  //     display: none
-  //     width: 100%
-  //     &.active
-  //       display: block
+  &__select
+    strong
+      font-size: 14px
+      font-weight: bold
+      color: #131c2e
+      margin-bottom: 10px
+      display: block
+      text-align: center
+    ul
+      display: flex
+      justify-content: center
+      padding-left: 5px
+    li
+      border-radius: 17px
+      padding: 8px 15px 6px
+      margin-right: 5px
+      font-size: 14px
+      font-weight: normal
+      color: #131c2e
+      border: 1px solid transparent
+      +tr
+      &:hover
+        border: 1px solid #fff
+      &.active
+        background-color: #ffffff
+        font-weight: 600
   &__tariff
     margin-top: -170px
     +r(767)
