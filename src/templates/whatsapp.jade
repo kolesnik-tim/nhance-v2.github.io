@@ -287,12 +287,19 @@ block content
       .container
         .whatsapp__title
           h2 Pricing
+        .whatsapp__pricing__select
+          strong Select Currency
+          ul
+            li(data-one="49").active $USD
+            li(data-one="85") A$ AUD
+            li(data-one="40") £ GBP
+            li(data-one="3500") ₹ INR
         .whatsapp__pricing__block
           //- strong Most Popular Plan
           h2 Basic
           h3 
             span $
-            | 49
+            strong 49
             b /mo
           ul
             li

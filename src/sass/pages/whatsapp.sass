@@ -28,7 +28,8 @@
     background-size: contain
     background-color: rgb(13, 12, 70)
     img
-      width: 240px
+      max-width: 390px
+      width: 100%
       +r(767)
         +relative-x
         margin-top: 30px
@@ -300,6 +301,32 @@
     background: rgba(#000, 0.1)
     +r(767)
       padding: 50px 0
+    &__select
+      strong
+        font-size: 14px
+        font-weight: bold
+        color: #131c2e
+        margin-bottom: 10px
+        display: block
+        text-align: center
+      ul
+        display: flex
+        justify-content: center
+        padding-left: 5px
+      li
+        border-radius: 17px
+        padding: 8px 15px 6px
+        margin-right: 5px
+        font-size: 14px
+        font-weight: normal
+        color: #131c2e
+        border: 1px solid transparent
+        +tr
+        &:hover
+          border: 1px solid #fff
+        &.active
+          background-color: #ffffff
+          font-weight: 600
     &__block
       margin-top: 60px
       max-width: 370px
@@ -309,15 +336,15 @@
       border-radius: 10px
       background: #fff
       padding-bottom: 40px
-      strong
-        font-size: 14px
-        font-weight: bold
-        text-align: center
-        color: #131c2e
-        background-color: #0ef7b5
-        padding: 12px 0 10px
-        display: block
-        text-transform: uppercase
+      // strong
+      //   font-size: 14px
+      //   font-weight: bold
+      //   text-align: center
+      //   color: #131c2e
+      //   background-color: #0ef7b5
+      //   padding: 12px 0 10px
+      //   display: block
+      //   text-transform: uppercase
       h2
         margin-top: 50px
         font-size: 36px
