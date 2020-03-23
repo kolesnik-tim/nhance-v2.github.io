@@ -44,26 +44,31 @@ block content
                   i.icon.icon-check
                   | Multi Language Support
           .col-xl-5
-            form.form
+            form.form#mc-embedded-subscribe-form.validate(action='https://nhancenow.us19.list-manage.com/subscribe/post?u=b7373c443f74841bbd510d4e1&id=575c25a38c', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
               h2 Schedule a free demo
               p Have one of our CX experts reach out to you.
-              .form__input
-                input(type="text" name="name" id="name" required)
-                label(for="name") Name
-                  i *
-              .form__input
-                input(type="email" name="email" id="email" required)
-                label(for="email") Email
-                  i *
-              .form__input
-                input(type="text" name="company" id="company" required)
-                label(for="company") Company
-                  i *
-              .form__input
-                input(type="tel" name="phone" id="phone" required)
-                label(for="phone") Phone
-                  i *
-              button(type="submit") Request Your FREE Consultation
+              .form__input.mc-field-group
+                input(type="text" value='' name='LNAME' required)#mce-LNAME.required
+                label(for="mce-LNAME") Name
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="email" value='' name='EMAIL' required)#mce-EMAIL.required.email
+                label(for="mce-EMAIL") Email
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="text" value='' name='MMERGE5' required)#mce-MMERGE5.required
+                label(for="mce-MMERGE5") Company
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="text" value='' name='MMERGE6' required)#mce-MMERGE6.required
+                label(for="mce-MMERGE6") Phone
+                  i.asterisk *
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_b7373c443f74841bbd510d4e1_575c25a38c', tabindex='-1', value='')
+              button(type="submit" name='subscribe')#mc-embedded-subscribe.button Request Your FREE Consultation
               strong 
                 img(src="img/hotel/safety.png", alt="")
                 | Your information is kept safe
