@@ -21,10 +21,13 @@ $icon-fb: "\EA09";
 $icon-in: "\EA0A";
 $icon-link: "\EA0B";
 $icon-linkedin: "\EA0C";
-$icon-play: "\EA0D";
-$icon-star: "\EA0E";
-$icon-twitter: "\EA0F";
-$icon-user: "\EA10";
+$icon-location: "\EA0D";
+$icon-mail: "\EA0E";
+$icon-play: "\EA0F";
+$icon-site: "\EA10";
+$icon-star: "\EA11";
+$icon-twitter: "\EA12";
+$icon-user: "\EA13";
 
 
 %icon {
@@ -55,7 +58,10 @@ $icon-user: "\EA10";
 .icon-in:before { content: $icon-in; }
 .icon-link:before { content: $icon-link; }
 .icon-linkedin:before { content: $icon-linkedin; }
+.icon-location:before { content: $icon-location; }
+.icon-mail:before { content: $icon-mail; }
 .icon-play:before { content: $icon-play; }
+.icon-site:before { content: $icon-site; }
 .icon-star:before { content: $icon-star; }
 .icon-twitter:before { content: $icon-twitter; }
 .icon-user:before { content: $icon-user; }

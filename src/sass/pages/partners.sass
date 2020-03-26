@@ -1,0 +1,84 @@
+.partners
+  &__intro-img
+    height: 100%
+    +center
+    img
+      max-width: 600px
+  .whatsapp__intro__row 
+    padding-bottom: 0
+    img
+      max-width: 750px
+      width: 100%
+      position: relative
+      top: 35px
+      +r(767)
+        position: static
+  .whatsapp__title
+    padding-bottom: 90px
+    max-width: 1060px
+    width: 100%
+    +relative-x
+    +r(767)
+      padding-bottom: 40px
+
+
+  &__directory
+    padding: 200px 0 100px
+    +r(767)
+      padding: 50px 0 0
+    &__block
+      border: solid 1px #dadada
+      height: 100%
+      background: #f6f6f6
+      +r(992)
+        margin-bottom: 40px
+        height: auto
+      .block__header
+        border-bottom: solid 1px #dadada
+        background: #fff
+        padding: 20px 30px
+        img
+          height: 35px
+    h3
+      font-size: 18px
+      font-weight: 600
+      color: #131725
+      padding: 35px 25px 30px
+    ul
+      padding: 0 25px
+      li
+        display: flex
+        margin-bottom: 20px
+      i
+        color: #b0b0b0
+        font-size: 20px
+        margin-right: 20px
+        &.icon-location
+          font-size: 25px
+          margin-right: 16px
+      a, p
+        font-size: 14px
+        font-weight: normal
+        color: #131725
+      a:hover
+        text-decoration: underline
+
+  .whatsapp__who__block
+    +r(767)
+      margin-bottom: 40px
+      height: calc(100% - 40px)
+  .whatsapp__who__block h3
+    margin-bottom: 30px
+  .whatsapp__baner .whatsapp__title
+    max-width: 690px
+    padding-bottom: 45px
+  &__info 
+    padding: 50px 0
+    p
+      font-size: 18px
+      text-align: center
+      color: #0f093f
+    a
+      color: #0f093f
+    a:hover
+      text-decoration: underline

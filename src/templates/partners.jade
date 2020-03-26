@@ -1,0 +1,310 @@
+---
+title: Whatsapp
+"description": ""
+---
+extends layouts/_layout
+block content
+  block header
+    header.header(class=header)
+      .container
+        .menu-open
+          span
+        .row.align-aitems-center.no-gutters
+          .col-lg-9.col-md-4.col-12
+            .header__content
+              a(href="index.html").header__logo
+                img(src="img/nhance-logo.svg")
+  .menu-bg
+  .menu#menu
+    ul.menu__content
+      li 
+        a(href="index.html").menu__item Home
+      li 
+        a(href="#").menu__item Platform
+          span
+            i.icon.icon-arrow-down
+        ul.menu__dropdown
+          li
+            a(href="platform-overview.html")
+              .menu__dropdown__list
+                b Overview
+          li
+            a(href="dx-card.html")
+              .menu__dropdown__list
+                b DX Card
+          li
+            a(href="messaging-gateway.html")
+              .menu__dropdown__list
+                b Messaging Gateway
+          li
+            a(href="voice-gateway.html")
+              .menu__dropdown__list
+                b Voice Gateway
+          li
+            a(href="enterprise-midmarket.html")
+              .menu__dropdown__list
+                b Mid-Market/Enterprise
+          li
+            a(href="small-business.html")
+              .menu__dropdown__list
+                b Micro / Small Business
+          li
+            a(href="http://dxcard.club/" target='_blank')
+              .menu__dropdown__list
+                b Consumers
+      li 
+        a(href="#").menu__item Use Cases
+          span
+            i.icon.icon-arrow-down
+        ul.menu__dropdown
+          li
+            a(href="use-cases.html#0")
+              .menu__dropdown__list
+                b Wellness
+          li
+            a(href="use-cases.html#1")
+              .menu__dropdown__list
+                b Travel
+          li
+            a(href="use-cases.html#2")
+              .menu__dropdown__list
+                b Healthcare
+          li
+            a(href="use-cases.html#3")
+              .menu__dropdown__list
+                b Automotive
+          li
+            a(href="use-cases.html#4")
+              .menu__dropdown__list
+                b Electronics
+      li
+        a(href="#").menu__item Resources
+          span
+            i.icon.icon-arrow-down
+        ul.menu__dropdown
+          li
+            a(href="http://support.nhancenow.com/" target="_blank")
+              .menu__dropdown__list
+                b Helpcenter
+          li
+            a(href="http://blog.nhancenow.com" target="_blank")
+              .menu__dropdown__list
+                b Blog
+          li
+            a(href="security.html")
+              .menu__dropdown__list
+                b Security
+          li
+            a(href="https://www.nhancenow.com/api/" target="_blank")
+              .menu__dropdown__list
+                b API
+      li
+        a(href="pricing.html").menu__item Pricing
+      li
+        a(href="#").menu__item Company
+          span
+            i.icon.icon-arrow-down
+        ul.menu__dropdown
+          li
+            a(href="about.html") 
+              .menu__dropdown__list
+                b About Us
+          li
+            a(href="team.html") 
+              .menu__dropdown__list
+                b Team
+          li
+            a(href="customers.html")
+              .menu__dropdown__list
+                b Customers
+          li
+            a(href="http://nhancenow.com/partners/" target="_blank") 
+              .menu__dropdown__list
+                b Partners
+          li
+            a(href="https://angel.co/nhance-now/jobs" target="_blank") 
+              .menu__dropdown__list
+                b Careers
+          li
+            a(href="contact.html")
+              .menu__dropdown__list
+                b Contact Us
+          li
+            a(href="brand-assets.html")
+              .menu__dropdown__list
+                b Brand Assets  
+    .header__btn
+      a(href="#")
+        i.icon.icon-user
+        | Log In
+      a(href="#")
+        i.icon.icon-star
+        | Schedule a Demo
+      a(href="#").btn For Consumers
+  //END header
+  .whatsapp.partners
+    .whatsapp__intro
+      .container
+        .row
+          .col-lg-6.col-md-8
+            .whatsapp__intro__title
+              h1 Reseller Partner Program
+              p Maximise your business growth and revenue stream by partnering with us to sell the world's first AI powered Customer Experience Solution.
+              a(href="#schedule" rel="modal:open") BECOME A PARTNER
+                i.icon.icon-arrow-right
+          .col-lg-6.col-md-4
+            .partners__intro-img
+              img(src="img/partners/partners_intro_img.png", alt="")
+          .col-lg-10.offset-lg-1
+            h2 Customer Experience Management is a Large Business Opportunity
+            p With digital innovations reshaping the way people live businesses worldwide are racing against time to upgrade their customer experiences to meet the needs of the digital customer. A significant amount of spending is been made towards improving customer engagement and convenience. It is happening NOW! Our best opportunity is NOW!
+            .whatsapp__intro__row
+              img(src="img/partners/schedule.jpg", alt="")
+    
+    
+    .partners__directory
+      .container
+        .whatsapp__title
+          h2 Partner Directory
+        .row
+          .col-lg-4.col-md-12
+            .partners__directory__block
+              .block__header
+                img(src="img/partners/epratikshana.png", alt="")
+              h3 ePratikshana 2498 Solutions
+              ul
+                li
+                  i.icon.icon-location
+                  p D-307, Shanti Shopping Centre, Opp. Railway Station, Mira Road East, Mumbai, Maharashtra 401107
+                li
+                  i.icon.icon-mail
+                  a(href="mailto:omniajay@zoho.com") omniajay@zoho.com
+                li
+                  i.icon.icon-site
+                  a(href="https://epratikshana.in") epratikshana.in
+          .col-lg-4.col-md-12
+            .partners__directory__block
+              .block__header
+                img(src="img/partners/omnis.png", alt="")
+              h3 Omnis Customer Experience
+              ul
+                li
+                  i.icon.icon-location
+                  p International House 61 Mosley Street Manchester M2 3HZ United Kingdom
+                li
+                  i.icon.icon-mail
+                  a(href="mailto:jeff.ince@omnis-cx.co.uk") jeff.ince@omnis-cx.co.uk
+                li
+                  i.icon.icon-site
+                  a(href="https://www.omnis-cx.co.uk") www.omnis-cx.co.uk
+          .col-lg-4.col-md-12
+            .partners__directory__block
+              .block__header
+                img(src="img/partners/active.png", alt="")
+              h3 Actvee Management Company Limited
+              ul
+                li
+                  i.icon.icon-location
+                  p 9/372 Soi sukhabhibal 5 soi 28, Tha Raeng Bang Kean, Bangkok Thailand
+                li 
+                  i.icon.icon-mail
+                  a(href="mailto:surachai@actvee.com") surachai@actvee.com
+                li
+                  i.icon.icon-site
+                  a(href="https://actvee.com") actvee.com
+
+
+
+
+
+    .whatsapp__who
+      .container
+        .whatsapp__title
+          h2 Why Partner with us?
+          strong Businesses worldwide are seeking simple and easy to use solutions which helps them improve their customer experience with minimal effort, low cost and without the burden of going through large scale technology changes. Our solution can be used on the fly and at affordable pricing. We are looking at business partners who can identify prospects, showcase value and mutually build a profitable business partnership.
+        .row
+          .col-md-4.col-sm-12
+            .whatsapp__who__block
+              .line(style="background-color: rgb(128, 134, 231);")
+              h3 An Easy Product to Sell
+              p Our product is highly user friendly and intuitive and does not require any IT knowledge to manage or maintain. Almost all the businesses that use our product do not have dedicated IT staff and its easy enough to be used by members of marketing, sales or business.
+          .col-md-4.col-sm-12
+            .whatsapp__who__block
+              .line(style="background-color: rgb(73, 86, 220);")
+              h3 Flexible Solution
+              p NHANCE NOW is industry agnostic. It can fit into various industry segment  enabling businesses to offer the same kind of experience. We understand that customers across industries look for the same kind of modern, simple and convenient experiences and we have factored that in to the core of our solution.
+          .col-md-4.col-sm-12
+            .whatsapp__who__block
+              .line(style="background-color: rgb(114, 177, 227);")
+              h3 Plug n Play Product
+              p Businesses dislike changes to their workflows. As a result we have made our solution integration friendly which allows it to seamlessly integrate amongst existing business applications. Businesses can experience the benefits of our solution without making any changes to their workflows or major development efforts.
+    
+  
+    
+    .whatsapp__features
+      .container
+        .whatsapp__title
+          h2 What You Get as a Partner
+        .whatsapp__features__row
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-1.png", alt="")
+            h3 Digital Resources
+            p You get access to your dedicated demo platform, customised digital kits, customer onboarding interfaces and partner portal.
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-2.png", alt="")
+            h3 Revenue Opportunity
+            p Multiple revenue streams which includes commissions in sales/ annual contracts/integrations, service and up selling.
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-3.png", alt="")
+            h3 Sales Artefacts
+            p Complete access to our presentations (pptx, videos), digital contents, customised content on website and all other relevant documents.
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-4.png", alt="")
+            h3 Technical Assistance
+            p Training and complete technical assistance in installations, integrations, sales customisation, data security and compliance.
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-5.png", alt="")
+            h3 Training
+            p Regular and complete training on our product, sales strategy, marketing, implementation and the various uses cases.
+          .whatsapp__features__block
+            img(src="img/partners/partners_features_img-6.png", alt="")
+            h3 Marketing Support
+            p Ongoing and regular support with digital content marketing and social media channels
+          .whatsapp__features__block.empty
+          .whatsapp__features__block.empty
+          
+
+    .whatsapp__baner
+      .container
+        .whatsapp__title
+          h2 An Exciting Opportunity Awaits
+          p It has never been easier to become part of a global community and reshaping a business segment as important as customer experience.
+        a(href="#schedule" rel="modal:open") LET'S GET GOING
+          i.icon.icon-arrow-right
+    .partners__info 
+      .container
+        p If you would like to know more about out program or got any other questions pleases drop us a line at 
+          a(href="mailto:sales@nhancenow.com") sales@nhancenow.com
+
+
+  block footer
+    footer.whatsapp__footer
+      .container  
+        .whatsapp__footer__row
+          .footer__logo.whatsapp__footer__block
+            img(src="img/n-icon.svg")
+            p Inspirion Digital Solutions Pvt Ltd 
+              span (Parent Company of NHANCE NOW)
+          .footer__social.whatsapp__footer__block
+            a(href="https://twitter.com/nhancenow?lang=cs" target="_blank")
+              i.icon.icon-twitter
+            a(href="https://www.facebook.com/nhancenow/" target="_blank")
+              i.icon.icon-fb
+            a(href="https://in.linkedin.com/company/nhancenow" target="_blank")
+              i.icon.icon-in
+          .footer__copyright.whatsapp__footer__block
+            p Copyright ©2019 Inspirion Digital Solutions pvt ltd. All rights reserved.
+          .footer__policy.whatsapp__footer__block
+            a(target="_blank" href="policy.html") Privacy Policy 
+            span |
+            a(target="_blank" href="service.html") Terms of Use
