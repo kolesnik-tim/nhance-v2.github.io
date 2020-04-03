@@ -11,9 +11,35 @@ block content
           .header__content
             a(href="index.html").header__logo
               img(src="img/nhance-logo.svg")
+            .header__btn.hidden-xs
+              b
+                i.icon.icon-user
+                | Log In
+                ul.header__btn__login
+                  li
+                    a(href="https://app-in.nhancenow.com/" target="_blank") 
+                      img(src="img/country/usa.png", alt="")
+                      | USA
+                  li
+                    a(href="https://app-me.nhancenow.com/" target="_blank") 
+                      img(src="img/country/uae_flag.png", alt="")
+                      | UAE
+                  li
+                    a(href="https://app-in.nhancenow.com/" target="_blank") 
+                      img(src="img/country/india_flag.png", alt="")
+                      | INDIA
+                  li
+                    a(href="https://app-in.nhancenow.com/" target="_blank") 
+                      img(src="img/country/Singapore_flag.png", alt="")
+                      | SINGAPORE
+              a(href="#schedule" rel="modal:open")
+                i.icon.icon-star
+                | Schedule a Demo
     //END header
     .whatsapp
-      a(href="https://www.nhancenow.com").baner-landing To check all our other offerings please visit our main website www.nhancenow.com
+      p.baner-landing To check all our other offerings please visit our main website 
+        a(href="https://www.nhancenow.com") www.nhancenow.com
+          i.icon.icon-arrow-right
       .whatsapp__intro
         .container
           .row
@@ -188,20 +214,20 @@ block content
           .row
             .col-lg-4
               .landing-home__tips__block
-                .block__img(style="background-image: url('img/landing-home/')")
-                .block__text.block__text--primary
+                .block__img.block__img--primary(style="background-image: url('img/landing-home/tips__block-1.png')")
+                .block__text
                   p A note from our CEO on COVID 19
                   a(href="#") Read more
             .col-lg-4
               .landing-home__tips__block
-                .block__img(style="background-image: url('img/landing-home/')")
-                .block__text.block__text--secondary
+                .block__img(style="background-image: url('img/landing-home/tips__block-2.jpg')")
+                .block__text
                   p Seven years of remote work taught me how to be good at it, here’s how you can too
                   a(href="#") Read more
             .col-lg-4
               .landing-home__tips__block
-                .block__img(style="background-image: url('img/landing-home/')")
-                .block__text.block__text--primary
+                .block__img(style="background-image: url('img/landing-home/tips__block-3.jpg')")
+                .block__text
                   p 20 Tools your remote customer support team needs
                   a(href="#") Read more
 

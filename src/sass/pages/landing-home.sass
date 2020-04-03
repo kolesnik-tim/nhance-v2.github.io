@@ -6,12 +6,20 @@
     color: #ffffff
     padding: 15px
     display: block
-    background: #8183ee
+    background: #000
     position: fixed
     left: 0
     top: 0
     width: 100%
     z-index: 10
+    a
+      color: #ff0057
+      &:hover
+        text-decoration: underline
+      i
+        margin-left: 6px
+        font-size: 9px
+        font-weight: 900
   .header-landing
     position: absolute
     top: 50px
@@ -19,6 +27,18 @@
     width: 100%
     z-index: 8
     padding-top: 20px
+  .header__content
+    display: flex
+    justify-content: space-between
+  .header__btn b, .header__btn a, .header__btn b i
+    color: #fff
+    &:hover
+      color: #ff0057
+  .header__btn b:hover i
+    color: #ff0057
+  .header__btn a i
+    background: #fff
+    color: #000
   .whatsapp__intro
     background-image: none
     padding: 130px 0
@@ -159,34 +179,37 @@
       .block__img
         height: 240px
         background-color: #58f2da
+        +cover
+        &--primary
+          background-size: auto 85% 
+          background-position: 50% 100%
       .block__text
         height: calc(100% - 240px)
         padding: 35px 35px 85px
         position: relative
+        background: #dedede
+        +tr
         +r(767)
           padding: 20px 15px 70px
-        &--primary
-          background: #dedede
-          a, p
-            color: #000
-        &--secondary
-          background: #000
-          a, p
-            color: #fff
         p
           font-size: 18px
           font-weight: bold
+          color: #000
+          +tr
         a
           position: absolute
           bottom: 40px
           left: 35px
           font-size: 18px
           font-weight: bold
+          color: #000
           +r(767)
             bottom: 20px
             left: 15px
-          &:hover
-            text-decoration: underline
+        &:hover
+          background: #000
+          a, p
+            color: #fff
 
 
 
