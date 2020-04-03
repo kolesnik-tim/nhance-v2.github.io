@@ -40,8 +40,9 @@
     background: #fff
     color: #000
   .whatsapp__intro
-    background-image: none
+    background-image: url('../img/landing-home/login-bg.png')
     padding: 130px 0
+    +cover
     +r(767)
       padding: 100px 0 50px
     &__title
@@ -72,7 +73,22 @@
       a
         +relative-x
         +r(767)
-          font-size: 15px
+          font-size: 14px
+          padding: 4px 15px 0
+        &.btn-terms
+          background: none
+          font-size: 14px
+          font-weight: normal
+          line-height: 1.79
+          color: rgba(255, 255, 255, 0.5)
+          display: block
+          text-align: center
+          text-transform: none
+          font-style: italic
+          text-decoration: underline
+          padding-top: 15px
+          &:hover
+            color: #00fefa
   .whatsapp__title
     h2
       width: 100%
