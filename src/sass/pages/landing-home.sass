@@ -1,0 +1,198 @@
+.landing-home
+  .baner-landing
+    font-size: 14px
+    font-weight: bold
+    text-align: center
+    color: #ffffff
+    padding: 15px
+    display: block
+    background: #8183ee
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 10
+  .header-landing
+    position: absolute
+    top: 50px
+    left: 0
+    width: 100%
+    z-index: 8
+    padding-top: 20px
+  .whatsapp__intro
+    background-image: none
+    padding: 130px 0
+    +r(767)
+      padding: 100px 0 50px
+    &__title
+      max-width: 1000px
+      +relative-x
+      h1
+        text-align: center
+        +r(767)
+          font-size: 40px
+      strong
+        font-size: 25px
+        font-weight: 600
+        line-height: 1.2
+        text-align: center
+        color: #ffffff
+        display: inline-block
+        margin-bottom: 25px
+        max-width: 900px
+        width: 100%
+        +relative-x
+        +r(767)
+          font-size: 20px
+      p
+        text-align: center
+        max-width: 680px
+        width: 100%
+        +relative-x
+      a
+        +relative-x
+        +r(767)
+          font-size: 15px
+  .whatsapp__title
+    h2
+      width: 100%
+      +relative-x
+    strong
+      width: 100%
+      +relative-x
+      font-weight: normal
+      color: #131725
+      display: block
+
+
+    
+  .whatsapp__who
+    .whatsapp__title
+      padding-bottom: 75px
+      h2
+        max-width: 580px
+      strong
+        max-width: 450px
+    &__block
+      +r(767)
+        margin-bottom: 40px
+        height: calc(100% - 40px)
+      h3
+        margin-bottom: 15px
+        font-size: 28px
+
+  .whatsapp__features__block
+    padding: 30px 34px
+    padding-bottom: 60px
+
+
+
+
+
+  &__team
+    background: #dedede
+    padding-top: 75px
+    overflow: hidden
+    +r(767)
+      padding-top: 50px
+    .whatsapp__title
+      h2
+        max-width: 670px
+      strong
+        max-width: 580px
+    &__row
+      display: flex
+      flex-wrap: wrap
+    &__block
+      width: 100%
+      max-width: 20%
+      flex: 0 0 20%
+      margin-top: 60px
+      +r(1200)
+        max-width: 33.333%
+        flex: 0 0 33.333%
+      +r(767)
+        max-width: 50%
+        flex: 0 0 50%
+      span
+        font-size: 20px
+        font-weight: bold
+        line-height: 2.5
+        letter-spacing: -1px
+        text-align: center
+        color: #131725
+        margin-bottom: 15px
+        display: block
+        +r(767)
+          margin-bottom: 0
+          font-size: 17px
+      img
+        height: 320px
+        +relative-x
+        bottom: -7px
+        +r(767)
+          height: 220px
+
+
+
+
+  &__tips
+    padding: 130px 0
+    +r(767)
+      padding: 50px 0
+    .whatsapp__title
+      padding-bottom: 90px
+      +r(767)
+        padding-bottom: 50px
+      h2
+        max-width: 860px
+      strong
+        max-width: 480px
+    &__row
+      display: flex
+    &__block
+      width: 100%
+      height: 100%
+      +r(992)
+        height: calc(100% - 20px)
+        margin-bottom: 20px
+      .block__img
+        height: 240px
+        background-color: #58f2da
+      .block__text
+        height: calc(100% - 240px)
+        padding: 35px 35px 85px
+        position: relative
+        +r(767)
+          padding: 20px 15px 70px
+        &--primary
+          background: #dedede
+          a, p
+            color: #000
+        &--secondary
+          background: #000
+          a, p
+            color: #fff
+        p
+          font-size: 18px
+          font-weight: bold
+        a
+          position: absolute
+          bottom: 40px
+          left: 35px
+          font-size: 18px
+          font-weight: bold
+          +r(767)
+            bottom: 20px
+            left: 15px
+          &:hover
+            text-decoration: underline
+
+
+
+  .whatsapp__baner
+    h2
+      max-width: 860px
+    a
+      +r(400)
+        font-size: 12px
