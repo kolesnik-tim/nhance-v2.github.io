@@ -16,6 +16,7 @@ var config = {
         // path for sass files that will be generated automatically via some of tasks
         sassGen      : 'src/sass/generated',
         js           : 'src/js',
+        pdf          : 'src/pdf',
         img          : 'src/img',
         svg          : 'src/img/svg',
         icons        : 'src/icons',
@@ -37,7 +38,8 @@ var config = {
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
-        data : destPath + '/data'
+        data : destPath + '/data',
+        pdf : destPath + '/pdf'
     },
 
     setEnv: function(env) {
