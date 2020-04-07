@@ -17,16 +17,18 @@ var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 var up = false;
 var newscroll;
+var banerInfo = $('.baner-info').innerHeight();
+$('.header').css({'top': banerInfo});
 mywindow.scroll(function() {
   if(mywindow.scrollTop() > 50) {
     $('.header').addClass('active');
     newscroll = mywindow.scrollTop();
     if (newscroll > mypos && !up) {
-      $('.header').stop().removeClass('scroll');
-      $('.slider__header').css({'top': 0});
+      $('.header').stop().css({'top': '-200px'});
+      $('.slider__header').css({'top': banerInfo});
       up = !up;
     } else if(newscroll < mypos && up) {
-      $('.header').stop().addClass('scroll');
+      $('.header').stop().css({'top': banerInfo});
       $('.slider__header').css({'top': $('.header').innerHeight()});
       up = !up;
     }
