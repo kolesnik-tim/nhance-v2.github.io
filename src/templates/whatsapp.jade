@@ -4,350 +4,346 @@ title: Whatsapp
 ---
 extends layouts/_layout
 block content
-  block header
-    .baner-info
-      strong Covid 19 Offer
-      p Getting your business on track or helping those affected? We want to help.
-      a(href="#") Learn more
-        i.icon.icon-arrow-right
-    header.header(class=header)
-      .container
-        .menu-open
-          span
-        .row.align-aitems-center.no-gutters
-          .col-lg-9.col-md-4.col-12
-            .header__content
-              a(href="index.html").header__logo
-                img(src="img/nhance-logo.svg")
-  .menu-bg
-  .menu#menu
-    ul.menu__content
-      li 
-        a(href="index.html").menu__item Home
-      li 
-        a(href="#").menu__item Platform
-          span
-            i.icon.icon-arrow-down
-        ul.menu__dropdown
-          li
-            a(href="platform-overview.html")
-              .menu__dropdown__list
-                b Overview
-          li
-            a(href="dx-card.html")
-              .menu__dropdown__list
-                b DX Card
-          li
-            a(href="messaging-gateway.html")
-              .menu__dropdown__list
-                b Messaging Gateway
-          li
-            a(href="voice-gateway.html")
-              .menu__dropdown__list
-                b Voice Gateway
-          li
-            a(href="enterprise-midmarket.html")
-              .menu__dropdown__list
-                b Mid-Market/Enterprise
-          li
-            a(href="small-business.html")
-              .menu__dropdown__list
-                b Micro / Small Business
-          li
-            a(href="http://dxcard.club/" target='_blank')
-              .menu__dropdown__list
-                b Consumers
-      li 
-        a(href="#").menu__item Use Cases
-          span
-            i.icon.icon-arrow-down
-        ul.menu__dropdown
-          li
-            a(href="use-cases.html#0")
-              .menu__dropdown__list
-                b Wellness
-          li
-            a(href="use-cases.html#1")
-              .menu__dropdown__list
-                b Travel
-          li
-            a(href="use-cases.html#2")
-              .menu__dropdown__list
-                b Healthcare
-          li
-            a(href="use-cases.html#3")
-              .menu__dropdown__list
-                b Automotive
-          li
-            a(href="use-cases.html#4")
-              .menu__dropdown__list
-                b Electronics
-      li
-        a(href="#").menu__item Resources
-          span
-            i.icon.icon-arrow-down
-        ul.menu__dropdown
-          li
-            a(href="http://support.nhancenow.com/" target="_blank")
-              .menu__dropdown__list
-                b Helpcenter
-          li
-            a(href="http://blog.nhancenow.com" target="_blank")
-              .menu__dropdown__list
-                b Blog
-          li
-            a(href="security.html")
-              .menu__dropdown__list
-                b Security
-          li
-            a(href="https://www.nhancenow.com/api/" target="_blank")
-              .menu__dropdown__list
-                b API
-      li
-        a(href="pricing.html").menu__item Pricing
-      li
-        a(href="#").menu__item Company
-          span
-            i.icon.icon-arrow-down
-        ul.menu__dropdown
-          li
-            a(href="about.html") 
-              .menu__dropdown__list
-                b About Us
-          li
-            a(href="team.html") 
-              .menu__dropdown__list
-                b Team
-          li
-            a(href="customers.html")
-              .menu__dropdown__list
-                b Customers
-          li
-            a(href="http://nhancenow.com/partners/" target="_blank") 
-              .menu__dropdown__list
-                b Partners
-          li
-            a(href="https://angel.co/nhance-now/jobs" target="_blank") 
-              .menu__dropdown__list
-                b Careers
-          li
-            a(href="contact.html")
-              .menu__dropdown__list
-                b Contact Us
-          li
-            a(href="brand-assets.html")
-              .menu__dropdown__list
-                b Brand Assets  
-    .header__btn
-      a(href="#")
-        i.icon.icon-user
-        | Log In
-      a(href="#")
-        i.icon.icon-star
-        | Schedule a Demo
-      a(href="#").btn For Consumers
-  //END header
-  .whatsapp
-    .whatsapp__intro
-      .container
-        .row
-          .col-lg-7.col-md-8
-            .whatsapp__intro__title
-              h1 Simplify Everyday Work Life With Bots For Business
-              p Standout the way you connect, network, engage and follow up with contacts. Better and faster with WhatsApp and FB Messenger.
-              a(href="#schedule" rel="modal:open") Create Yours NOW
-                i.icon.icon-arrow-right
-          .col-lg-5.col-md-4
-            img(src="img/whatsapp/whats-app-screen.png", alt="")
-          .col-12
-            h2 Business by Bots in the Conversational Era
-            p Switch to an Easier, Faster, Cheaper way of Branding and Communications
-            .whatsapp__intro__row
-              img(src="img/whatsapp/old-way.png", alt="").old-way
-              img(src="img/whatsapp/vs.png", alt="").vs
-              img(src="img/whatsapp/newway.png", alt="").newway
-    
-    
-    .whatsapp__who
-      .container
-        .whatsapp__title
-          h2 Company-Wide Use Cases
-          strong For Business Leaders, Executives and Consultants
-        .row
-          .col-lg-3.col-md-6
-            .whatsapp__who__block
-              img(src="img/whatsapp/people-1.png", alt="")
-              .line(style="background-color: rgb(128, 134, 231);")
-              h3 Applicant Bot
-              a(href="#") Watch Video
-                i.icon.icon-play
-              p Arms HR teams to shorten interview cycles with Bots that screen candidates, provide information about the company and work culture, answer questions about a job opening and schedule interviews. 
-          .col-lg-3.col-md-6
-            .whatsapp__who__block
-              img(src="img/whatsapp/people-2.png", alt="")
-              .line(style="background-color: rgb(73, 86, 220);")
-              h3 Business Card Bot
-              a(href="#") Watch Video
-                i.icon.icon-play
-              p Convert your paper business card into an interactive bot that answers queries 24/7, tells the prospect about your company and starts an instant conversation with you when they need to connect for more.
-          .col-lg-3.col-md-6
-            .whatsapp__who__block
-              img(src="img/whatsapp/people-3.png", alt="")
-              .line(style="background-color: rgb(114, 177, 227);")
-              h3 Sales Bot
-              a(href="#") Watch Video
-                i.icon.icon-play
-              p Free up Sales Reps time to close key deals with the S&M Bot which takes the load of responding to routine queries from prospects for product or service information and setting up meetings and demos.
-          .col-lg-3.col-md-6
-            .whatsapp__who__block
-              img(src="img/whatsapp/people-4.png", alt="")
-              .line(style="background-color: rgb(49, 97, 189);")
-              h3 Company Bot
-              a(href="#") Watch Video
-                i.icon.icon-play
-              p Create conversational company profiles laced with documents, use cases, testimonials, pricing information, product/service videos and FAQs - that helps you grow your brand better and faster.
-    
-    
-    .whatsapp__benefits
-      .container
-        .whatsapp__title
-          h2 Benefits
-        .row
-          .col-lg-3.col-md-6
-            .whatsapp__benefits__block
-              img(src="img/whatsapp/whatsapp_benefits_img-1.png", alt="")
-              h3 Automate Everyday Repetitive Tasks 
-              p It is impossible to engage every contact effectively everyday. No more. Automate nurturing and managing contacts, 24/7.
-
-          .col-lg-3.col-md-6
-            .whatsapp__benefits__block.whatsapp__benefits__block--secondary
-              img(src="img/whatsapp/whatsapp_benefits_img-2.png", alt="")
-              h3 Get Conversational Era Ready
-              p Ditch static business cards, PPTs, and brochures that only share information. Grow faster with Conversational Bots designed to promote engaging conversations. 
-
-          .col-lg-3.col-md-6
-            .whatsapp__benefits__block.whatsapp__benefits__block--secondary
-              img(src="img/whatsapp/whatsapp_benefits_img-3.png", alt="")
-              h3 Personalize Approach for Every Contact
-              p Business Card BotEvery contact is different, so should be their experience. The AI engine uses ongoing interactions to personalize attention for every contact. 
-          
-          .col-lg-3.col-md-6
-            .whatsapp__benefits__block
-              img(src="img/whatsapp/whatsapp_benefits_img-4.png", alt="")
-              h3 Support Green Initiatives
-              p Create business collaterals in a fresh new way for the Digital First world and contribute in your little way to global green initiatives.
-
-    
-    
-    .whatsapp__features
-      .container
-        .whatsapp__title
-          h2 Features
-        .whatsapp__features__row
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-1.png", alt="")
-            h3 Digital Files
-            p Provide important documents and informative videos. Share confidential files protected with WhatsApp security protocols. 
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-2.png", alt="")
-            h3 Customisable Bot
-            p Setup Meetings, demos, give instant response to queries and provide contextual advisory.
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-3.png", alt="")
-            h3 Analytics
-            p See statistical graphs of interactions with all WhatsApp Cards issued by you or your company/representatives.
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-4.png", alt="")
-            h3 Automated Notifications
-            p Send automated event based notifications and alerts on company activities, webinars, product launches, etc
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-5.png", alt="")
-            h3 Share Option
-            p Let your contacts make your and your company profile viral with an easy share option embedded inside the card.
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-6.png", alt="")
-            h3 Personalize
-            p Customise cards with targeted content for specific activities or contacts. 
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-7.png", alt="")
-            h3 Dynamic Update
-            p Modify, Update or Add information or content to the card anytime, with seamless updates at the contact end.
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-8.png", alt="")
-            h3 Intuitive Creation Process
-            p Easy SaaS application to create cards with no IT support. Anyone can use it.
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-9.png", alt="")
-            h3 Experience Maps
-            p Expert designed workflows to nurture contacts/leads with contextual interactions at crucial junctures
-          .whatsapp__features__block
-            img(src="img/whatsapp/whatsapp_features_img-10.png", alt="")
-            h3 Conversation Templates
-            p Expert designed conversation templates to have automated Bot driven conversations to engage contacts at frequent intervals.
-          .whatsapp__features__block.empty
-          .whatsapp__features__block.empty
-          
-
-    .whatsapp__pricing
-      .container
-        .whatsapp__title
-          h2 Pricing
-        .whatsapp__pricing__select
-          strong Select Currency
-          ul
-            li(data-one="49").active $USD
-            li(data-one="85") A$ AUD
-            li(data-one="40") £ GBP
-            li(data-one="3500") ₹ INR
-        .whatsapp__pricing__block
-          //- strong Most Popular Plan
-          h2 Basic
-          h3 
-            span $
-            strong 49
-            b /mo
-          ul
+  .landing
+    block header
+      header.header(class=header)
+        .container
+          .menu-open
+            span
+          .row.align-aitems-center.no-gutters
+            .col-lg-9.col-md-4.col-12
+              .header__content
+                a(href="index.html").header__logo
+                  img(src="img/nhance-logo.svg")
+    .menu-bg
+    .menu#menu
+      ul.menu__content
+        li 
+          a(href="index.html").menu__item Home
+        li 
+          a(href="#").menu__item Platform
+            span
+              i.icon.icon-arrow-down
+          ul.menu__dropdown
             li
-              i.icon.icon-check
-              | Corporate bot
+              a(href="platform-overview.html")
+                .menu__dropdown__list
+                  b Overview
             li
-              i.icon.icon-check
-              | Applicant bot
+              a(href="dx-card.html")
+                .menu__dropdown__list
+                  b DX Card
             li
-              i.icon.icon-check
-              | Sales & marketing bot
+              a(href="messaging-gateway.html")
+                .menu__dropdown__list
+                  b Messaging Gateway
             li
-              i.icon.icon-check
-              | Business bot
-          a(href="#schedule" rel="modal:open").btn Start 14-day Free Trial
+              a(href="voice-gateway.html")
+                .menu__dropdown__list
+                  b Voice Gateway
+            li
+              a(href="enterprise-midmarket.html")
+                .menu__dropdown__list
+                  b Mid-Market/Enterprise
+            li
+              a(href="small-business.html")
+                .menu__dropdown__list
+                  b Micro / Small Business
+            li
+              a(href="http://dxcard.club/" target='_blank')
+                .menu__dropdown__list
+                  b Consumers
+        li 
+          a(href="#").menu__item Use Cases
+            span
+              i.icon.icon-arrow-down
+          ul.menu__dropdown
+            li
+              a(href="use-cases.html#0")
+                .menu__dropdown__list
+                  b Wellness
+            li
+              a(href="use-cases.html#1")
+                .menu__dropdown__list
+                  b Travel
+            li
+              a(href="use-cases.html#2")
+                .menu__dropdown__list
+                  b Healthcare
+            li
+              a(href="use-cases.html#3")
+                .menu__dropdown__list
+                  b Automotive
+            li
+              a(href="use-cases.html#4")
+                .menu__dropdown__list
+                  b Electronics
+        li
+          a(href="#").menu__item Resources
+            span
+              i.icon.icon-arrow-down
+          ul.menu__dropdown
+            li
+              a(href="http://support.nhancenow.com/" target="_blank")
+                .menu__dropdown__list
+                  b Helpcenter
+            li
+              a(href="http://blog.nhancenow.com" target="_blank")
+                .menu__dropdown__list
+                  b Blog
+            li
+              a(href="security.html")
+                .menu__dropdown__list
+                  b Security
+            li
+              a(href="https://www.nhancenow.com/api/" target="_blank")
+                .menu__dropdown__list
+                  b API
+        li
+          a(href="pricing.html").menu__item Pricing
+        li
+          a(href="#").menu__item Company
+            span
+              i.icon.icon-arrow-down
+          ul.menu__dropdown
+            li
+              a(href="about.html") 
+                .menu__dropdown__list
+                  b About Us
+            li
+              a(href="team.html") 
+                .menu__dropdown__list
+                  b Team
+            li
+              a(href="customers.html")
+                .menu__dropdown__list
+                  b Customers
+            li
+              a(href="http://nhancenow.com/partners/" target="_blank") 
+                .menu__dropdown__list
+                  b Partners
+            li
+              a(href="https://angel.co/nhance-now/jobs" target="_blank") 
+                .menu__dropdown__list
+                  b Careers
+            li
+              a(href="contact.html")
+                .menu__dropdown__list
+                  b Contact Us
+            li
+              a(href="brand-assets.html")
+                .menu__dropdown__list
+                  b Brand Assets  
+      .header__btn
+        a(href="#")
+          i.icon.icon-user
+          | Log In
+        a(href="#")
+          i.icon.icon-star
+          | Schedule a Demo
+        a(href="#").btn For Consumers
+    //END header
+    .whatsapp
+      .whatsapp__intro
+        .container
+          .row
+            .col-lg-7.col-md-8
+              .whatsapp__intro__title
+                h1 Simplify Everyday Work Life With Bots For Business
+                p Standout the way you connect, network, engage and follow up with contacts. Better and faster with WhatsApp and FB Messenger.
+                a(href="#schedule" rel="modal:open") Create Yours NOW
+                  i.icon.icon-arrow-right
+            .col-lg-5.col-md-4
+              img(src="img/whatsapp/whats-app-screen.png", alt="")
+            .col-12
+              h2 Business by Bots in the Conversational Era
+              p Switch to an Easier, Faster, Cheaper way of Branding and Communications
+              .whatsapp__intro__row
+                img(src="img/whatsapp/old-way.png", alt="").old-way
+                img(src="img/whatsapp/vs.png", alt="").vs
+                img(src="img/whatsapp/newway.png", alt="").newway
+      
+      
+      .whatsapp__who
+        .container
+          .whatsapp__title
+            h2 Company-Wide Use Cases
+            strong For Business Leaders, Executives and Consultants
+          .row
+            .col-lg-3.col-md-6
+              .whatsapp__who__block
+                img(src="img/whatsapp/people-1.png", alt="")
+                .line(style="background-color: rgb(128, 134, 231);")
+                h3 Applicant Bot
+                a(href="#") Watch Video
+                  i.icon.icon-play
+                p Arms HR teams to shorten interview cycles with Bots that screen candidates, provide information about the company and work culture, answer questions about a job opening and schedule interviews. 
+            .col-lg-3.col-md-6
+              .whatsapp__who__block
+                img(src="img/whatsapp/people-2.png", alt="")
+                .line(style="background-color: rgb(73, 86, 220);")
+                h3 Business Card Bot
+                a(href="#") Watch Video
+                  i.icon.icon-play
+                p Convert your paper business card into an interactive bot that answers queries 24/7, tells the prospect about your company and starts an instant conversation with you when they need to connect for more.
+            .col-lg-3.col-md-6
+              .whatsapp__who__block
+                img(src="img/whatsapp/people-3.png", alt="")
+                .line(style="background-color: rgb(114, 177, 227);")
+                h3 Sales Bot
+                a(href="#") Watch Video
+                  i.icon.icon-play
+                p Free up Sales Reps time to close key deals with the S&M Bot which takes the load of responding to routine queries from prospects for product or service information and setting up meetings and demos.
+            .col-lg-3.col-md-6
+              .whatsapp__who__block
+                img(src="img/whatsapp/people-4.png", alt="")
+                .line(style="background-color: rgb(49, 97, 189);")
+                h3 Company Bot
+                a(href="#") Watch Video
+                  i.icon.icon-play
+                p Create conversational company profiles laced with documents, use cases, testimonials, pricing information, product/service videos and FAQs - that helps you grow your brand better and faster.
+      
+      
+      .whatsapp__benefits
+        .container
+          .whatsapp__title
+            h2 Benefits
+          .row
+            .col-lg-3.col-md-6
+              .whatsapp__benefits__block
+                img(src="img/whatsapp/whatsapp_benefits_img-1.png", alt="")
+                h3 Automate Everyday Repetitive Tasks 
+                p It is impossible to engage every contact effectively everyday. No more. Automate nurturing and managing contacts, 24/7.
+
+            .col-lg-3.col-md-6
+              .whatsapp__benefits__block.whatsapp__benefits__block--secondary
+                img(src="img/whatsapp/whatsapp_benefits_img-2.png", alt="")
+                h3 Get Conversational Era Ready
+                p Ditch static business cards, PPTs, and brochures that only share information. Grow faster with Conversational Bots designed to promote engaging conversations. 
+
+            .col-lg-3.col-md-6
+              .whatsapp__benefits__block.whatsapp__benefits__block--secondary
+                img(src="img/whatsapp/whatsapp_benefits_img-3.png", alt="")
+                h3 Personalize Approach for Every Contact
+                p Business Card BotEvery contact is different, so should be their experience. The AI engine uses ongoing interactions to personalize attention for every contact. 
+            
+            .col-lg-3.col-md-6
+              .whatsapp__benefits__block
+                img(src="img/whatsapp/whatsapp_benefits_img-4.png", alt="")
+                h3 Support Green Initiatives
+                p Create business collaterals in a fresh new way for the Digital First world and contribute in your little way to global green initiatives.
+
+      
+      
+      .whatsapp__features
+        .container
+          .whatsapp__title
+            h2 Features
+          .whatsapp__features__row
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-1.png", alt="")
+              h3 Digital Files
+              p Provide important documents and informative videos. Share confidential files protected with WhatsApp security protocols. 
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-2.png", alt="")
+              h3 Customisable Bot
+              p Setup Meetings, demos, give instant response to queries and provide contextual advisory.
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-3.png", alt="")
+              h3 Analytics
+              p See statistical graphs of interactions with all WhatsApp Cards issued by you or your company/representatives.
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-4.png", alt="")
+              h3 Automated Notifications
+              p Send automated event based notifications and alerts on company activities, webinars, product launches, etc
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-5.png", alt="")
+              h3 Share Option
+              p Let your contacts make your and your company profile viral with an easy share option embedded inside the card.
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-6.png", alt="")
+              h3 Personalize
+              p Customise cards with targeted content for specific activities or contacts. 
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-7.png", alt="")
+              h3 Dynamic Update
+              p Modify, Update or Add information or content to the card anytime, with seamless updates at the contact end.
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-8.png", alt="")
+              h3 Intuitive Creation Process
+              p Easy SaaS application to create cards with no IT support. Anyone can use it.
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-9.png", alt="")
+              h3 Experience Maps
+              p Expert designed workflows to nurture contacts/leads with contextual interactions at crucial junctures
+            .whatsapp__features__block
+              img(src="img/whatsapp/whatsapp_features_img-10.png", alt="")
+              h3 Conversation Templates
+              p Expert designed conversation templates to have automated Bot driven conversations to engage contacts at frequent intervals.
+            .whatsapp__features__block.empty
+            .whatsapp__features__block.empty
+            
+
+      .whatsapp__pricing
+        .container
+          .whatsapp__title
+            h2 Pricing
+          .whatsapp__pricing__select
+            strong Select Currency
+            ul
+              li(data-one="49").active $USD
+              li(data-one="85") A$ AUD
+              li(data-one="40") £ GBP
+              li(data-one="3500") ₹ INR
+          .whatsapp__pricing__block
+            //- strong Most Popular Plan
+            h2 Basic
+            h3 
+              span $
+              strong 49
+              b /mo
+            ul
+              li
+                i.icon.icon-check
+                | Corporate bot
+              li
+                i.icon.icon-check
+                | Applicant bot
+              li
+                i.icon.icon-check
+                | Sales & marketing bot
+              li
+                i.icon.icon-check
+                | Business bot
+            a(href="#schedule" rel="modal:open").btn Start 14-day Free Trial
 
 
-    .whatsapp__baner
-      .container
-        .whatsapp__title
-          h2 Activate your first Business Bot in minutes
-          p Design your first bot on the next few screens then sample it on your own WhatsApp/FB Messenger account
-        a(href="#schedule" rel="modal:open") START NOW
-          i.icon.icon-arrow-right
+      .whatsapp__baner
+        .container
+          .whatsapp__title
+            h2 Activate your first Business Bot in minutes
+            p Design your first bot on the next few screens then sample it on your own WhatsApp/FB Messenger account
+          a(href="#schedule" rel="modal:open") START NOW
+            i.icon.icon-arrow-right
 
-  block footer
-    footer.whatsapp__footer
-      .container  
-        .whatsapp__footer__row
-          .footer__logo.whatsapp__footer__block
-            img(src="img/n-icon.svg")
-            p Inspirion Digital Solutions Pvt Ltd 
-              span (Parent Company of NHANCE NOW)
-          .footer__social.whatsapp__footer__block
-            a(href="https://twitter.com/nhancenow?lang=cs" target="_blank")
-              i.icon.icon-twitter
-            a(href="https://www.facebook.com/nhancenow/" target="_blank")
-              i.icon.icon-fb
-            a(href="https://in.linkedin.com/company/nhancenow" target="_blank")
-              i.icon.icon-in
-          .footer__copyright.whatsapp__footer__block
-            p Copyright ©2020 Inspirion Digital Solutions pvt ltd. All rights reserved.
-          .footer__policy.whatsapp__footer__block
-            a(target="_blank" href="policy.html") Privacy Policy 
-            span |
-            a(target="_blank" href="service.html") Terms of Use
+    block footer
+      footer.whatsapp__footer
+        .container  
+          .whatsapp__footer__row
+            .footer__logo.whatsapp__footer__block
+              img(src="img/n-icon.svg")
+              p Inspirion Digital Solutions Pvt Ltd 
+                span (Parent Company of NHANCE NOW)
+            .footer__social.whatsapp__footer__block
+              a(href="https://twitter.com/nhancenow?lang=cs" target="_blank")
+                i.icon.icon-twitter
+              a(href="https://www.facebook.com/nhancenow/" target="_blank")
+                i.icon.icon-fb
+              a(href="https://in.linkedin.com/company/nhancenow" target="_blank")
+                i.icon.icon-in
+            .footer__copyright.whatsapp__footer__block
+              p Copyright ©2020 Inspirion Digital Solutions pvt ltd. All rights reserved.
+            .footer__policy.whatsapp__footer__block
+              a(target="_blank" href="policy.html") Privacy Policy 
+              span |
+              a(target="_blank" href="service.html") Terms of Use
