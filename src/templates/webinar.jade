@@ -1,0 +1,130 @@
+---
+title: Webinar
+"description": ""
+---
+extends layouts/_layout
+block content
+  .webinar
+    block header
+      header.header-landing
+        .container
+          .header__content
+            a(href="index.html").header__logo
+              img(src="img/nhance-logo.svg")
+    //END header
+    
+    p.baner-landing To check all our other offerings please visit our main website 
+      a(href="https://nhancenow.com/" target="_blank") www.nhancenow.com
+        i.icon.icon-arrow-right
+    .webinar__intro
+      .container
+        h1 This Is The Best Webinar
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        a(href="#") Reserve Your Spot
+      .webinar__intro__clock(year="2020" month="4" day="20" hour="0" minute="0")
+        .webinar__intro__clock__block
+          strong.days 0
+          span Days
+        .webinar__intro__clock__block
+          strong.hours 0
+          span Hours
+        .webinar__intro__clock__block
+          strong.minutes 0
+          span Minutes
+        .webinar__intro__clock__block
+          strong.seconds 0
+          span Seconds
+
+    .webinar__info
+      .container
+        .webinar__title
+          h2 Don’t miss this amazing webinar!
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+        .webinar__info__row
+          .webinar__info__block.col-lg-3.col-md-6
+            img(src="img/webinar/webinar__info-img-1.png", alt="")
+            span Date
+            strong November 12th
+          .webinar__info__block.col-lg-3.col-md-6
+            img(src="img/webinar/webinar__info-img-2.png", alt="")
+            span Time
+            strong 10 am IST
+          .webinar__info__block.col-lg-3.col-md-6
+            img(src="img/webinar/webinar__info-img-3.png", alt="")
+            span Duration
+            strong 1 Hour
+          .webinar__info__block.col-lg-3.col-md-6
+            img(src="img/webinar/webinar__info-img-4.png", alt="")
+            span Price
+            strong Free
+
+    .webinar__about
+      .container
+        .webinar__title
+          h2 About Speaker
+        .webinar__about__row
+          .webinar__about__img
+            div
+              img(src="img/webinar/person.png", alt="")
+          .webinar__about__text
+            strong Praveen Deherkar - 
+              span Co-Founder | CEO - GCC Region
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+      
+    .container
+      .webinar__title(style="padding-bottom:0")
+        h2 Who Should attend
+        strong Business Owners  
+          i |
+          | CIO  
+          i |
+          | Leaders  
+          i |
+          | CX Heads  
+          i |
+          | Customer Service Heads
+
+    .webinar__advantages
+      .container
+        .webinar__advantages__content
+          h2 More Reasons To Join Webinar
+          .webinar__advantages__row
+            .webinar__advantages__block
+              i.icon.icon-check
+              strong Start Earning
+              p Cras sagittis. Vivamus in erat urna cursus vestibulum. 
+            .webinar__advantages__block
+              i.icon.icon-check
+              strong Best Technology
+              p Cras sagittis. Vivamus in erat urna cursus vestibulum. 
+            .webinar__advantages__block
+              i.icon.icon-check
+              strong More Experience
+              p Cras sagittis. Vivamus in erat urna cursus vestibulum. 
+            .webinar__advantages__block
+              i.icon.icon-check
+              strong Fast Learning
+              p Cras sagittis. Vivamus in erat urna cursus vestibulum. 
+    
+        
+    block footer
+      footer.whatsapp__footer
+        .container  
+          .whatsapp__footer__row
+            .footer__logo.whatsapp__footer__block
+              img(src="img/n-icon.svg")
+              p Inspirion Digital Solutions Pvt Ltd 
+                span (Parent Company of NHANCE NOW)
+            .footer__social.whatsapp__footer__block
+              a(href="https://twitter.com/nhancenow?lang=cs" target="_blank")
+                i.icon.icon-twitter
+              a(href="https://www.facebook.com/nhancenow/" target="_blank")
+                i.icon.icon-fb
+              a(href="https://in.linkedin.com/company/nhancenow" target="_blank")
+                i.icon.icon-in
+            .footer__copyright.whatsapp__footer__block
+              p Copyright ©2020 Inspirion Digital Solutions pvt ltd. All rights reserved.
+            .footer__policy.whatsapp__footer__block
+              a(target="_blank" href="policy.html") Privacy Policy 
+              span |
+              a(target="_blank" href="service.html") Terms of Use
