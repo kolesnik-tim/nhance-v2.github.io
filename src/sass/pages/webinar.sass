@@ -300,6 +300,7 @@
     &:after
       bottom: -260px
       border-radius: 50% 50% 0 0 / 100% 100% 0 0
+      background: rgb(228, 231, 239)
       +r(767)
         bottom: -250px
       +r(600)
@@ -309,6 +310,22 @@
     &__content
       height: 100%
       +center-column
+    a
+      position: absolute
+      bottom: 140px
+      left: 50%
+      transform: translate(-50%)
+      border-radius: 29px
+      background-color: #131725
+      font-size: 18px
+      font-weight: bold
+      color: #ffffff
+      padding: 16px 40px 13px
+      z-index: 9
+      text-align: center
+      width: 268px
+      +r(767)
+        bottom: 20px
     h2
       font-size: 50px
       font-weight: bold
