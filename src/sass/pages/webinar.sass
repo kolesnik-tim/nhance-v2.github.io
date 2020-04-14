@@ -1,3 +1,34 @@
+.calendly-badge-widget
+  position: absolute !important
+  right: auto !important
+  bottom: auto !important
+  width: 100%
+  top: 480px
+  display: flex
+  justify-content: center
+  +r(992)
+    top: 550px
+  +r(767)
+    top: 480px
+  +r(425)
+    top: 540px
+.calendly-badge-widget .calendly-badge-content
+  height: 57px !important
+  border-radius: 30px !important
+  display: flex !important
+  align-items: center
+  font-family: 'Eina03', sans-serif !important
+  font-size: 18px !important
+  color: #131725 !important
+  text-transform: uppercase
+  background: #00fefa !important
+  border: 1px solid #00fefa
+  +tr
+  &:hover
+    background: none !important
+    color: #00fefa !important
+
+  
 .webinar
   .baner-landing
     font-size: 14px
@@ -70,7 +101,7 @@
         color: #adadad
         margin: 0 15px
 
-
+  
   &__intro
     background-image: linear-gradient(to right bottom, #0f093f, #2312ab)
     padding-top: 170px
@@ -97,7 +128,7 @@
       letter-spacing: -3.75px
       text-align: center
       color: #ffffff
-      max-width: 440px
+      max-width: 890px
       width: 100%
       +relative-x
       margin-bottom: 40px
@@ -110,7 +141,7 @@
       line-height: 1.2
       text-align: center
       color: #ffffff
-      max-width: 600px
+      max-width: 710px
       width: 100%
       +relative-x
       margin-bottom: 60px
@@ -130,6 +161,7 @@
       display: inline-block
       +relative-x
       margin-bottom: 70px
+      visibility: hidden
 
 
     &__clock
@@ -333,11 +365,22 @@
       letter-spacing: -2.5px
       text-align: center
       color: #ffffff
-      max-width: 360px
-      width: 100%
-      margin-bottom: 100px
+      margin-bottom: 20px
       +r(767)
         font-size: 40px
+    b
+      font-size: 30px
+      font-weight: bold
+      line-height: 1
+      letter-spacing: -1.5px
+      text-align: center
+      color: #ffffff
+      max-width: 485px
+      width: 100%
+      margin-bottom: 90px
+      +r(767)
+        font-size: 20px
+        letter-spacing: normal
     &__row
       max-width: 750px
       width: 100%

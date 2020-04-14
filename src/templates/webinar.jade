@@ -4,6 +4,12 @@ title: Webinar
 ---
 extends layouts/_layout
 block content
+  //- <!-- Calendly badge widget begin -->
+  link(href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet")
+  script(src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript")
+  script(type="text/javascript").
+    Calendly.initBadgeWidget({ url: 'https://calendly.com/nhance-now-webinar/30min', text: 'Reserve Your Spot'});
+  //- <!-- Calendly badge widget end -->
   .webinar
     block header
       header.header-landing
@@ -18,10 +24,11 @@ block content
         i.icon.icon-arrow-right
     .webinar__intro
       .container
-        h1 This Is The Best Webinar
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-        a(href="#") Reserve Your Spot
-      .webinar__intro__clock(year="2020" month="4" day="20" hour="0" minute="0")
+        h1 Retooling your business to navigate the Covid19 crisis.
+        p Learn how Bots are turning out into the technology stimulus that's helping company with business continuity.
+        a(href="#schedule" rel="modal:open") Reserve Your Spot
+          
+      .webinar__intro__clock(year="2020" month="4" day="21" hour="0" minute="0")
         .webinar__intro__clock__block
           strong.days 0
           span Days
@@ -44,7 +51,7 @@ block content
           .webinar__info__block.col-lg-3.col-md-6
             img(src="img/webinar/webinar__info-img-1.png", alt="")
             span Date
-            strong November 12th
+            strong April 21st
           .webinar__info__block.col-lg-3.col-md-6
             img(src="img/webinar/webinar__info-img-2.png", alt="")
             span Time
@@ -87,7 +94,8 @@ block content
     .webinar__advantages
       .container
         .webinar__advantages__content
-          h2 More Reasons To Join Webinar
+          h2 What you will learn?
+          b 5 effective ways, Bots can help your business in the current COVID-19 era.
           a(href="#") Reserve Your Spot
           .webinar__advantages__row
             .webinar__advantages__block
