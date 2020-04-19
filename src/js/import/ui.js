@@ -3,10 +3,17 @@ import modal from 'jquery-modal';
 
 //pop-up
 $('[rel="modal:open"]').on('click', function(event) {
-  $(this).modal({
-    fadeDuration: 200
-  });
-  return false;
+  if($(this).attr('href') === '#video-page') {
+    $(this).modal({
+      fadeDuration: 200
+    });
+    return false;
+  } else{
+    $(this).modal({
+      fadeDuration: 200
+    });
+    return false;
+  }
 });
 
 //sledeDown (pricing)

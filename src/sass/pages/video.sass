@@ -1,0 +1,120 @@
+.video
+  h2
+    font-size: 80px !important
+    font-weight: bold
+    line-height: 0.94
+    letter-spacing: -4px
+    text-align: center
+    color: #131c2e
+    max-width: 100%
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 100%
+    +r(767)
+      font-size: 34px !important
+      letter-spacing: normal
+  .intro
+    background-image: url('../img/contact-header.png')
+    p
+      max-width: 450px
+
+  &__row
+    display: flex
+    padding-top: 120px
+    padding-bottom: 30px
+    +r(767)
+      flex-direction: column
+  &__aside
+    width: 200px
+    margin-right: 50px
+    h4
+      font-size: 18px
+      font-weight: bold
+      color: #131a2e
+      margin-bottom: 20px
+      a
+        margin-left: 15px
+        font-size: 14px
+        font-weight: 600
+        color: #131a2e
+        &:hover
+          text-decoration: underline
+    p
+      font-size: 18px
+      color: #131a2e
+      margin-bottom: 25px
+    label
+      font-size: 14px
+      font-weight: normal
+      color: #131a2e
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+      &::before
+        content: $icon-right
+        font-family: "iconfont"
+        width: 18px
+        height: 18px
+        border-radius: 5px
+        border: 1px solid #ebebeb
+        margin-right: 8px
+        position: relative
+        top: -3px
+        +center
+        color: #fff
+        font-size: 11px
+        +tr
+        padding-top: 2px
+    input
+      display: none
+      &:checked + label:before
+        background: #0ef7b5
+        border: 1px solid #0ef7b5
+  &__content
+    width: 100%
+    flex: 1
+    +r(767)
+      margin-top: 60px
+    h3
+      font-size: 14px
+      font-weight: normal
+      color: #131a2e
+      margin-bottom: 20px
+      span
+        margin-left: 4px
+  &__block
+    margin-bottom: 40px
+    &__header
+      width: 100%
+      height: 230px
+      border-radius: 10px
+      background-color: #6374e0
+      +cover
+      position: relative
+      overflow: hidden
+      a
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        +center
+        img
+          width: 70px
+          +tr
+        &:hover
+          img
+            transform: scale(1.1)
+    &__footer
+      padding-top: 20px
+      ul
+        display: flex
+        flex-wrap: wrap
+        li
+          font-size: 12px
+          color: #131a2e
+          border-radius: 11px
+          background-color: #ebebeb
+          padding: 6px 10px 5px
+          margin-right: 5px
