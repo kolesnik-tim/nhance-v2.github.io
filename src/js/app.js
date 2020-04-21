@@ -6,6 +6,7 @@ import './import/scroller';
 import './import/small-business';
 import './import/swiper';
 import './import/timer';
+import './import/video';
 
 // import objectFitImages from 'object-fit-images';
 

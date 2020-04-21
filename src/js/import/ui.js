@@ -4,6 +4,8 @@ import modal from 'jquery-modal';
 //pop-up
 $('[rel="modal:open"]').on('click', function(event) {
   if($(this).attr('href') === '#video-page') {
+    let url = $(this).siblings('iframe').attr('src');
+    $('#video-page iframe').attr('src', url);
     $(this).modal({
       fadeDuration: 200
     });
