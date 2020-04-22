@@ -1,7 +1,7 @@
 ---
 title: Conversational AI Tactical Advice
 "description": ""
-bodyClass: webinar
+bodyClass: webinar--secondary
 ---
 extends layouts/_layout
 block content
@@ -11,7 +11,7 @@ block content
   script(type="text/javascript").
     Calendly.initBadgeWidget({ url: 'https://calendly.com/nhance-now-webinar/30min', text: 'Reserve Your Spot'});
   //- <!-- Calendly badge widget end -->
-  .webinar
+  .webinar.webinar--secondary
     block header
       header.header-landing
         .container
@@ -25,11 +25,11 @@ block content
         i.icon.icon-arrow-right
     .webinar__intro
       .container
-        h1 Retooling your business to navigate the Covid19 crisis.
-        p Learn how Bots are turning out into the technology stimulus that's helping company with business continuity.
+        h1 Getting the most out of Work & Business during Covid-19
+        p We discuss the current remote working environment, the challenges it poses and some tools to overcome them.
         a(href="#schedule" rel="modal:open") Reserve Your Spot
           
-      .webinar__intro__clock(year="2020" month="4" day="21" hour="11" minute="30")
+      .webinar__intro__clock(year="2020" month="4" day="24" hour="24" minute="00")
         .webinar__intro__clock__block
           strong.days 0
           span Days
@@ -47,16 +47,16 @@ block content
       .container
         .webinar__title
           h2 Don’t miss this amazing webinar!
-          p An insight into novel practises followed by a host companies globally to survive and rise in the Covid economy.
+          p Join us for a webinar where we discuss the current remote working scenario, challenges we face and how organizations and employees can come out stronger from this pandemic. We will also share some tips on how to get the best out of your remote working setup and stay connected with your customers.
         .webinar__info__row
           .webinar__info__block.col-lg-3.col-md-6
             img(src="img/webinar/webinar__info-img-1.png", alt="")
             span Date
-            strong April 21st
+            strong April 24st
           .webinar__info__block.col-lg-3.col-md-6
             img(src="img/webinar/webinar__info-img-2.png", alt="")
             span Time
-            strong 11:30 a.m. BST (GMT +1)
+            strong 12:00 p.m. IST (GMT +1)
           .webinar__info__block.col-lg-3.col-md-6
             img(src="img/webinar/webinar__info-img-3.png", alt="")
             span Duration
@@ -73,54 +73,50 @@ block content
         .webinar__about__row
           .webinar__about__img
             div
-              img(src="img/webinar/person.png", alt="")
+              img(src="img/webinar/Rahul-Soni.jpg", alt="")
           .webinar__about__text
-            strong Praveen Deherkar - 
-              span Co-Founder & CEO of NHANCE NOW For G.C.C., U.K. & Europe Region.
+            strong Rahul Soni, Director - 
+              span Fluo Digital
             ul
-              li A U.K. national with over 26+ years of corporate experience in Premium Luxury Retail & Automotive Industry.
-              li Former Vice President Information Technology of a multi Billion Dollar group in U.A.E.
-              li Has many accolades of successful Omnichannel Transformation for Premium Luxury Retail Brands
+              li 12 years experience in Digital Media and Communications 
+              li Entrepreneur and Founder of Fluo Digital - full service digital agency
+        .webinar__about__row
+          .webinar__about__img
+            div
+              img(src="img/webinar/Vivek.jpg", alt="")
+          .webinar__about__text
+            strong Vivek Ramachandran - 
+              span Global Marketing Lead at Nhance Now
+            ul
+              li 10 years experience in Marketing & Advertising
+              li Ex-WPP, FCB, Publicis Groupe
 
 
     .container
       .webinar__title(style="padding-bottom:0")
         h2 Who Should attend
-        strong Business Owners  
+        strong Startups
           i |
-          | CIO  
+          | Small & Medium Businesses 
           i |
-          | Leaders  
-          i |
-          | CX Heads  
-          i |
-          | Customer Service Heads
+          | Business Leaders
 
     .webinar__advantages
       .container
         .webinar__advantages__content
           h2 What you will learn?
-          b 5 effective ways, Bots can help your business in the current COVID-19 era.
+          b 3 effective ways, Bots can help your business in the current COVID-19 era.
           //- a(href="#") Reserve Your Spot
           .webinar__advantages__row
             .webinar__advantages__block
               i.icon.icon-check
-              p Adapt, Align & Accomplish new ways of Business with the help of Bots.
+              p Getting the maximum out of your remote working setup
             .webinar__advantages__block
               i.icon.icon-check
-              p Close Key Deals with Sales Bot.
+              p Current working scenario and challenges
             .webinar__advantages__block
               i.icon.icon-check
-              p Company Bot, create a conversational Brand Profile.
-            .webinar__advantages__block
-              i.icon.icon-check
-              p Improve Recruitment Efficiency with Conversational Hiring Bot.
-            .webinar__advantages__block
-              i.icon.icon-check
-              p Convert your paper business card into an interactive bot that answers queries 24/7.
-            .webinar__advantages__block
-              i.icon.icon-check
-              p Q&A
+              p Introduction to Business Bots: close deals, hire new talent, engage employees and much more remotely. 
     
         
     block footer
