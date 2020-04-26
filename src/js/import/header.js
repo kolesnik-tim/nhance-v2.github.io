@@ -1,3 +1,10 @@
+if($('div').hasClass('baner-info')) {
+  $('.out').css({'padding-top': $('.baner-info').innerHeight()});
+  $(window).resize(function() {
+    $('.out').css({'padding-top': $('.baner-info').innerHeight()});
+  });
+}
+
 //sledeDown
 $('.menu__content .menu__item').on('click', function() {
   if($(this).hasClass('active')) {
