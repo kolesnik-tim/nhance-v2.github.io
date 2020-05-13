@@ -37,3 +37,19 @@ var swiper3 = new Swiper('.swiper-home', {
   //   }
   // }
 });
+
+
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 'auto',
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});

@@ -32,7 +32,7 @@
       margin-bottom: 45px
     p
       color: #616161
-      max-width: 640px
+      max-width: 700px
       margin-bottom: 70px
       +r(767)
         margin-bottom: 40px
@@ -58,6 +58,15 @@
         color: #006dff
         margin-left: 13px
         +tr
+
+
+
+
+
+
+
+
+
   &__features
     &__text
       padding: 140px 0
@@ -142,13 +151,65 @@
       max-width: 990px
       margin-bottom: 110px
       +r(767)
-        margin-bottom: 40px
+        margin-bottom: 60px
         font-size: 36px
+    .gallery-top
+      padding-top: 110px
+      +r(767)
+        padding-top: 40px
+    .gallery-thumbs
+      padding: 15px 0
+      .swiper-wrapper
+        display: flex
+        width: 100%
+        justify-content: space-between
+        transform: translate3d(0px, 0, 0) !important
+        +r(992)
+          flex-direction: column
+          align-items: center
+      .swiper-slide
+        font-size: 25px
+        font-weight: bold
+        line-height: 1
+        color: #131c2e
+        opacity: 0.3
+        width: auto
+        display: flex
+        align-items: center
+        cursor: pointer
+        padding: 15px 0
+        +r(1200)
+          font-size: 20px
+        +r(992)
+          max-width: 350px
+          width: 100%
+          padding-left: 20px
+        +r(450)
+          font-size: 18px
+        &::before
+          content: ''
+          width: 20px
+          height: 20px
+          background: #131c2e
+          border-radius: 50%
+          display: block
+          margin-right: 15px
+          margin-top: -4px
+        &.swiper-slide-thumb-active
+          opacity: 1
+    &__block
+      width: 100%
+      flex: 4
+      +r(767)
+        flex: auto
     &__img
       +center-y
       height: 100%
+      +r(992)
+        margin-right: 20px
       +r(767)
-        padding-top: 40px
+        margin-right: 0
+        +center
       img
         width: 100%
         max-width: 440px
@@ -156,9 +217,11 @@
         img
           max-width: 100%
     .features-scroller__row
-      padding-bottom: 170px
+      padding-bottom: 0px
+      display: flex
       +r(767)
-        padding-bottom: 100px
+        padding-bottom: 0px
+        flex-wrap: wrap
     .features-scroller__text
       p
         max-width: 520px
@@ -225,6 +288,15 @@
           left: -20px
           z-index: -1
 
+
+
+
+
+
+
+
+
+
   &__platform
     padding: 100px 0 140px
     +r(767)
@@ -248,19 +320,53 @@
     .message__channels-other__block
       position: relative
       background-color: #2cfffe
+      min-height: 345px
+      justify-content: flex-start
       +r(767)
         margin-bottom: 100px
-      img
-        width: 110px
-        position: absolute
-        top: -50px
-        left: 10px
+      &--primary
+        background: rgb(113, 242, 186)
+        img
+          width: 100%
+          max-width: 215px
+          position: absolute
+          bottom: 30px
+          right: -25px
+          +r(1200)
+            max-width: 180px
+            bottom: 10px
+          +r(767)
+            right: -10px
+          +r(400)
+            bottom: -60px
+      &--secondary
+        background: rgb(114, 238, 250)
+        img
+          width: 100%
+          max-width: 455px
+          position: absolute
+          bottom: -50px
+          right: -20px
+          +r(1200)
+            bottom: -20px
+          +r(767)
+            right: -10px
+
       a
         font-size: 18px
         font-weight: 600
+        color: #131c2e
         i
           font-size: 12px
           color: #006dff
+
+
+
+
+
+
+
+
   &__presentation
     padding: 140px 0 
     background-color: #0f0f20
@@ -380,6 +486,15 @@
         top: 20px
 
 
+
+
+
+
+
+
+
+
+
   &__businesses
     padding-top: 150px
     +r(767)
@@ -425,22 +540,16 @@
       &__img
         border-radius: 15px
         +center
-        align-items: flex-end
         height: 195px
         margin-bottom: 30px
+        img
+          width: 125px
         &--1
           background-color: #2cfffe
-          img
-            width: 117px
         &--2
           background-color: #b783f9
-          img
-            width: 95px
         &--3
           background-color: #0ef7b5
-          align-items: center
-          img
-            width: 137px
       &__text
         padding: 6px
         h4
@@ -459,9 +568,9 @@
           +r(767)
             text-align: center
     &__title
-      padding: 200px 0 95px
+      padding: 0px 0 95px
       +r(767)
-        padding: 100px 0 50px
+        padding: 0px 0 50px
       h2
         font-size: 50px
         margin-bottom: 35px
@@ -481,6 +590,12 @@
         +relative-x
         +r(767)
           font-size: 18px
+      &--superagents
+        h2
+          font-size: 80px
+          max-width: 590px
+          letter-spacing: -4px
+          margin-bottom: 45px
     &__current-ideas
       padding-bottom: 200px
       +r(767)
@@ -527,6 +642,14 @@
             font-size: 12px
             color: #006dff
             +tr
+
+
+
+
+
+
+
+
 
 
   &__firms

@@ -52,10 +52,13 @@
       line-height: 1.43
   &__nav
     display: flex
-    justify-content: space-between
+    justify-content: flex-end
     +r(767)
       +center-column
     &__block
+      margin-left: 75px
+      +r(992)
+        margin-left: 25px
       +r(767)
         width: 100%
       h3
