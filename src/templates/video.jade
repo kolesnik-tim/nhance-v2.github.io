@@ -18,18 +18,19 @@ block content
             a(href="#") Clear all tags
           p Industry
           .video__aside__checkbox
+            input(type="checkbox" id="industry-all" checked)
+            label(for="industry-all").checked All
             input(type="checkbox" id="industry-1" checked)
             label(for="industry-1").checked Webinars
-            input(type="checkbox" id="industry-2")
-            label(for="industry-2") Product
-            input(type="checkbox" id="industry-3")
-            label(for="industry-3") Advertisements
-            input(type="checkbox" id="industry-4")
-            label(for="industry-4") Social Media 
+            input(type="checkbox" id="industry-2" checked)
+            label(for="industry-2").checked Product
+            input(type="checkbox" id="industry-3" checked)
+            label(for="industry-3").checked Advertisements
+            input(type="checkbox" id="industry-4" checked)
+            label(for="industry-4").checked Social Media 
         .video__content
           h3 
             b Industry: 
-            span Webinars
           .row
             .col-xl-3.col-lg-4.col-md-6.col-12
               .video__block
