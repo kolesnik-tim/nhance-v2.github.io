@@ -1,9 +1,11 @@
 .careers
   .intro
-    padding-top: 180px
-    padding-bottom: 135px
+    padding-bottom: 175px
+    background-image: url('../img/careers/careers-bg.jpg')
+    +cover
     +r(767)
-      padding-bottom: 40px
+      padding-top: 100px
+      padding-bottom: 300px
     h1
       font-size: 80px
       font-weight: bold
@@ -14,7 +16,7 @@
       max-width: 680px
       width: 100%
       +relative-x
-      margin-bottom: 75px
+      margin-bottom: 45px
       +r(767)
         font-size: 34px
         letter-spacing: -1px
@@ -109,21 +111,24 @@
         letter-spacing: normal
     &__block
       padding: 70px 45px
-      background: #f4f0eb
+      background: #34495e
       margin-bottom: 25px
       height: calc(100% - 25px)
+      border-radius: 10px
+      &--primary
+        background: #4744d3
       +r(767)
         padding: 50px 20px
       h4
         font-size: 25px
         font-weight: bold
-        color: #131725
+        color: #fff
         margin-bottom: 30px
       p
         font-size: 18px
         font-weight: normal
         line-height: 1.53
-        color: #131725
+        color: #fff
 
 
   &__values
@@ -287,13 +292,25 @@
 
 
   &__gallery
-    padding: 180px 0
+    padding: 140px 0 180px
     +r(767)
       padding: 50px 0
     .col-lg-6
       padding: 0 10px
       .col-lg-6
         padding: 0 5px
+    h2
+      font-size: 80px
+      font-weight: bold
+      line-height: 0.94
+      letter-spacing: -4px
+      text-align: center
+      color: #131725
+      margin-bottom: 110px
+      +r(767)
+        font-size: 30px
+        margin-bottom: 40px
+        letter-spacing: normal
     &__block
       font-size: 36px
       font-weight: bold
