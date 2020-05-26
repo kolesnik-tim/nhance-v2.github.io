@@ -3,6 +3,9 @@ if($('div').hasClass('baner-info')) {
   $(window).resize(function() {
     $('.out').css({'padding-top': $('.baner-info').innerHeight()});
   });
+} 
+if($('div').hasClass('pulsating-background-container')) {
+  $('.out').addClass('dx-card-header');
 }
 
 //sledeDown
@@ -19,7 +22,7 @@ $('.menu__content .menu__item').on('click', function() {
 });
 
 if($('div').hasClass('fullpage-wrapper')) {
-
+  
 }else{
   //header;
   var mywindow = $(window);
