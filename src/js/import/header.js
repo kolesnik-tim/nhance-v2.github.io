@@ -29,7 +29,7 @@ if($('div').hasClass('fullpage-wrapper')) {
   var mypos = mywindow.scrollTop();
   var up = false;
   var newscroll;
-  var banerInfo = $('.baner-info').innerHeight();
+  // var banerInfo = $('.baner-info').innerHeight();
   if($('div').hasClass('landing')) {
     mywindow.scroll(function() {
       if(mywindow.scrollTop() > 50) {
@@ -50,17 +50,17 @@ if($('div').hasClass('fullpage-wrapper')) {
       }
     });
   } else{
-    $('.header').css({'top': banerInfo});
+    $('.header').css({'top': 0});
     mywindow.scroll(function() {
       if(mywindow.scrollTop() > 50) {
         $('.header').addClass('active');
         newscroll = mywindow.scrollTop();
         if (newscroll > mypos && !up) {
           $('.header').stop().css({'top': '-200px'});
-          $('.slider__header').css({'top': banerInfo});
+          $('.slider__header').css({'top': 0});
           up = !up;
         } else if(newscroll < mypos && up) {
-          $('.header').stop().css({'top': banerInfo});
+          $('.header').stop().css({'top': 0});
           $('.slider__header').css({'top': $('.header').innerHeight()});
           up = !up;
         }
