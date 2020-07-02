@@ -356,104 +356,405 @@
           <div class="pricing__select"><strong>Select Currency</strong>
             <ul>
               <li data-one="199" data-two="299" class="active">$USD</li>
-              <li data-one="349" data-two="529">A$ AUD</li>
-              <li data-one="175" data-two="249">£ GBP</li>
               <li data-one="15000" data-two="22000">₹ INR</li>
             </ul>
           </div>
         </div>
         <div class="container">
           <div class="pricing__tariff">
-            <div class="row">
-              <div class="col-lg-4 col-12">
-                <div data-wow-duration="1.5s" class="pricing__tariff__block wow flipInY">
-                  <div class="pricing__tariff__block__title">
-                    <h2>Basic</h2>
-                    <p>Ideal for Small and Medium Businesses</p>
-                    <div><strong>$</strong><span>199</span><em>/mo</em></div>
-                  </div>
-                  <div class="pricing__tariff__block__btn"><a href="#schedule" rel="modal:open" class="btn btn-secondary">7-day Trial</a></div>
-                  <div class="pricing__tariff__block__mobile">
-                    <div class="pricing__tariff__block__all">
-                      <h3><a href="#"></a></h3>
-                      <ul>
-                        <li> <i class="icon icon-check"></i>APP/PWA/FB/WhatsApp Channel</li>
-                        <li> <i class="icon icon-check"></i>
-                          <div>All Basic Features <span>(Reports, Product Onboarding, Product Registration, Menu config etc)</span></div>
-                        </li>
-                        <li> <i class="icon icon-check"></i>
-                          <div>Free Integration with Popular Business Tools <span>(like Freshdesk, Zendesk, Live Chat tools, Shopify,Tally)</span></div>
-                        </li>
-                        <li> <i class="icon icon-check"></i>Smart Notification & Offers</li>
-                        <li> <i class="icon icon-check"></i>Standard Reports</li>
-                        <li> <i class="icon icon-check"></i>Support : Knowledgebase/Email</li>
-                        <li><i class="icon icon-check"></i>No Customisation</li>
-                      </ul>
-                    </div>
-                  </div><a href="#" class="pricing__tariff__block__mobile-btn hidden-md hidden-sm"><span>View details</span><i class="icon icon-arrow-down"></i></a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-12">
-                <div data-wow-duration="1.5s" class="pricing__tariff__block pricing__tariff__block-secondary wow flipInY">
-                  <div class="pricing__tariff__block__popular">
-                    <p>premium the most popular plan</p>
-                  </div>
-                  <div class="pricing__tariff__block__title">
-                    <h2>Pro</h2>
-                    <p>Ideal for Small and Medium Businesses</p>
-                    <div><strong>$</strong><span>299</span><em>/mo</em></div>
-                  </div>
-                  <div class="pricing__tariff__block__btn"><a href="#schedule" rel="modal:open" class="btn btn-secondary">7-day Trial</a></div>
-                  <div class="pricing__tariff__block__mobile">
-                    <div class="pricing__tariff__block__all">
-                      <h3><a href="#">Everything in Basic and…</a></h3>
-                      <ul>
-                        <li> <i class="icon icon-check"></i>WhatsApp & Facebook Messenger Channel</li>
-                        <li> <i class="icon icon-check"></i>Feedback</li>
-                        <li> <i class="icon icon-check"></i>Pre-Defined Conversational Templates</li>
-                        <li> <i class="icon icon-check"></i>Use own SMS/Email/Payment Gateway</li>
-                        <li> <i class="icon icon-check"></i>Support : Knowledgebase/Email/ Live Chat</li>
-                        <li> <i class="icon icon-check"></i>Assisted Account Setup</li>
-                        <li> <i class="icon icon-check"></i>Priority Support</li>
-                        <li> <i class="icon icon-check"></i>Limited Customisation</li>
-                      </ul>
-                    </div>
-                  </div><a href="#" class="pricing__tariff__block__mobile-btn hidden-md hidden-sm"><span>View details</span><i class="icon icon-arrow-down"></i></a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-12">
-                <div data-wow-duration="1.5s" class="pricing__tariff__block wow flipInY">
-                  <div class="pricing__tariff__block-medal"><img src="img/medal.png" alt=""></div>
-                  <div class="pricing__tariff__block__title">
-                    <h2>Premium</h2>
-                    <p>Ideal for Mid-Market and Enterprises</p>
-                    <div><span>Custom</span></div>
-                  </div>
-                  <div class="pricing__tariff__block__details"></div>
-                  <div class="pricing__tariff__block__btn"><a href="#schedule" rel="modal:open" class="btn btn-secondary">Contact Sales</a></div>
-                  <div class="pricing__tariff__block__mobile">
-                    <div class="pricing__tariff__block__all">
-                      <h3><a href="#">Everything in Pro and…</a></h3>
-                      <ul>
-                        <li> <i class="icon icon-check"></i>WhatsApp, Facebook Messenger, APP, Alexa</li>
-                        <li> <i class="icon icon-check"></i>API for custom integration</li>
-                        <li> <i class="icon icon-check"></i>Recommendation Engine</li>
-                        <li> <i class="icon icon-check"></i>Custom Workflows</li>
-                        <li> <i class="icon icon-check"></i>Support : Knowledgebase/Email/Live Chat/Phone</li>
-                        <li> <i class="icon icon-check"></i>Personalized account setup and product training</li>
-                        <li> <i class="icon icon-check"></i>VIP Support</li>
-                        <li> <i class="icon icon-check"></i>Dedicated Customer Happiness Specialist</li>
-                        <li> <i class="icon icon-check"></i>Advanced Customisation (may incur additional cost)</li>
-                      </ul>
-                    </div>
-                  </div><a href="#" class="pricing__tariff__block__mobile-btn hidden-md hidden-sm"><span>View details</span><i class="icon icon-arrow-down"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="pricing__tariff__info">
-              <p>*Standard charges for custom integrations</p><span>Not sure which plan to choose? Please drop us a mail at <a href="mailTo:support@nhancenow.com">support@nhancenow.com</a></span>
-            </div>
+            <table>
+              <col span="5">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>
+                    <h4>Basic</h4><span>Ideal for SMB</span><a href="#">Start 7-day Free Trial</a>
+                  </th>
+                  <th><b>Most Popular Plan</b>
+                    <h4>Pro</h4><span>Ideal for SMB</span><a href="#">Start 7-day Free Trial</a>
+                  </th>
+                  <th>
+                    <h4>Advanced</h4><span>Ideal for SMB</span><a href="#">Start 7-day Free Trial</a>
+                  </th>
+                  <th>
+                    <div class="pricing__tariff__img"><img src="img/medal.png" alt=""></div>
+                    <h4>Premium</h4><span>Ideal for Mid-market & Enterprise</span><a href="#">Contact Sales</a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Setup Fee</td>
+                  <td>$100</td>
+                  <td>$250</td>
+                  <td>$500</td>
+                  <td>Custom</td>
+                </tr>
+                <tr>
+                  <td>Monthly Platform Usage Fees</td>
+                  <td>$199</td>
+                  <td>$299</td>
+                  <td>$499</td>
+                  <td>Custom</td>
+                </tr>
+                <tr>
+                  <td>No of Users</td>
+                  <td>upto 5000</td>
+                  <td>upto 10000</td>
+                  <td>upto 10000</td>
+                  <td>Custom</td>
+                </tr>
+                <tr>
+                  <td>Additional Storage per 50 GB<span>(Beyond Free Limit)</span></td>
+                  <td>$20</td>
+                  <td>$20</td>
+                  <td>$20</td>
+                  <td>Custom</td>
+                </tr>
+                <tr>
+                  <td colspan="5"><strong>WHATSAPP MESSAGING COST</strong></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Session Message Cost</td>
+                  <td><a href="#">Talk to Sales</a></td>
+                  <td><a href="#">Talk to Sales</a></td>
+                  <td><a href="#">Talk to Sales</a></td>
+                  <td><a href="#">Talk to Sales</a></td>
+                </tr>
+                <tr>
+                  <td>Notification Message Cost<span>(Standard as per WhatsApp defined fees, calculated on the basis of destination country of the message)</span><span>Varies form country to country</span></td>
+                  <td><a href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank">https://developers.facebook.com/docs/whatsapp/pricing#usd</a></td>
+                  <td><a href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank">https://developers.facebook.com/docs/whatsapp/pricing#usd</a></td>
+                  <td><a href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank">https://developers.facebook.com/docs/whatsapp/pricing#usd</a></td>
+                  <td><a href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank">https://developers.facebook.com/docs/whatsapp/pricing#usd</a></td>
+                </tr>
+              </tfoot>
+            </table><a href="#" class="btn-all-features">See all features<i class="icon icon-arrow-down"></i></a>
+            <p class="pricing__tariff__info">Not sure which plan to choose? - Low usage? Contact our sales team for starter plan.<a href="mailto:support@nhancenow.com">support@nhancenow.com</a></p>
           </div>
+          <div class="pricing__advantages">
+            <table>
+              <col span="5">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th><strong>Basic</strong></th>
+                  <th><strong>Pro</strong></th>
+                  <th><strong>Advanced</strong></th>
+                  <th><strong>Premium</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5"><b>Channels</b></td>
+                </tr>
+                <tr>
+                  <td>WhatsApp</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>FB</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>App</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>PWA</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Voice Assistants<span>(Amazon Alexa, Google Assistant, Apple Siri)</span></td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Telegram</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Service Partner / Field Force App</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Integrations</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="warning">Limited</i></td>
+                  <td><i class="warning">Limited</i></td>
+                  <td> <strong>Custom Integration</strong></td>
+                </tr>
+                <tr>
+                  <td>Standard API </td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Customization</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="warning">Limited</i></td>
+                  <td><strong>Yes</strong></td>
+                </tr>
+                <tr>
+                  <td>Reports</td>
+                  <td> <strong>Standard</strong></td>
+                  <td><strong>Standard</strong></td>
+                  <td><strong>Standard + 2 Custom Report</strong></td>
+                  <td><strong>Standard + 2 Custom Report</strong></td>
+                </tr>
+                <tr>
+                  <td>Menu Based Bot</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Campaign Manager</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>WhatsApp Notification Manager</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Languages Supported</td>
+                  <td> <strong>1</strong></td>
+                  <td><strong>1</strong></td>
+                  <td><strong>1</strong></td>
+                  <td><strong>Multiple</strong></td>
+                </tr>
+                <tr>
+                  <td>Additional Language Support</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Address Management</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Advanced Analytics</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Activity Reports</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Service Ticket Management</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Self Service Content Hosting - Videos / Documents</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Bot Designer (WhatsApp / FB Messenger)</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Bot Configuration Manager</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Recomendation & Workflow</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Loyalty & Reward </td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Google Location Services with Contact number</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Events</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Rule based Alerts & Reminders </td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Notes</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Hierarchy Management</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>NLP</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Advanced NLP</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Custom API Integration & Support</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Dedicated Hosting</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Dedicated Account Manager</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Sandbox Environment</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Customized Dashboard</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Data Backup</td>
+                  <td> <strong>1 Month</strong></td>
+                  <td><strong>3 Month</strong></td>
+                  <td><strong>12 Month</strong></td>
+                  <td><strong>36 Month</strong></td>
+                </tr>
+                <tr>
+                  <td>Audit Logs</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>IP Whitelisting</td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td>S3 - Storage </td>
+                  <td> <strong>Upto 100 GB</strong></td>
+                  <td><strong>Upto 200 GB</strong></td>
+                  <td><strong>Upto 500 GB</strong></td>
+                  <td><strong>Upto 10,000 GB</strong></td>
+                </tr>
+                <tr>
+                  <td>Additional Storage</td>
+                  <td> <i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> <i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-close"></i></td>
+                  <td><i class="icon icon-check"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="pricing__tariff__info">For low usage contact our sales team for starter plan<a href="mailto:support@nhancenow.com">support@nhancenow.com</a></p>
           <div class="pricing__questions">
             <div class="row">
               <div class="col-12">

@@ -15,20 +15,21 @@ $icon-arrow-right: "\EA03";
 $icon-arrow_left-cicle: "\EA04";
 $icon-arrow_right-circle: "\EA05";
 $icon-check: "\EA06";
-$icon-double-arrows: "\EA07";
-$icon-download-arrow: "\EA08";
-$icon-fb: "\EA09";
-$icon-in: "\EA0A";
-$icon-link: "\EA0B";
-$icon-linkedin: "\EA0C";
-$icon-location: "\EA0D";
-$icon-mail: "\EA0E";
-$icon-play: "\EA0F";
-$icon-right: "\EA10";
-$icon-site: "\EA11";
-$icon-star: "\EA12";
-$icon-twitter: "\EA13";
-$icon-user: "\EA14";
+$icon-close: "\EA07";
+$icon-double-arrows: "\EA08";
+$icon-download-arrow: "\EA09";
+$icon-fb: "\EA0A";
+$icon-in: "\EA0B";
+$icon-link: "\EA0C";
+$icon-linkedin: "\EA0D";
+$icon-location: "\EA0E";
+$icon-mail: "\EA0F";
+$icon-play: "\EA10";
+$icon-right: "\EA11";
+$icon-site: "\EA12";
+$icon-star: "\EA13";
+$icon-twitter: "\EA14";
+$icon-user: "\EA15";
 
 
 %icon {
@@ -53,6 +54,7 @@ $icon-user: "\EA14";
 .icon-arrow_left-cicle:before { content: $icon-arrow_left-cicle; }
 .icon-arrow_right-circle:before { content: $icon-arrow_right-circle; }
 .icon-check:before { content: $icon-check; }
+.icon-close:before { content: $icon-close; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
 .icon-download-arrow:before { content: $icon-download-arrow; }
 .icon-fb:before { content: $icon-fb; }

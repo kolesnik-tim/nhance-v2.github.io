@@ -14,150 +14,551 @@ block content
         strong Select Currency
         ul
           li(data-one="199" data-two="299").active $USD
-          li(data-one="349" data-two="529") A$ AUD
-          li(data-one="175" data-two="249") £ GBP
           li(data-one="15000" data-two="22000") ₹ INR
     .container
       .pricing__tariff
-        .row
-          .col-lg-4.col-12
-            .pricing__tariff__block.wow.flipInY(data-wow-duration='1.5s')
-              .pricing__tariff__block__title
-                h2 Basic
-                p Ideal for Small and Medium Businesses
-                div
-                  strong $
-                  span 199
-                  em /mo
-              .pricing__tariff__block__btn
-                a(href="#schedule" rel="modal:open").btn.btn-secondary 7-day Trial
-              .pricing__tariff__block__mobile
-                .pricing__tariff__block__all
-                  h3
-                    a(href='#')
-                  ul
-                    li 
-                      i.icon.icon-check
-                      | APP/PWA/FB/WhatsApp Channel
-                    li 
-                      i.icon.icon-check
-                      div All Basic Features 
-                        span (Reports, Product Onboarding, Product Registration, Menu config etc)
-                    li 
-                      i.icon.icon-check
-                      div Free Integration with Popular Business Tools 
-                        span (like Freshdesk, Zendesk, Live Chat tools, Shopify,Tally)
-                    li 
-                      i.icon.icon-check
-                      | Smart Notification & Offers
-                    li 
-                      i.icon.icon-check
-                      | Standard Reports
-                    li 
-                      i.icon.icon-check
-                      | Support : Knowledgebase/Email
-                    li
-                      i.icon.icon-check
-                      | No Customisation
-              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
-                span View details
-                i.icon.icon-arrow-down
-          .col-lg-4.col-12
-            .pricing__tariff__block.pricing__tariff__block-secondary.wow.flipInY(data-wow-duration='1.5s')
-              .pricing__tariff__block__popular
-                p premium the most popular plan
-              .pricing__tariff__block__title
-                h2 Pro
-                p Ideal for Small and Medium Businesses
-                div
-                  strong $
-                  span 299
-                  em /mo
-              .pricing__tariff__block__btn
-                a(href="#schedule" rel="modal:open").btn.btn-secondary 7-day Trial
-              .pricing__tariff__block__mobile
-                .pricing__tariff__block__all
-                  h3
-                    a(href='#') Everything in Basic and…
-                  ul
-                    li 
-                      i.icon.icon-check
-                      | WhatsApp & Facebook Messenger Channel
-                    li 
-                      i.icon.icon-check
-                      | Feedback
-                    li 
-                      i.icon.icon-check
-                      | Pre-Defined Conversational Templates
-                    li 
-                      i.icon.icon-check
-                      | Use own SMS/Email/Payment Gateway
-                    li 
-                      i.icon.icon-check
-                      | Support : Knowledgebase/Email/ Live Chat
-                    li 
-                      i.icon.icon-check
-                      | Assisted Account Setup
-                    li 
-                      i.icon.icon-check
-                      | Priority Support
-                    li 
-                      i.icon.icon-check
-                      | Limited Customisation
-              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
-                span View details
-                i.icon.icon-arrow-down
-          .col-lg-4.col-12
-            .pricing__tariff__block.wow.flipInY(data-wow-duration='1.5s')
-              .pricing__tariff__block-medal
-                img(src="img/medal.png", alt="")
-              .pricing__tariff__block__title
-                h2 Premium
-                p Ideal for Mid-Market and Enterprises
-                div
-                  span Custom
-              .pricing__tariff__block__details
-              .pricing__tariff__block__btn
-                a(href="#schedule" rel="modal:open").btn.btn-secondary Contact Sales
-              .pricing__tariff__block__mobile
-                .pricing__tariff__block__all
-                  h3
-                    a(href='#') Everything in Pro and…
-                  ul
-                    li 
-                      i.icon.icon-check
-                      | WhatsApp, Facebook Messenger, APP, Alexa
-                    li 
-                      i.icon.icon-check
-                      | API for custom integration
-                    li 
-                      i.icon.icon-check
-                      | Recommendation Engine
-                    li 
-                      i.icon.icon-check
-                      | Custom Workflows
-                    li 
-                      i.icon.icon-check
-                      | Support : Knowledgebase/Email/Live Chat/Phone
-                    li 
-                      i.icon.icon-check
-                      | Personalized account setup and product training
-                    li 
-                      i.icon.icon-check
-                      | VIP Support
-                    li 
-                      i.icon.icon-check
-                      | Dedicated Customer Happiness Specialist
-                    li 
-                      i.icon.icon-check
-                      | Advanced Customisation (may incur additional cost)
-              a.pricing__tariff__block__mobile-btn.hidden-md.hidden-sm(href='#')
-                span View details
-                i.icon.icon-arrow-down
-        .pricing__tariff__info
-          p *Standard charges for custom integrations
-          span Not sure which plan to choose? Please drop us a mail at 
-            a(href="mailTo:support@nhancenow.com") support@nhancenow.com
+        table
+          col(span="5")
+          thead
+            tr
+              th
+              th
+                h4 Basic
+                span Ideal for SMB
+                a(href="#") Start 7-day Free Trial
+              th
+                b Most Popular Plan
+                h4 Pro
+                span Ideal for SMB
+                a(href="#") Start 7-day Free Trial
+              th
+                h4 Advanced
+                span Ideal for SMB
+                a(href="#") Start 7-day Free Trial
+              th
+                .pricing__tariff__img
+                  img(src="img/medal.png", alt="")
+                h4 Premium
+                span Ideal for Mid-market & Enterprise
+                a(href="#") Contact Sales
+          tbody
+            tr
+              td Setup Fee
+              td $100
+              td $250
+              td $500
+              td Custom
+            tr
+              td Monthly Platform Usage Fees
+              td $199
+              td $299
+              td $499
+              td Custom
+            tr
+              td No of Users
+              td upto 5000
+              td upto 10000
+              td upto 10000
+              td Custom
+            tr
+              td Additional Storage per 50 GB
+                span (Beyond Free Limit)
+              td $20
+              td $20
+              td $20
+              td Custom
+            tr
+              td(colspan="5")
+                strong WHATSAPP MESSAGING COST
+          tfoot
+            tr
+              td Session Message Cost
+              td
+                a(href="#") Talk to Sales
+              td
+                a(href="#") Talk to Sales
+              td
+                a(href="#") Talk to Sales
+              td
+                a(href="#") Talk to Sales
+            tr
+              td Notification Message Cost
+                span (Standard as per WhatsApp defined fees, calculated on the basis of destination country of the message)
+                span Varies form country to country
+              td
+                a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+              td
+                a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+              td
+                a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+              td
+                a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+
+        a(href="#").btn-all-features See all features
+          i.icon.icon-arrow-down
+        p.pricing__tariff__info Not sure which plan to choose? - Low usage? Contact our sales team for starter plan.
+          a(href="mailto:support@nhancenow.com") support@nhancenow.com
+
+
+
+
+
+      .pricing__advantages
+        table
+          col(span="5")
+          thead
+            tr
+              th
+              th
+                strong Basic
+              th
+                strong Pro
+              th
+                strong Advanced
+              th
+                strong Premium
+          tbody
+            tr
+              td(colspan="5")
+                b Channels
+            tr
+              td WhatsApp
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td FB
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td App
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td PWA
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Voice Assistants
+                span (Amazon Alexa, Google Assistant, Apple Siri)
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Telegram
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Service Partner / Field Force App
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Integrations
+              td 
+                i.icon.icon-close
+              td
+                i.warning Limited
+              td
+                i.warning Limited
+              td 
+                strong Custom Integration
+            tr
+              td Standard API 
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Customization
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.warning Limited
+              td
+                strong Yes
+            tr
+              td Reports
+              td 
+                strong Standard
+              td
+                strong Standard
+              td
+                strong Standard + 2 Custom Report
+              td
+                strong Standard + 2 Custom Report
+            tr
+              td Menu Based Bot
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Campaign Manager
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td WhatsApp Notification Manager
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Languages Supported
+              td 
+                strong 1
+              td
+                strong 1
+              td
+                strong 1
+              td
+                strong Multiple
+            tr
+              td Additional Language Support
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Address Management
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Advanced Analytics
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Activity Reports
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Service Ticket Management
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Self Service Content Hosting - Videos / Documents
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Bot Designer (WhatsApp / FB Messenger)
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Bot Configuration Manager
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Recomendation & Workflow
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Loyalty & Reward 
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Google Location Services with Contact number
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Events
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Rule based Alerts & Reminders 
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Notes
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Hierarchy Management
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td NLP
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Advanced NLP
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Custom API Integration & Support
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Dedicated Hosting
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Dedicated Account Manager
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td Sandbox Environment
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Customized Dashboard
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+            tr
+              td Data Backup
+              td 
+                strong 1 Month
+              td
+                strong 3 Month
+              td
+                strong 12 Month
+              td
+                strong 36 Month
+            tr
+              td Audit Logs
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td IP Whitelisting
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td S3 - Storage 
+              td 
+                strong Upto 100 GB
+              td
+                strong Upto 200 GB
+              td
+                strong Upto 500 GB
+              td
+                strong Upto 10,000 GB
+            tr
+              td Additional Storage
+              td 
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+              td
+                i.icon.icon-check
+            tr
+              td 
+              td 
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-close
+              td
+                i.icon.icon-check
+      p.pricing__tariff__info For low usage contact our sales team for starter plan
+        a(href="mailto:support@nhancenow.com") support@nhancenow.com
+
+
+
+
+
       .pricing__questions
         .row
           .col-12
