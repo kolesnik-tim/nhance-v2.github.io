@@ -57,6 +57,15 @@
       color: #131c2e
       line-height: 1
       text-align: center
+      span.usd, span.inr
+        font-size: 16px
+        font-weight: 600
+        color: #131c2e
+        line-height: 1
+        text-align: center
+        display: inline
+      span.inr
+        display: none
       +r(1200)
         padding: 25px 10px
       &:first-child
@@ -192,14 +201,14 @@
       top: 0
       width: 58px
       height: 58px
-      padding: 10px
+      padding: 8px
       text-align: left
       +r(1200)
         width: 40px
         height: 40px
         padding: 7px
       img
-        width: 22px
+        width: 17px
         position: relative
         z-index: 2
         +r(1200)
@@ -207,18 +216,13 @@
       &::before
         content: ''
         position: absolute
-        left: -58px
-        top: -58px
+        left: -40px
+        top: -40px
         display: block
-        border: 58px solid transparent
-        border-right: 58px solid #131c2e
+        border: 40px solid transparent
+        border-right: 40px solid #131c2e
         transform: rotate(45deg)
         z-index: 1
-        +r(1200)
-          border: 40px solid transparent
-          border-right: 40px solid #131c2e
-          left: -40px
-          top: -40px
     
   &__advantages
     border-radius: 15px

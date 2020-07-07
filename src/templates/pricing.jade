@@ -13,8 +13,8 @@ block content
       .pricing__select
         strong Select Currency
         ul
-          li(data-one="199" data-two="299").active $USD
-          li(data-one="15000" data-two="22000") ₹ INR
+          li(data="usd").active $USD
+          li(data="inr") ₹ INR
     .container
       .pricing__tariff
         table
@@ -44,28 +44,52 @@ block content
           tbody
             tr
               td Setup Fee
-              td $100
-              td $250
-              td $500
+              td 
+                span.usd $100
+                span.inr ₹5000
+              td 
+                span.usd $250
+                span.inr ₹10000
+              td 
+                span.usd $500
+                span.inr ₹10000
               td Custom
             tr
               td Monthly Platform Usage Fees
-              td $199
-              td $299
-              td $499
+              td 
+                span.usd $199
+                span.inr ₹15000
+              td 
+                span.usd $299
+                span.inr ₹25000
+              td 
+                span.usd $499
+                span.inr ₹40000
               td Custom
             tr
               td No of Users
-              td upto 5000
-              td upto 10000
-              td upto 10000
+              td 
+                span.usd upto 5000
+                span.inr upto 5000
+              td 
+                span.usd upto 10000
+                span.inr upto 10000
+              td 
+                span.usd upto 25000
+                span.inr upto 25000
               td Custom
             tr
               td Additional Storage per 50 GB
                 span (Beyond Free Limit)
-              td $20
-              td $20
-              td $20
+              td 
+                span.usd $20
+                span.inr ₹1000
+              td 
+                span.usd $20
+                span.inr ₹1000
+              td 
+                span.usd $20
+                span.inr ₹1000
               td Custom
             tr
               td(colspan="5")
@@ -74,13 +98,13 @@ block content
             tr
               td Session Message Cost
               td
-                a(href="#") Talk to Sales
+                a(href="contact.html") Talk to Sales
               td
-                a(href="#") Talk to Sales
+                a(href="contact.html") Talk to Sales
               td
-                a(href="#") Talk to Sales
+                a(href="contact.html") Talk to Sales
               td
-                a(href="#") Talk to Sales
+                a(href="contact.html") Talk to Sales
             tr
               td Notification Message Cost
                 span (Standard as per WhatsApp defined fees, calculated on the basis of destination country of the message)
@@ -565,10 +589,10 @@ block content
             h2 Frequently asked questions
           .col-md-6.col-12
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What type of support is included with this Service?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div To assist in your ongoing success, NHANCE NOW provides the following support services to our customers:
                 ul
                   li Flexible support options – email, phone and instant messaging chat (WhatsApp).
@@ -576,80 +600,80 @@ block content
                   li A skilled, well trained team of Tier 1 and 2 support professionals.
                   li The ability to submit an unlimited number of support tickets, at no additional cost.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What contract options are available?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div Our goal is to provide convenient, flexible contract options to address the widest range of budget needs. Here’s how it works:
                 ul
                   li The service is made available to you on a monthly pay per use basis through an effective subscription mechanism, with transparent pricing. (We also have an annual plan which gives you a delicious 20% discount.)
                   li No large upfront costs associated with getting started with the service. 
                   li We only charge a reasonable integration fee if there are some custom integrations to be done
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What if I want to cancel my membership?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
-                div Any subscription canceled in the first 5 days is fully refundable. After 5 days, cancellation policies will apply.
+              .pricing__questions__block__text(style="display:none")
+                div Any subscription canceled in the first 7-Days is fully refundable. After 7-Days, cancellation policies will apply.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | When does the subscription begin?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div Your subscription begins as soon as you provide your credit card details for prepaid plans and as soon as you request for a subscription activation in the premium plans.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | How do I renew my subscription?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div Your subscription is automatically renewed at the end of the subscription period. 
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | Is the price the same throughout the subscription period?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div Yes, the price remains fixed throughout the subscription period. Prices may change, but only on renewal, and we will always inform you beforehand. 
           .col-md-6.col-12
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What is your cancellation policy?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div
                   | You can cancel your subscription at any time by emailing our Support team. Canceling your subscription will stop the auto-renewal of your subscription from the next billing cycle. Your existing subscription that you’ve already paid for will remain active till the end of the current billing cycle. We do not delete your data for a period of 2 months (60 days) from the time you cancel your subscription. You can renew anytime within this period to gain complete access to your data.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What payment methods do you accept?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div
                   | We accept payments by credit card (Visa, Mastercard, Discover and American Express) and PayPal. All payments are processed through our payment gateway partner ZOHO. We also accept Wire Transfers and Online bank transfers.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | How does the Free Trial work?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div
-                  | In a free-trial, all the features are made available to you for a period of 5 days. You can choose to purchase a subscription any time during those 5 days or at the end of the trial period.
+                  | In a free-trial, all the features are made available to you for a period of 7-Days. You can choose to purchase a subscription any time during those 7-Days or at the end of the trial period.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What happens once the Trial period has expired?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div
                   | At the end of the free trial, you can choose to purchase a subscription. Also, please note that we will not delete any data from your account for a period of 2 months (60 days) from the end of the trial. In this time period, you can renew your subscription at any time.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | Do you charge for integrations?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div
                   | We provide APIs which can be consumed by businesses to link their IT systems and business applications. However where custom or complex integrations have to be undertaken we do charge an hourly fee.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
-              strong.active
+              strong
                 | What happens to my files if I cancel?
                 i.icon.icon-arrow-down
-              .pricing__questions__block__text
+              .pricing__questions__block__text(style="display:none")
                 div If you decide to cancel your paid subscription, you will have limited access to your NHANCE NOW application, and your account will be converted to a NHANCE NOW free membership. <br>Your files will remain intact but you may have limited access to certain files. 
                 div With the free plan, you can log in to your NHANCE NOW Web app and perform basic functions. 
   block footer
