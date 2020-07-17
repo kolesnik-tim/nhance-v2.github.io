@@ -1,4 +1,4 @@
-// import Swiper from 'swiper';
+import Swiper from 'swiper';
 
 var swiper2 = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
