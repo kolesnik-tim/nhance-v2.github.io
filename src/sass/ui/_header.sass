@@ -174,7 +174,7 @@
         +r(1200)
           font-size: 14px
       a
-        padding-right: 30px
+        padding-right: 26px
         +r(1250)
           padding-right: 15px
         i
@@ -268,13 +268,18 @@
     align-items: center
     height: 100%
     +r(1040)
-      width: 300px
-      margin-left: -50px
+      position: relative
+      left: -50px
     +r(991)
       width: auto
       margin-left: 0
-    +r(1040)
-      padding-right: 60px
+    &__create
+      margin-right: 30px
+      +r(1220)
+        margin-right: 15px
+      i
+        font-size: 8px !important
+        font-weight: 900
     a
       font-size: 14px
       font-weight: 600
@@ -307,6 +312,8 @@
       margin-right: 30px
       position: relative
       cursor: pointer
+      +r(1200)
+        margin-right: 15px
       &:hover .header__btn__login
         opacity: 1
         visibility: visible
