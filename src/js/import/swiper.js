@@ -40,6 +40,27 @@ var swiper3 = new Swiper('.swiper-home', {
 
 
 
+//home
+var swiperBots = new Swiper('.swiper-bots', {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  // loop: true,
+  navigation: {
+    nextEl: '.swiper-bots-next',
+    prevEl: '.swiper-bots-prev',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    }
+  }
+});
+
+
+
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 'auto',
