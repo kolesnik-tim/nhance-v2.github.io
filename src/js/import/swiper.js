@@ -50,8 +50,8 @@ var swiperBots = new Swiper('.swiper-bots', {
     prevEl: '.swiper-bots-prev',
   },
   breakpoints: {
-    992: {
-      slidesPerView: 3,
+    1200: {
+      slidesPerView: 4,
     },
     767: {
       slidesPerView: 2,
