@@ -122,6 +122,98 @@
 
 
 
+
+  &__channels
+    background: #f4f4f4
+    padding: 80px 0 0
+    h2
+      font-size: 25px
+      font-weight: bold
+      line-height: 1.2
+      color: #131725
+      text-align: center
+      margin-bottom: 65px
+    &__decor
+      position: relative
+      display: block
+      margin-bottom: 10px
+      &::before
+        content: ''
+        position: absolute
+        left: 20px
+        top: 50%
+        height: 1px
+        width: calc(100% - 40px)
+        background: #111111
+      b
+        font-size: 18px
+        font-weight: bold
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.67
+        letter-spacing: normal
+        text-align: left
+        color: #ff0057
+        background: #f4f4f4
+        display: inline-block
+        transform: translate(-50%)
+        left: 50%
+        position: relative
+        padding: 0 20px
+        z-index: 2
+
+    &__block
+      +center-column
+      margin-bottom: 45px
+      &__img
+        width: 240px
+        border-radius: 20px
+        border: solid 1px rgba(189, 189, 189, 0.7)
+        background-color: #e2e2e2
+        overflow: hidden
+        height: 505px
+        margin-bottom: 35px
+        img
+          width: 100%
+      b
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        color: #111111
+        display: block
+        margin-bottom: 15px
+      strong
+        font-size: 18px
+        font-weight: bold
+        text-align: center
+        color: #111111
+        max-width: 135px
+        width: 100%
+        display: block
+        margin-bottom: 25px
+      a
+        font-size: 14px
+        font-weight: bold
+        color: #111111
+        display: flex
+        align-items: flex-start
+        i
+          color: #00fefa
+          font-size: 18px
+          width: 15px
+          height: 15px
+          background: #000
+          +center
+          border-radius: 50%
+          margin-right: 10px
+
+
+
+
+
+
+
+
   &__feature
     padding: 120px 0 0
     +r(767)
