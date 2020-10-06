@@ -1,0 +1,355 @@
+---
+title: business-bot
+"description": ""
+bodyClass: webinar--secondary
+---
+extends layouts/_layout
+block content
+
+  .business-bot
+    block header
+      header.header-landing
+        .container
+          .header__content
+            a(href="index.html").header__logo
+              img(src="img/nhance-logo.svg")
+    //END header
+    .whatsapp__intro
+      .container
+        .row
+          .col-lg-7.col-md-8
+            .whatsapp__intro__title
+              h1 Automate Your Business With WhatsApp Bot
+              p tGet the digital automation platform that provides everythingyou need to automate lead generation, commerce, support and customer engagement over Whatsapp.
+              a(href="#schedule" rel="modal:open") Create Yours NOW
+                i.icon.icon-arrow-right
+          .col-lg-5.col-md-4
+            .whatsapp__intro__img
+              img(src="img/business-bot/whats-app-screen.png", alt="")
+   
+    .midmarket__curated
+      .container
+        h2 Why Whatsapp is Popular Amongst Customers
+        .midmarket__curated__row
+          .midmarket__curated__block.midmarket__curated__block--1
+            .midmarket__curated__img
+              img(src="img/midmarket/hub.png", alt="")
+            p Instant gratification. Fastest channel for resolution of queries.
+          .midmarket__curated__block.midmarket__curated__block--2
+            .midmarket__curated__img
+              img(src="img/midmarket/commerce.png", alt="")
+            p Simple conversations allowing them to chat with businesses like they do with friends and family.
+          .midmarket__curated__block.midmarket__curated__block--3
+            .midmarket__curated__img
+              img(src="img/midmarket/support.png", alt="")
+            p Reach out to business instantly without the hassles of writing mails or dialing IVRs.
+
+    .business-bot__whatsapp
+      .container
+        h2 Why is WhatsApp Popular Amongst Businesses
+        .row
+          .col-lg-4.col-md-6
+            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-1.jpg');")
+              p Zero friction adoption. People already spend upto 3 hours a day on WhatsApp.
+          .col-lg-4.col-md-6
+            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-2.jpg');")
+              p Almost 50% cheaper to handle support queries than maintaining  expensive call centers.
+          .col-lg-4.col-md-6
+            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-3.jpg');")
+              p Consistent high quality experience for every customer at scale.
+ 
+
+    .business-bot__api
+      .container
+        h2 WhatsApp Business API Use Cases
+        .row
+          .col-lg-4
+            .business-bot__api__block
+              span 01
+              strong Customer Support
+              p Handle queries, live chat and digital assets for self service.
+          .col-lg-4
+            .business-bot__api__block
+              span 02
+              strong Sales
+              p Promote products, book enquiries and answers FAQs.
+          .col-lg-4
+            .business-bot__api__block
+              span 03
+              strong Commerce
+              p Purchases, order tracking, cancellations and order management.
+          .col-lg-4
+            .business-bot__api__block
+              span 04
+              strong Data Collection
+              p KYC, Surveys, Feedback.
+          .col-lg-4
+            .business-bot__api__block
+              span 05
+              strong Booking & Scheduling
+              p Services, appointments, interviews.
+          .col-lg-4
+            .business-bot__api__block
+              span 06
+              strong Corporate
+              p HR, Hiring, Outreach & Corporate profile.
+
+
+
+
+    .home__bots-whatsapp
+      .container
+        .home__bots-whatsapp__title
+          h2 Meet WhatsApp Business Bots
+        .swiper-container.swiper-bots
+          .swiper-wrapper
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-1.png", alt="")
+                .swiper-bots__info
+                  b Personal Electronics / Home Appliances - Service & Support Bot
+                  p Automate customer service, sell add-on products, trigger smart notifications and help customers discover great deals.
+                strong For Consumer Electronics | Furnitures | Other Consumer Products
+                .swiper-bots__btn
+                  a(href="#")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-2.png", alt="")
+                .swiper-bots__info
+                  b General Insurance Bot
+                  p Provide support, service, claims processing and sell new policies without human intervention.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  a(href="#")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-3.png", alt="")
+                .swiper-bots__info
+                  b Banking Bot
+                  p Provide all banking services from checking balance, transferring money and various other banking services through simple messaging.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  a(href="#")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-4.png", alt="")
+                .swiper-bots__info
+                  b Order and Delivery Bot - 1
+                  p Let customers place orders, make payments and check order status with the ease of messaging.
+                strong For Grocery | Retail Products | Healthcare Products | Food & Beverages
+                .swiper-bots__btn
+                  a(href="#")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+          .swiper-bots-next.swiper-button-next
+            i.icon.icon-arrow_left-cicle
+          .swiper-bots-prev.swiper-button-prev
+            i.icon.icon-arrow_right-circle
+
+
+
+    .business-bot__benefist
+      .container
+        h2 How Can We Help?
+        .row
+          .col-lg-4
+            .business-bot__benefist__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              strong Setup your WhatsApp Business Account
+          .col-lg-4
+            .business-bot__benefist__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              strong Provide you with a Bot platform
+          .col-lg-4
+            .business-bot__benefist__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              strong Implement the best Bot practices for max ROI
+
+
+
+    .business-bot__help
+      .container
+        h2 How Can We Help?
+        .row
+          .col-lg-4
+            .business-bot__help__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              h4 Setup your WhatsApp Business Account
+          .col-lg-4
+            .business-bot__help__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              h4 Provide you with a Bot platform
+          .col-lg-4
+            .business-bot__help__block
+              img(src="https://via.placeholder.com/76x75.png", alt="")
+              h4 Implement the best Bot practices for max ROI
+      
+
+    .pricing
+      .pricing__title
+        .container
+          h1 Pricing
+        .pricing__select
+          strong Select Currency
+          ul
+            li(data="usd").active $USD
+            li(data="inr") ₹ INR
+      .container
+        .pricing__tariff
+          table
+            col(span="5")
+            thead
+              tr
+                th
+                th
+                  h4 Basic
+                  span Ideal for SMB
+                  a(href="#schedule" rel="modal:open") Start 7-day Free Trial
+                th
+                  b Most Popular Plan
+                  h4 Pro
+                  span Ideal for SMB
+                  a(href="#schedule" rel="modal:open") Start 7-day Free Trial
+                th
+                  h4 Advanced
+                  span Ideal for SMB
+                  a(href="#schedule" rel="modal:open") Start 7-day Free Trial
+                th
+                  .pricing__tariff__img
+                    img(src="img/medal.png", alt="")
+                  h4 Premium
+                  span Ideal for Mid-market & Enterprise
+                  a(href="#schedule" rel="modal:open") Contact Sales
+            tbody
+              tr
+                td Setup Fee
+                td 
+                  span.usd $100
+                  span.inr ₹5000
+                td 
+                  span.usd $250
+                  span.inr ₹10000
+                td 
+                  span.usd $500
+                  span.inr ₹10000
+                td Custom
+              tr
+                td Monthly Platform Usage Fees
+                td 
+                  span.usd $199
+                  span.inr ₹15000
+                td 
+                  span.usd $299
+                  span.inr ₹25000
+                td 
+                  span.usd $499
+                  span.inr ₹40000
+                td Custom
+              tr
+                td No of Users
+                td 
+                  span.usd upto 5000
+                  span.inr upto 5000
+                td 
+                  span.usd upto 10000
+                  span.inr upto 10000
+                td 
+                  span.usd upto 20000
+                  span.inr upto 20000
+                td Custom
+              tr
+                td Additional Storage per 50 GB
+                  span (Beyond Free Limit)
+                td 
+                  span.usd $20
+                  span.inr ₹1000
+                td 
+                  span.usd $20
+                  span.inr ₹1000
+                td 
+                  span.usd $20
+                  span.inr ₹1000
+                td Custom
+              tr
+                td(colspan="5")
+                  strong WHATSAPP MESSAGING COST
+            tfoot
+              tr
+                td Session Message Cost
+                td
+                  a(href="contact.html") Talk to Sales
+                td
+                  a(href="contact.html") Talk to Sales
+                td
+                  a(href="contact.html") Talk to Sales
+                td
+                  a(href="contact.html") Talk to Sales
+              tr
+                td Notification Message Cost
+                  span (Standard as per WhatsApp defined fees, calculated on the basis of destination country of the message)
+                  span Varies form country to country
+                td
+                  a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+                td
+                  a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+                td
+                  a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+                td
+                  a(href="https://developers.facebook.com/docs/whatsapp/pricing#usd" target="_blank") https://developers.facebook.com/docs/whatsapp/pricing#usd
+
+        a(href="#pay" rel="modal:open").btn-all-features See all features
+          i.icon.icon-arrow-right
+        p.pricing__tariff__info Not sure which plan to choose? Need a Starter plan? Contact our sales team for more.
+          a(href="mailto:sales@nhancenow.com") sales@nhancenow.com
+
+
+  
+
+    .whatsapp__baner
+      .container
+        .whatsapp__title
+          h2 Activate your first Business Bot in minutes
+          p Design your first bot on the next few screens then sample it on your own WhatsApp/FB Messenger account
+        a(href="https://forms.gle/LVCDFJn4YrbH7H188" target="_blank") START NOW
+          i.icon.icon-arrow-right
+
+
+    block footer
+      footer.whatsapp__footer
+        .container  
+          .whatsapp__footer__row
+            .footer__logo.whatsapp__footer__block
+              img(src="img/n-icon.svg")
+              p Inspirion Digital Solutions Pvt Ltd 
+                span (Parent Company of NHANCE NOW)
+            .footer__social.whatsapp__footer__block
+              a(href="https://twitter.com/nhancenow?lang=cs" target="_blank")
+                i.icon.icon-twitter
+              a(href="https://www.facebook.com/nhancenow/" target="_blank")
+                i.icon.icon-fb
+              a(href="https://in.linkedin.com/company/nhancenow" target="_blank")
+                i.icon.icon-in
+            .footer__copyright.whatsapp__footer__block
+              p Copyright ©2020 Inspirion Digital Solutions pvt ltd. All rights reserved.
+            .footer__policy.whatsapp__footer__block
+              a(target="_blank" href="policy.html") Privacy Policy 
+              span |
+              a(target="_blank" href="service.html") Terms of Use
