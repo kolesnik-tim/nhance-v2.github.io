@@ -27,53 +27,19 @@
       span:before, span:after
         background: red
   &__pay.modal
-    max-width: 665px
+    max-width: 1220px
     width: 100%
     border-radius: 10px
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.19)
     background-color: $white
     padding: 0
     overflow: hidden
-    h2
-      padding: 30px
-      +center-y
-      font-size: 25px
-      font-weight: 300
-      color: #131c2e
-      +r(767)
-        font-size: 20px
-        padding-right: 50px
-      img
-        margin-right: 15px
-    table
-      th
-        font-size: 12px
-        font-weight: bold
-        text-align: center
-        color: #131c2e
-        text-transform: uppercase
-        padding: 20px 10px
-        width: 33%
-        +r(550)
-          font-size: 10px
-      td
-        font-size: 14px
-        font-weight: normal
-        color: #131c2e
-        padding: 20px 30px
-        line-height: 1.3
-        border: 1px solid gray
-        width: 33%
-        +r(550)
-          font-size: 12px
-          padding: 20px 10px 
-        b, a
-          color: #131c2e
-          font-weight: 600
-        a
-          color: red
-          &:hover
-            color: #131c2e
+    .pricing__advantages
+      margin-top: 0
+    .pop-up__close
+      z-index: 2
+      top: 10px
+      background: #fff
   &__schedule
     padding: 0 !important
     width: 80%

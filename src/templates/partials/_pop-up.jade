@@ -1,45 +1,456 @@
 //BEGIN pop-up
-.pop-up__pay.pop-up.modal#pay
+.pop-up__pay.pop-up.modal#pay.pricing
   a(href="#" rel="modal:close").pop-up__close
     span
-  h2
-    img(src="img/icon/fee-icon.png" srcset="img/icon/fee-icon@2x.png 2x, img/icon/fee-icon@3x.png 3x")
-    | Platform Usage Fee Slabs
-  table
-    tr
-      th number of Experience Cards
-      th number of Experience Cards
-      th usage fee per month
-    tr
-      td 0
-      td 5,000
-      td 
-        b $99
-    tr
-      td 5,001
-      td 10,000
-      td 
-        b $199
-    tr
-      td 10,001
-      td 20,000
-      td 
-        b $349
-    tr
-      td 20.001
-      td 40,000
-      td 
-        b $499
-    tr
-      td 40,001
-      td 100,000
-      td 
-        b $999
-    tr
-      td Beyond 100,000
-      td
-      td 
-        a(href="contacts.html") Contact Sales
+  .pricing__advantages
+    table
+      col(span="5")
+      thead
+        tr
+          th
+          th
+            strong Basic
+          th
+            strong Pro
+          th
+            strong Advanced
+          th
+            strong Premium
+      tbody
+        tr
+          td(colspan="5")
+            b Channels
+        tr
+          td WhatsApp
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td FB
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td App
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td PWA
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Voice Assistants
+            span (Amazon Alexa, Google Assistant, Apple Siri)
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Telegram
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Service Partner / Field Force App
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Integrations
+          td 
+            i.icon.icon-close
+          td
+            i.warning Limited
+          td
+            i.warning Limited
+          td 
+            strong Custom Integration
+        tr
+          td Standard API 
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Customization
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.warning Limited
+          td
+            strong Yes
+        tr
+          td Reports
+          td 
+            strong Standard
+          td
+            strong Standard
+          td
+            strong Standard + 2 Custom Report
+          td
+            strong Standard + 2 Custom Report
+        tr
+          td Menu Based Bot
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Campaign Manager
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td WhatsApp Notification Manager
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Languages Supported
+          td 
+            strong 1
+          td
+            strong 1
+          td
+            strong 1
+          td
+            strong Multiple
+        tr
+          td Additional Language Support
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Address Management
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Advanced Analytics
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Activity Reports
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Service Ticket Management
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Self Service Content Hosting - Videos / Documents
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Bot Designer (WhatsApp / FB Messenger)
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Bot Configuration Manager
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Recomendation & Workflow
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Loyalty & Reward 
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Google Location Services with Contact number
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Events
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Rule based Alerts & Reminders 
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Notes
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Hierarchy Management
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td NLP
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Advanced NLP
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Custom API Integration & Support
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Dedicated Hosting
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Dedicated Account Manager
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td Sandbox Environment
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Customized Dashboard
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+        tr
+          td Data Backup
+          td 
+            strong 1 Month
+          td
+            strong 3 Month
+          td
+            strong 12 Month
+          td
+            strong 36 Month
+        tr
+          td Audit Logs
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td IP Whitelisting
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td S3 - Storage 
+          td 
+            strong Upto 100 GB
+          td
+            strong Upto 200 GB
+          td
+            strong Upto 500 GB
+          td
+            strong Upto 10,000 GB
+        tr
+          td Additional Storage
+          td 
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+          td
+            i.icon.icon-check
+        tr
+          td 
+          td 
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-close
+          td
+            i.icon.icon-check
 
 
 .pop-up__schedule.pop-up.modal#schedule
