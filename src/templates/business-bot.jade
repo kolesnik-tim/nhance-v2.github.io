@@ -14,18 +14,44 @@ block content
             a(href="index.html").header__logo
               img(src="img/nhance-logo.svg")
     //END header
-    .whatsapp__intro
+    .whatsapp__intro.hotel__intro
       .container
         .row
-          .col-lg-7.col-md-8
+          .col-lg-7
             .whatsapp__intro__title
               h1 Automate Your Business With WhatsApp Bot
               p tGet the digital automation platform that provides everythingyou need to automate lead generation, commerce, support and customer engagement over Whatsapp.
               a(href="#schedule" rel="modal:open") Create Yours NOW
                 i.icon.icon-arrow-right
-          .col-lg-5.col-md-4
-            .whatsapp__intro__img
-              img(src="img/business-bot/whats-app-screen.png", alt="")
+          .col-lg-5
+            form.form#mc-embedded-subscribe-form.validate(action='https://nhancenow.us19.list-manage.com/subscribe/post?u=b7373c443f74841bbd510d4e1&id=575c25a38c', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              h2 Schedule a free demo
+              p Have one of our CX experts reach out to you.
+              .form__input.mc-field-group
+                input(type="text" value='' name='LNAME' required)#mce-LNAME.required
+                label(for="mce-LNAME") Name
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="email" value='' name='EMAIL' required)#mce-EMAIL.required.email
+                label(for="mce-EMAIL") Email
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="text" value='' name='MMERGE5' required)#mce-MMERGE5.required
+                label(for="mce-MMERGE5") Company
+                  i.asterisk *
+              .form__input.mc-field-group
+                input(type="text" value='' name='MMERGE6' required)#mce-MMERGE6.required
+                label(for="mce-MMERGE6") Phone
+                  i.asterisk *
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_b7373c443f74841bbd510d4e1_575c25a38c', tabindex='-1', value='')
+              button(type="submit" name='subscribe')#mc-embedded-subscribe.button Request Your FREE Consultation
+              strong 
+                img(src="img/hotel/safety.png", alt="")
+                | Your information is kept safe
    
     .midmarket__curated
       .container
@@ -33,15 +59,15 @@ block content
         .midmarket__curated__row
           .midmarket__curated__block.midmarket__curated__block--1
             .midmarket__curated__img
-              img(src="img/midmarket/hub.png", alt="")
+              img(src="img/business-bot/midmarket__curated__img-1.png", alt="")
             p Instant gratification. Fastest channel for resolution of queries.
           .midmarket__curated__block.midmarket__curated__block--2
             .midmarket__curated__img
-              img(src="img/midmarket/commerce.png", alt="")
+              img(src="img/business-bot/midmarket__curated__img-2.png", alt="")
             p Simple conversations allowing them to chat with businesses like they do with friends and family.
           .midmarket__curated__block.midmarket__curated__block--3
             .midmarket__curated__img
-              img(src="img/midmarket/support.png", alt="")
+              img(src="img/business-bot/midmarket__curated__img-3.png", alt="")
             p Reach out to business instantly without the hassles of writing mails or dialing IVRs.
 
     .business-bot__whatsapp
@@ -49,13 +75,13 @@ block content
         h2 Why is WhatsApp Popular Amongst Businesses
         .row
           .col-lg-4.col-md-6
-            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-1.jpg');")
+            .business-bot__whatsapp__block(style="background-image: url('img/business-bot/business-bot__whatsapp-img-1.jpg');")
               p Zero friction adoption. People already spend upto 3 hours a day on WhatsApp.
           .col-lg-4.col-md-6
-            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-2.jpg');")
+            .business-bot__whatsapp__block(style="background-image: url('img/business-bot/business-bot__whatsapp-img-2.jpg');")
               p Almost 50% cheaper to handle support queries than maintaining  expensive call centers.
           .col-lg-4.col-md-6
-            .business-bot__whatsapp__block(style="background-image: url('img/commerce-bot/commerce-bot__whatsapp__block-img-3.jpg');")
+            .business-bot__whatsapp__block(style="background-image: url('img/business-bot/business-bot__whatsapp-img-3.jpg');")
               p Consistent high quality experience for every customer at scale.
  
 
@@ -106,13 +132,14 @@ block content
             .swiper-slide
               .swiper-bots__slide
                 .swiper-bots__img
-                  img(src="img/home/bots-whatsapp/slide-1.png", alt="")
+                  img(src="img/home/bots-whatsapp/slide-2.png", alt="")
                 .swiper-bots__info
-                  b Personal Electronics / Home Appliances - Service & Support Bot
-                  p Automate customer service, sell add-on products, trigger smart notifications and help customers discover great deals.
-                strong For Consumer Electronics | Furnitures | Other Consumer Products
+                  b Support Bot 
+                  p Provide support, service, claims processing and sell new policies without human intervention.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
                 .swiper-bots__btn
-                  a(href="#")
+                  iframe(src="https://www.youtube.com/embed/4TURWLYlJBs" style="display:none")
+                  a(href="#video-page" rel="modal:open")
                     i.icon.icon-play
                     | Watch Video
                   //- a(href="#")
@@ -122,11 +149,72 @@ block content
                 .swiper-bots__img
                   img(src="img/home/bots-whatsapp/slide-2.png", alt="")
                 .swiper-bots__info
-                  b General Insurance Bot
+                  b Commerce Bot
                   p Provide support, service, claims processing and sell new policies without human intervention.
                 strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
                 .swiper-bots__btn
-                  a(href="#")
+                  iframe(src="https://www.youtube.com/embed/7xmFtatB52I" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-2.png", alt="")
+                .swiper-bots__info
+                  b IVR Bot
+                  p Provide support, service, claims processing and sell new policies without human intervention.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/PQQGD7kZ2wE" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-2.png", alt="")
+                .swiper-bots__info
+                  b Lead Gen Bot
+                  p Provide support, service, claims processing and sell new policies without human intervention.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/s2f-egLNMho" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-1.png", alt="")
+                .swiper-bots__info
+                  b HR Bot
+                  p Automate customer service, sell add-on products, trigger smart notifications and help customers discover great deals.
+                strong For Consumer Electronics | Furnitures | Other Consumer Products
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/cPSEMtYEKoM" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-2.png", alt="")
+                .swiper-bots__info
+                  b Hospital Bot
+                  p Provide support, service, claims processing and sell new policies without human intervention.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/g4uymyA9xDk" style="display:none")
+                  a(href="#video-page" rel="modal:open")
                     i.icon.icon-play
                     | Watch Video
                   //- a(href="#")
@@ -136,11 +224,12 @@ block content
                 .swiper-bots__img
                   img(src="img/home/bots-whatsapp/slide-3.png", alt="")
                 .swiper-bots__info
-                  b Banking Bot
+                  b Auto Sales Bot
                   p Provide all banking services from checking balance, transferring money and various other banking services through simple messaging.
                 strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
                 .swiper-bots__btn
-                  a(href="#")
+                  iframe(src="https://www.youtube.com/embed/FDx3GqXzuwU" style="display:none")
+                  a(href="#video-page" rel="modal:open")
                     i.icon.icon-play
                     | Watch Video
                   //- a(href="#")
@@ -150,11 +239,42 @@ block content
                 .swiper-bots__img
                   img(src="img/home/bots-whatsapp/slide-4.png", alt="")
                 .swiper-bots__info
-                  b Order and Delivery Bot - 1
+                  b Travel Booking Bot 
                   p Let customers place orders, make payments and check order status with the ease of messaging.
                 strong For Grocery | Retail Products | Healthcare Products | Food & Beverages
                 .swiper-bots__btn
-                  a(href="#")
+                  iframe(src="https://www.youtube.com/embed/-NNv2-HN4yg" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-3.png", alt="")
+                .swiper-bots__info
+                  b Driving School Bot 
+                  p Provide all banking services from checking balance, transferring money and various other banking services through simple messaging.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/Ngya2rkHD1A" style="display:none")
+                  a(href="#video-page" rel="modal:open")
+                    i.icon.icon-play
+                    | Watch Video
+                  //- a(href="#")
+                  //-   i.icon.icon-arrow_left-cicle
+            .swiper-slide
+              .swiper-bots__slide
+                .swiper-bots__img
+                  img(src="img/home/bots-whatsapp/slide-3.png", alt="")
+                .swiper-bots__info
+                  b Real Estate Bot
+                  p Provide all banking services from checking balance, transferring money and various other banking services through simple messaging.
+                strong For Insurance Companies | Insurance Agents | Insurance Advisory Firms
+                .swiper-bots__btn
+                  iframe(src="https://www.youtube.com/embed/B0w0svyyHlo" style="display:none")
+                  a(href="#video-page" rel="modal:open")
                     i.icon.icon-play
                     | Watch Video
                   //- a(href="#")
@@ -171,17 +291,20 @@ block content
         h2 How Can We Help?
         .row
           .col-lg-4
-            .business-bot__benefist__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
-              strong Setup your WhatsApp Business Account
+            .business-bot__benefist__block.business-bot__benefist__block--1
+              .business-bot__benefist__img
+                img(src="img/business-bot/business-bot__benefist-img-1.png", alt="")
+              strong Bot Automation Reduces Support Cost.
           .col-lg-4
-            .business-bot__benefist__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
-              strong Provide you with a Bot platform
+            .business-bot__benefist__block.business-bot__benefist__block--2
+              .business-bot__benefist__img
+                img(src="img/business-bot/business-bot__benefist-img-3.png", alt="")
+              strong Increased engagement, higher life time value.
           .col-lg-4
-            .business-bot__benefist__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
-              strong Implement the best Bot practices for max ROI
+            .business-bot__benefist__block.business-bot__benefist__block--3
+              .business-bot__benefist__img
+                img(src="img/business-bot/business-bot__benefist-img-2.png", alt="")
+              strong Easiest channel to maximize reach and service.
 
 
 
@@ -191,15 +314,15 @@ block content
         .row
           .col-lg-4
             .business-bot__help__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
+              img(src="img/business-bot/whatsapp.png", alt="")
               h4 Setup your WhatsApp Business Account
           .col-lg-4
             .business-bot__help__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
+              img(src="img/business-bot/provide.png", alt="")
               h4 Provide you with a Bot platform
           .col-lg-4
             .business-bot__help__block
-              img(src="https://via.placeholder.com/76x75.png", alt="")
+              img(src="img/business-bot/roi.png", alt="")
               h4 Implement the best Bot practices for max ROI
       
 
