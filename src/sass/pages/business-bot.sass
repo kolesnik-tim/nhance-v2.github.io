@@ -24,14 +24,21 @@
       letter-spacing: normal
 
   .whatsapp__intro
-    padding-bottom: 140px
-    padding-top: 0
-    +r(1200)
-      padding-bottom: 0
-  .whatsapp__intro__title
-    padding-top: 150px
-  .hotel__intro .form strong img
-    width: auto
+    padding-bottom: 50px
+    position: relative
+    background-image: url('../img/business-bot/intro-bg.png')
+    +cover
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      max-width: 745px
+      width: 100%
+      height: 100%
+      background-image: url('../img/business-bot/intro-bg-right.png')
+      +cover
+      z-index: 2
   .whatsapp__intro__img
     img
       width: 308px
@@ -96,14 +103,6 @@
       +r(767)
         padding: 20px
         padding-top: 180px
-      &::before
-        content: ''
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        left: 0
-        background: rgba(#18104d, 0.7)
       p
         position: relative
         z-index: 2
