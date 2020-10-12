@@ -25,6 +25,7 @@
 
   .whatsapp__intro
     padding-bottom: 50px
+    padding-top: 50px
     position: relative
     background-image: url('../img/business-bot/intro-bg.png')
     +cover
@@ -39,13 +40,18 @@
       background-image: url('../img/business-bot/intro-bg-right.png')
       +cover
       z-index: 2
+  .whatsapp__intro__title
+    padding-top: 160px
+    +r(1200)
+      padding-top: 70px
   .whatsapp__intro__img
     +r(992)
       padding-top: 20px
       +center
     img
-      max-width: 480px
+      max-width: 600px
   .swiper-bots__info
+    padding-bottom: 15px
     &::before
       display: none
   .midmarket__curated
