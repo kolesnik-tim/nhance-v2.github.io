@@ -1,0 +1,55 @@
+---
+title: Solutions-6
+"description": ""
+---
+extends layouts/_layout
+block content
+  block header
+    include partials/_header
+  .solution.solution-primary
+    .intro
+      .container.wow.fadeInUp(data-wow-duration="1s")
+        h2 Conversational Hiring
+        p Improve recruitment efficiency in a remote hiring environment through WhatsApp.
+        a(href="#") Request Demo
+        .intro__video
+          iframe(src="https://www.youtube.com/embed/OwaVM8sgjZc" style="display:none")
+          a(href="#video-page" rel="modal:open")
+            i.icon.icon-play
+            | Watch Video
+    .solution__features
+      .container
+        h2 Key Use Case
+        .row.features-scroller__row
+          .col-md-6.col-lg-5.offset-lg-1.col-12.order-md-first.animateme.scrollme(data-when="span" data-from="0" data-to="1" data-easing="linear" data-translatey="-100" style="position: relative;top: 70px")
+            .features-scroller__img
+              img(src="img/solution/transact/transact__img-1.jpg", alt="")
+          .col-md-6.col-lg-6.col-12.order-first.wow.fadeInRight(data-wow-duration="1s")
+            .features-scroller__text
+              h3 
+                span 01
+                b Candidate Engagement
+              p Free up time by keeping candidates engaged through automated WhatsApp responses. Instantly share updates like interview dates, assessments and application status with several candidates simultaneously.
+        .row.features-scroller__row
+          .col-md-6.col-lg-6.offset-lg-1.col-12.wow.fadeInLeft(data-wow-duration="1s")
+            .features-scroller__text
+              h3 
+                span 02
+                b Task Automation
+              p The Hiring Bot can work 24 by 7 to answer candidate questions and schedule interviews, keeping the hiring teams focused on processing core tasks. 
+          .col-md-6.col-lg-5.col-12.animateme.scrollme(data-when="span" data-from="0" data-to="1" data-easing="linear" data-translatey="-100" style="position: relative;top: 70px")
+            .features-scroller__img
+              img(src="img/solution/transact/transact__img-2.jpg", alt="")
+        .row.features-scroller__row
+          .col-md-6.col-lg-5.offset-lg-1.col-12.order-md-first.animateme.scrollme(data-when="span" data-from="0" data-to="1" data-easing="linear" data-translatey="-100" style="position: relative;top: 70px")
+            .features-scroller__img
+              img(src="img/solution/transact/transact__img-3.jpg", alt="")
+          .col-md-6.col-lg-6.col-12.order-first.wow.fadeInRight(data-wow-duration="1s")
+            .features-scroller__text
+              h3 
+                span 03
+                b Employer Branding
+              p Grab attention by differentiating your recruitment process with a messaging first approach. Increase referrals and improve social reviews by adopting cutting edge technology. 
+        
+  block footer
+    include partials/_footer
