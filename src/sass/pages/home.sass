@@ -245,15 +245,15 @@
         position: relative
         +r(767)
           min-height: auto
-        &::before
-          content: ''
-          background-color: #131c2e
-          height: 1px
-          width: 45px
-          display: block
-          position: absolute
-          bottom: 0
-          left: 0
+        // &::before
+        //   content: ''
+        //   background-color: #131c2e
+        //   height: 1px
+        //   width: 45px
+        //   display: block
+        //   position: absolute
+        //   bottom: 0
+        //   left: 0
         b
           font-size: 18px
           font-weight: 600
@@ -294,6 +294,26 @@
             border-radius: 50%
             width: 18px
             height: 18px
+    .swiper-bots__btn
+      position: absolute
+      left: 0
+      bottom: 20px
+      width: 100%
+      display: flex
+      a
+        display: flex
+        align-items: center
+        font-size: 12px
+        font-weight: bold
+        color: #131c2e
+        i
+          margin-right: 10px
+          margin-top: -4px
+    .swiper-bots__slide
+      padding-bottom: 40px
+      min-height: auto
+      +r(767)
+        padding: 20px 20px 50px
 
 
 
