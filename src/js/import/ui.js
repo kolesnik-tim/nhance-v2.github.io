@@ -102,11 +102,14 @@ if($(window).width() < 768) {
 
 
 //label active  (page hotel)
-$('.hotel input').on('focus', function() {
-  $(this).next('label').addClass('active');
+$('.hotel__intro input').on('focus', function() {
+  $(this).parents('.form__input').find('label').addClass('active');
 });
-$('.hotel input').on('blur', function() {
+$('.hotel__intro input').on('blur', function() {
   if($(this).val() === '') {
-    $(this).next('label').removeClass('active');
+    $(this).parents('.form__input').find('label').removeClass('active');
   }
 });
+
+
+

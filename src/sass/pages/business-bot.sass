@@ -1,4 +1,5 @@
 .business-bot
+  overflow: hidden
   .small-business__feature__img__block
     height: 625px
   .header-landing
@@ -8,6 +9,8 @@
     width: 100%
     z-index: 8
     padding-top: 20px
+  .header__content
+    width: 100%
 
   h2
     font-size: 50px
@@ -22,24 +25,50 @@
     +r(767)
       font-size: 34px
       letter-spacing: normal
-
+  .hotel__intro
+    background: none
+    padding-bottom: 0
+    max-width: 490px
+    position: relative
+    left: 100%
+    transform: translate(-100%)
+    +r(992)
+      left: 50%
+      transform: translate(-50%)
   .whatsapp__intro
     padding-bottom: 50px
-    padding-top: 50px
+    padding-top: 0px
     position: relative
     background-image: url('../img/business-bot/intro-bg.png')
     +cover
-    &::before
-      content: ''
-      position: absolute
-      right: 0
-      top: 0
-      max-width: 745px
-      width: 100%
-      height: 100%
-      background-image: url('../img/business-bot/intro-bg-right.png')
-      +cover
-      z-index: 2
+    +r(1200)
+      padding-bottom: 0
+      padding-top: 30px
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   right: 0
+    //   top: 0
+    //   max-width: 745px
+    //   width: 100%
+    //   height: 100%
+    //   background-image: url('../img/business-bot/intro-bg-right.png')
+    //   +cover
+    //   z-index: 2
+  .form
+    .zf-errorMessage
+      padding: 10px 0 0
+      color: red
+      font-size: 14px
+    img
+      width: auto
+    strong
+      justify-content: center
+    label
+      +r(400)
+        font-size: 10px
+  .form__input
+    margin-bottom: 20px
   .whatsapp__intro__title
     padding-top: 160px
     +r(1200)
