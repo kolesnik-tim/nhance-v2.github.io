@@ -9,6 +9,7 @@ block content
     // $Id: $
     function zf_ValidateAndSubmit(){
         if(zf_CheckMandatory()){
+          document.location.href = "thank-you.html";
           if(zf_ValidCheck()){
             if(isSalesIQIntegrationEnabled){
               zf_addDataToSalesIQ();
@@ -350,21 +351,21 @@ block content
             .whatsapp__intro__title
               h1 Automate Your Business With WhatsApp Bot
               p Get the digital automation platform that provides everything you need to automate lead generation, commerce, support and customer engagement over Whatsapp.
-              a(href="#schedule" rel="modal:open") Automate My Business
-                i.icon.icon-arrow-right
+              //- a(href="#schedule" rel="modal:open") Automate My Business
+              //-   i.icon.icon-arrow-right
           .col-lg-6
             .hotel__intro
-
-              form.form#form(action='https://forms.zohopublic.in/apps/form/EventRegistration/formperma/CIZoYlaOehjzfDnSBO9wv1eNWq_I5VnpOkbTRZv2MCo/htmlRecords/submit' name='form' method='POST' onsubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data')
+              
+              form.form(action='https://forms.zohopublic.in/apps/form/Scheduleacustomdemo/formperma/sAKLOmI8isylLVeQr1a11NQ-H9m8-UX9U0U63kLn4V0/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form')
                 input(type='hidden' name='zf_referrer_name' value='')
                 // To Track referrals , place the referrer name within the " " in the above hidden input field
-                input(type='hidden' name='zf_redirect_url' value='')
+                input(type='hidden' name='zf_redirect_url' value='https://www.nhancenow.com/thank-you.html')
                 // To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field
                 input(type='hidden' name='zc_gad' value='')
                 // If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM
                 .zf-templateWrapper
-                  h2 Schedule a free demo
-                  p Have one of our CX experts reach out to you.
+                  h2 Schedule a custom demo
+                  p We need a few details to share with our team.
                   .zf-subContWrap.zf-topAlign
                     ul
                       // -------Single Line Starts Here--------
@@ -403,7 +404,7 @@ block content
                       // -------template Container Starts Here--------
                       ul
                         li.zf-fmFooter
-                          button.zf-submitColor.button Submit
+                          button.zf-submitColor.button Show me how to sell with Bots
                         li
                           strong 
                             img(src="img/hotel/safety.png", alt="")
