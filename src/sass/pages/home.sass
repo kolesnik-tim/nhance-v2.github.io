@@ -27,6 +27,7 @@
     background-size: auto 90%
     padding-top: 200px
     padding-bottom: 20px
+    background-color: rgb(244, 244, 247)
     +r(767)
       min-height: 100%
       padding: 120px 0 50px
@@ -139,6 +140,17 @@
       padding: 30px
       border-radius: 25px
       +cover
+      position: relative
+      overflow: hidden
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.89))
       +r(992)
         width: calc( 50% - 15px )
         margin-bottom: 15px
@@ -153,12 +165,16 @@
         font-weight: bold
         color: #ffffff
         margin-bottom: 30px
+        position: relative
+        z-index: 2
         +r(1200)
           font-size: 20px
       p
         font-size: 18px
         color: #fff
         text-shadow: 0.8px 0.6px 0 #000000
+        position: relative
+        z-index: 2
 
 
 
@@ -287,9 +303,14 @@
 
   &__marketplace
     padding: 120px 0
-    background: #000
+    background-color: #000
+    background-image: url('../img/home/home__marketplace-img.png')
+    background-repeat: no-repeat
+    background-size: auto 100%
+    background-position: 100% 0
     +r(767)
       padding: 50px 0
+      background-position: -100px 0
     h2
       color: #fff
       text-align: left
@@ -300,6 +321,7 @@
       line-height: 1.3
       color: #ffffff
       margin-bottom: 60px
+      max-width: 520px
       +r(767)
         font-size: 20px
     ul
@@ -398,6 +420,7 @@
     &__img
       flex: 1
       display: flex
+      align-items: center
       margin-right: 60px
       max-width: 430px
       +r(992)

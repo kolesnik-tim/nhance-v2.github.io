@@ -96,6 +96,19 @@
         text-align: center
       p
         text-align: center
+      b, strong
+        font-size: 20px
+        font-weight: bold
+        display: block
+        margin-top: 40px
+        line-height: 1.25
+        letter-spacing: -0.6px
+        text-align: center
+        color: #000000
+        margin-bottom: 5px
+      strong
+        font-size: 16px
+        margin-top: 0
       span
         position: absolute
         left: -3px
@@ -150,7 +163,7 @@
       +r(1200)
         flex-wrap: wrap
     &__review
-      width: 430px
+      width: 437px
       margin-right: 30px
       +r(1200)
         width: 50%
@@ -170,15 +183,25 @@
         &:last-child
           p
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='709' height='194'%3E%3Cpath fill='%23f7e6ac' fill-rule='evenodd' d='M669 194H89.943c-16.302 0-30.317-9.758-36.548-23.747L-.006 159.071c38.541-5.313 47.752-60.701 49.949-85.579V40c0-22.092 17.908-40 40-40H669c22.091 0 40 17.908 40 40v114c0 22.091-17.909 40-40 40z'/%3E%3C/svg%3E%0A")
-
+      &--2
+        li
+          &:first-child
+            p
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='709' height='194'%3E%3Cpath fill='%23B993F8' fill-rule='evenodd' d='M669 194.001H89.943c-16.303 0-30.318-9.759-36.548-23.749L-.006 159.07c38.541-5.312 47.752-60.701 49.949-85.578V40c0-22.092 17.908-40 40-40H669c22.091 0 40 17.908 40 40v114c0 22.092-17.909 40.001-40 40.001z'/%3E%3C/svg%3E%0A")
+          &:nth-child(2)
+            p
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='709' height='194'%3E%3Cpath fill='%23F7ACB7' fill-rule='evenodd' d='M669 193.999H89.938c-16.303 0-30.318-9.758-36.549-23.747L-.006 159.07c38.51-5.308 47.737-60.613 49.944-85.519V40c0-22.092 17.908-40 40-40H669c22.091 0 40 17.908 40 40v114c0 22.092-17.909 39.999-40 39.999z'/%3E%3C/svg%3E%0A")
+          &:last-child
+            p
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='709' height='194'%3E%3Cpath fill='%23ACE1F7' fill-rule='evenodd' d='M669 194H89.943c-16.302 0-30.317-9.757-36.548-23.747L-.006 159.07c38.541-5.312 47.752-60.701 49.949-85.578V40c0-22.092 17.908-40 40-40H669c22.091 0 40 17.908 40 40v113.999C709 176.092 691.091 194 669 194z'/%3E%3C/svg%3E%0A")
     &__img
       width: 75px
       height: 75px
       border-radius: 50%
       overflow: hidden
-      display: block
+      +center
       img
-        width: 100%
+        width: 107%
     p
       flex: 1
       padding: 30px 35px
