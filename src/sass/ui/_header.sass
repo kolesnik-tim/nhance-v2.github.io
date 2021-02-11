@@ -177,7 +177,7 @@
         +r(1200)
           font-size: 14px
       a
-        padding-right: 20px
+        padding-right: 35px
         +r(1250)
           padding-right: 15px
         i
@@ -202,7 +202,6 @@
       right: -260px
       top: 40px
       border-radius: 10px
-      flex-direction: column
       display: none
       &--icon
         width: 445px
@@ -219,7 +218,7 @@
         border-bottom: 8px solid $white
         position: absolute
         top: -16px
-        left: 30%
+        left: 29%
       &__img
         width: 75px
         img
@@ -418,11 +417,12 @@
     display: none
 
   .header__btn
-    +r(1040)
-      padding-right: 0
-      flex-direction: column
-      align-items: flex-start
-      padding-left: 20px
+    padding-right: 0
+    flex-direction: column
+    align-items: flex-start
+    padding-left: 20px
+    left: 0
+    height: auto
     a
       +r(1040)
         color: #5e5a54
@@ -480,3 +480,34 @@
     &__list
       flex: 1
     
+
+
+.header__nav__dropdown--lists
+  width: 490px
+  padding: 25px
+  &::before
+    left: 39%
+  li
+    display: inline-flex
+    flex-direction: column
+    align-items: flex-start
+    width: 56%
+    box-sizing: border-box
+    &:last-child
+      width: 38%
+      border-left: 1px solid #bdbdbd
+      padding-left: 30px
+  h3
+    font-size: 12px
+    font-weight: bold
+    color: #19b87a
+    text-transform: uppercase
+    margin-bottom: 5px
+  a
+    padding: 3px 0
+    border-bottom: 0
+    font-size: 16px
+    &:hover
+      background: none
+      b
+        color: #ff0057 !important
