@@ -10,11 +10,11 @@ block content
     .pricing__title
       .container
         h1 Pricing
-      .pricing__select
-        strong Select Currency
-        ul
-          li(data="usd").active $USD
-          li(data="inr") ₹ INR
+      //- .pricing__select
+      //-   strong Select Currency
+      //-   ul
+      //-     li(data="usd").active $USD
+      //-     li(data="inr") ₹ INR
     .container
       .pricing__tariff
         table
@@ -25,16 +25,16 @@ block content
               th
                 h4 Basic
                 span Ideal for SMB
-                a(href="#") Start 7-day Free Trial
+                a(href="#") 14-day Free Trial
               th
                 b Most Popular Plan
                 h4 Pro
                 span Ideal for SMB
-                a(href="#") Start 7-day Free Trial
+                a(href="#") 14-day Free Trial
               th
                 h4 Advanced
                 span Ideal for SMB
-                a(href="#") Start 7-day Free Trial
+                a(href="#") 14-day Free Trial
               th
                 .pricing__tariff__img
                   img(src="img/medal.png", alt="")
@@ -45,7 +45,7 @@ block content
             tr
               td Setup Fee
               td 
-                span.usd $100
+                span.usd $150
                 span.inr ₹5000
               td 
                 span.usd $250
@@ -60,35 +60,36 @@ block content
                 span.usd $199
                 span.inr ₹15000
               td 
-                span.usd $299
+                span.usd $499
                 span.inr ₹25000
               td 
-                span.usd $499
+                span.usd $999
                 span.inr ₹40000
               td Custom
             tr
-              td No of Users
+              td No of Users 
+                span (Base Limit)
               td 
                 span.usd upto 5000
                 span.inr upto 5000
               td 
-                span.usd upto 10000
-                span.inr upto 10000
-              td 
                 span.usd upto 20000
                 span.inr upto 20000
+              td 
+                span.usd upto 50000
+                span.inr upto 50000
               td Custom
             tr
               td Additional Storage per 50 GB
-                span (Beyond Free Limit)
+                span ($10 for 1000 user pack) 
               td 
-                span.usd $20
+                span.usd upto 20000
                 span.inr ₹1000
               td 
-                span.usd $20
+                span.usd upto 50000
                 span.inr ₹1000
               td 
-                span.usd $20
+                span.usd upto 100000
                 span.inr ₹1000
               td Custom
             tr
@@ -167,16 +168,6 @@ block content
                 i.icon.icon-check
             tr
               td App
-              td 
-                i.icon.icon-close
-              td
-                i.icon.icon-check
-              td
-                i.icon.icon-check
-              td
-                i.icon.icon-check
-            tr
-              td PWA
               td 
                 i.icon.icon-close
               td
@@ -306,16 +297,7 @@ block content
                 i.icon.icon-check
               td
                 i.icon.icon-check
-            tr
-              td Address Management
-              td 
-                i.icon.icon-check
-              td
-                i.icon.icon-check
-              td
-                i.icon.icon-check
-              td
-                i.icon.icon-check
+
             tr
               td Advanced Analytics
               td 
@@ -434,16 +416,6 @@ block content
                 i.icon.icon-check
               td
                 i.icon.icon-check
-              td
-                i.icon.icon-check
-            tr
-              td Hierarchy Management
-              td 
-                i.icon.icon-close
-              td
-                i.icon.icon-close
-              td
-                i.icon.icon-close
               td
                 i.icon.icon-check
             tr
@@ -566,16 +538,6 @@ block content
                 i.icon.icon-check
               td
                 i.icon.icon-check
-            tr
-              td 
-              td 
-                i.icon.icon-close
-              td
-                i.icon.icon-close
-              td
-                i.icon.icon-close
-              td
-                i.icon.icon-check
 
 
 
@@ -612,7 +574,7 @@ block content
                 | What if I want to cancel my membership?
                 i.icon.icon-arrow-down
               .pricing__questions__block__text(style="display:none")
-                div Any subscription canceled in the first 7-Days is fully refundable. After 7-Days, cancellation policies will apply.
+                div Any subscription canceled in the first 14-Days is fully refundable. After 14-Days, cancellation policies will apply.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
               strong
                 | When does the subscription begin?
@@ -652,7 +614,7 @@ block content
                 i.icon.icon-arrow-down
               .pricing__questions__block__text(style="display:none")
                 div
-                  | In a free-trial, all the features are made available to you for a period of 7-Days. You can choose to purchase a subscription any time during those 7-Days or at the end of the trial period.
+                  | In a free-trial, all the features are made available to you for a period of 14-Days. You can choose to purchase a subscription any time during those 14-Days or at the end of the trial period.
             .pricing__questions__block.wow.zoomIn(data-wow-duration='1.5s')
               strong
                 | What happens once the Trial period has expired?
